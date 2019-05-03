@@ -1,0 +1,143 @@
+\documentclass[monografia]{inf-ufg}
+% Opções da classe inf-ufg (ao usar mais de uma, separe por vírgulas)
+%   [tese]         -> Tese de doutorado.
+%   [dissertacao]  -> Dissertação de mestrado (padrão).
+%   [monografia]   -> Monografia de especialização.
+%   [relatorio]    -> Relatório final de graduação.
+%   [abnt]         -> Usa o estilo "abnt-alf" de citação bibliográfica.
+%   [nocolorlinks] -> Os links de navegação no texto ficam na cor preta.
+%                     Use esta opção para gerar o arquivo para impressão
+%                     da versão final do seu texto!!!
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{pdfpages} % Incluir pdfs
+\usepackage{color}
+\usepackage{rotating} % Pacotes para tabela em paisagem
+\usepackage{longtable} % Pacote para tabelas longas (várias páginas)
+\usepackage{lscape} % Utilizado com longtable para formato landscape
+\usepackage{amssymb} % Para simbolo \varnothing
+%\usepackage{array}
+%\usepackage[utf8]{inputenc}
+\definecolor{gray}{RGB}{240,240,240}
+\lstset{%
+  classoffset=0,
+  captionpos=b,
+  basicstyle=\ttfamily\footnotesize,
+  frame=trBL,
+  %numbers=left,
+  %frameround=fttt,
+  morecomment=[l]//,
+  commentstyle=\color{RoyalBlue},
+  backgroundcolor=\color{gray},
+  breaklines=true
+}
+%% melhorar o posicionamento da tabelas
+\newenvironment{wide}{
+  \setlength{\voffset}{-1cm}
+  \setlength{\hoffset}{-2cm}
+}{
+}
+%% enumerate recursivo em formato 1.1
+\renewcommand{\theenumii}{\arabic{enumii}}
+\renewcommand{\labelenumii}{\theenumi.\theenumii.}
+\hypersetup{
+  pagebackref=true,
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black,
+  citecolor=black,
+  filecolor=black
+}
+
+\begin{document}
+%------------------------------------------ AUTOR, TÍTULO E DATA DE DEFESA %
+\autor{Marcello Henrique Dias de Moura} % (José da Silva)
+\autorR{de Moura, Marcello Henrique Dias} % (da Silva, José)
+
+\titulo{Primeiros passos para criação de um aplicativo de saúde utilizado na UFG}
+%\subtitulo{Subtítulo do Trabalho}
+
+\cidade{Goiânia} % Nome da cidade em foi desenvolvido o trabalho
+\dia{03} %
+\mes{05} % Data da apresentação/defesa do trabalho
+\ano{2019} % Formato numérico: \dia{01}, \mes{01} e \ano{2009}
+
+%-------------------------------------------------------------- ORIENTADOR %
+\orientador{Dr. Fábio Nogueira de Lucena}
+\orientadorR{de Lucena, Fábio Nogueira}
+% Use os comandos a seguir se for Orientadora e nao Orientador.
+%\orientadora{Nome da Orientadora}
+%\orientadoraR{Nome Reverso da Orientadora}
+
+\coorientador{}
+\coorientadorR{}
+% Use os comandos a seguir se for Co-orientadora e nao Coorientador.
+%\coorientadora{Nome da Co-orientadora}
+%\coorientadoraR{Nome Reverso da Co-orientadora}
+
+%-------------------------------------------------- INSTITUIÇÃO E PROGRAMA %
+\universidade{Universidade Federal de Goiás} % {Universidade Federal de Goiás}
+\uni{UFG}         % UFG
+\unidade{Instituto de Informática} %Instituto de Informática
+%\departamento{Nome do Departamento} %Unidades com mais de um depto.
+
+\universidadeco{Universidade Federal de Goiás}
+\unico{UFG}
+\unidadeco{Instituto de Informática}
+
+\programa{Computação} % Computação
+\concentracao{Informática e Saúde}
+
+%-------------------------------------------------- ELEMENTOS PRÉ-TEXTUAIS %
+\capa    % Gera o modelo da capa externa do trabalho
+\publica % Gera a autorização para publicação em formato eletrônico
+\rosto   % Primeira folha interna do trabalho
+
+\input{tex/pre_aprovacao}
+\input{tex/pre_direitos}
+\input{tex/pre_dedicatoria}
+\input{tex/pre_agradecimentos}
+\input{tex/pre_epigrafe}
+\input{tex/pre_resumo}
+\input{tex/pre_abstract}
+
+\tabelas[figtab]
+%Opções:
+%nada [] -> Gera apenas o sumário
+%fig     -> Gera o sumário e a lista de figuras
+%tab     -> Sumário e lista de tabelas
+%alg     -> Sumário e lista de algoritmos
+%cod     -> Sumário e lista de códigos de programas
+%
+% Pode-se usar qualquer combinação dessas opções.
+% Por exemplo:
+%  figtab       -> Sumário e listas de figuras e tabelas
+%  figtabcod    -> Sumário e listas de figuras, tabelas e
+%                  códigos de programas
+%  figtabalg    -> Sumário e listas de figuras, tabelas e algoritmos
+%  figtabalgcod -> Sumário e listas de figuras, tabelas, algoritmos e
+%                  códigos de programas
+
+%--------------------------------------------------------------- CAPÍTULOS %
+\input{tex/cap_I}
+\input{tex/cap_II}
+\input{tex/cap_III}
+\input{tex/cap_IV}
+\input{tex/cap_V}
+\input{tex/cap_VI}
+
+%------------------------------------------------------------ BIBLIOGRAFIA %
+\cleardoublepage
+%\nocite{*} %%% Retire esta linha para gerar a bibliografia com apenas as
+           %%% referências usadas no seu texto!
+\arial
+\bibliography{./monografia} %%% Nomes dos seus arquivos .bib
+\label{ref-bib}
+
+%--------------------------------------------------------------- APÊNDICES %
+\apendices
+\includepdfset{pages={-},scale=1,pagecommand={}}
+%\input{tex/pos_apend}
+
+\end{document}
+
