@@ -1,3 +1,4 @@
+% Exemplo de dissertação do INF-UFG com texto em portugues formatado com LaTeX
 \documentclass[monografia]{inf-ufg}
 % Opções da classe inf-ufg (ao usar mais de uma, separe por vírgulas)
 %   [tese]         -> Tese de doutorado.
@@ -8,102 +9,61 @@
 %   [nocolorlinks] -> Os links de navegação no texto ficam na cor preta.
 %                     Use esta opção para gerar o arquivo para impressão
 %                     da versão final do seu texto!!!
-\usepackage{amsmath}
-\usepackage{multirow}
-\usepackage{pdfpages} % Incluir pdfs
-\usepackage{color}
-\usepackage{rotating} % Pacotes para tabela em paisagem
-\usepackage{longtable} % Pacote para tabelas longas (várias páginas)
-\usepackage{lscape} % Utilizado com longtable para formato landscape
-\usepackage{amssymb} % Para simbolo \varnothing
-%\usepackage{array}
-%\usepackage[utf8]{inputenc}
-\definecolor{gray}{RGB}{240,240,240}
-\lstset{%
-  classoffset=0,
-  captionpos=b,
-  basicstyle=\ttfamily\footnotesize,
-  frame=trBL,
-  %numbers=left,
-  %frameround=fttt,
-  morecomment=[l]//,
-  commentstyle=\color{RoyalBlue},
-  backgroundcolor=\color{gray},
-  breaklines=true
-}
 
-%\usepackage[latin1]{inputenc}
-%\usepackage[portuges,brazilian]{babel}
-
-%% melhorar o posicionamento da tabelas
-\newenvironment{wide}{
-  \setlength{\voffset}{-1cm}
-  \setlength{\hoffset}{-2cm}
-}{
-}
-%% enumerate recursivo em formato 1.1
-\renewcommand{\theenumii}{\arabic{enumii}}
-\renewcommand{\labelenumii}{\theenumi.\theenumii.}
-\hypersetup{
-  pagebackref=true,
-  colorlinks=true,
-  linkcolor=black,
-  urlcolor=black,
-  citecolor=black,
-  filecolor=black
-}
-
+%----------------------------------------------------- INICIO DO DOCUMENTO %
 \begin{document}
-%------------------------------------------ AUTOR, TÍTULO E DATA DE DEFESA %
-\autor{Marcello Henrique Dias de Moura} % (José da Silva)
-\autorR{de Moura, Marcello Henrique Dias} % (da Silva, José)
 
-\titulo{Primeiros passos para criação de um aplicativo de saúde na UFG}
-%\subtitulo{Subtítulo do Trabalho}
+%------------------------------------------ AUTOR, TÍTULO E DATA DE DEFESA %
+\autor{Jean Teixeira Lima} % (José da Silva)
+\autorR{Teixeira Lima, Jean} % (da Silva, José)
+
+\titulo{Relatório Técnico Científico}
+\subtitulo{Definição de um modelo de referência para elaboração e gerenciamento de Catálogo de Serviços de TI na UFG}
 
 \cidade{Goiânia} % Nome da cidade em foi desenvolvido o trabalho
-\dia{03} %
-\mes{05} % Data da apresentação/defesa do trabalho
+\dia{\textless Dia\textgreater} %
+\mes{\textless Mês\textgreater} % Data da apresentação/defesa do trabalho
 \ano{2019} % Formato numérico: \dia{01}, \mes{01} e \ano{2009}
 
 %-------------------------------------------------------------- ORIENTADOR %
-\orientador{Dr. Fábio Nogueira de Lucena}
-\orientadorR{de Lucena, Fábio Nogueira}
+\orientador{Me. Edison Andrade Martins Morais}
+\orientadorR{Andrade Martins Morais, Edison}
 % Use os comandos a seguir se for Orientadora e nao Orientador.
-%\orientadora{Nome da Orientadora}
-%\orientadoraR{Nome Reverso da Orientadora}
+%\orientadora{\textless Nome da Orientadora\textgreater}
+%\orientadoraR{\textless Nome Reverso da Orientadora\textgreater}
 
-\coorientador{}
-\coorientadorR{}
+%\coorientador{\textless Nome do Co-orientador\textgreater}
+%\coorientadorR{\textless Nome Reverso do Co-orientador\textgreater}
 % Use os comandos a seguir se for Co-orientadora e nao Coorientador.
-%\coorientadora{Nome da Co-orientadora}
-%\coorientadoraR{Nome Reverso da Co-orientadora}
+%\coorientadora{\textless Nome da Co-orientadora\textgreater}
+%\coorientadoraR{\textless Nome Reverso da Co-orientadora\textgreater}
 
 %-------------------------------------------------- INSTITUIÇÃO E PROGRAMA %
 \universidade{Universidade Federal de Goiás} % {Universidade Federal de Goiás}
 \uni{UFG}         % UFG
 \unidade{Instituto de Informática} %Instituto de Informática
-%\departamento{Nome do Departamento} %Unidades com mais de um depto.
+\departamento{Pós-Graduação Lato Sensu} %Unidades com mais de um depto.
 
-\universidadeco{Universidade Federal de Goiás}
-\unico{UFG}
-\unidadeco{Instituto de Informática}
+%\universidadeco{\textless Nome da Universidade do Co-orientador\textgreater}
+%\unico{\textless Sigla da Universidade do Co-orientador\textgreater}
+%\unidadeco{\textless Nome da Unidade Acadêmica do Co-orientador\textgreater}
 
-\programa{Computação} % Computação
-\concentracao{Informática e Saúde}
+\programa{Governança e Gestão de Sistemas e Tecnologias da Informação} % Computação
+\concentracao{\textless Gestão de Governança de TI\textgreater}
 
 %-------------------------------------------------- ELEMENTOS PRÉ-TEXTUAIS %
 \capa    % Gera o modelo da capa externa do trabalho
 \publica % Gera a autorização para publicação em formato eletrônico
 \rosto   % Primeira folha interna do trabalho
 
-\input{tex/pre_aprovacao}
-\input{tex/pre_direitos}
-\input{tex/pre_dedicatoria}
-\input{tex/pre_agradecimentos}
-\input{tex/pre_epigrafe}
-\input{tex/pre_resumo}
-\input{tex/pre_abstract}
+\input{./tex/pre_aprovacao}
+\input{./tex/pre_direitos}
+\input{./tex/pre_dedicatoria}
+\input{./tex/pre_agradecimentos}
+\input{./tex/pre_epigrafe}
+\input{./tex/pre_resumo}
+\input{./tex/pre_abstract}
+\input{./tex/pre_siglas}
 
 \tabelas[figtab]
 %Opções:
@@ -123,25 +83,29 @@
 %                  códigos de programas
 
 %--------------------------------------------------------------- CAPÍTULOS %
-\input{tex/cap_I}
-\input{tex/cap_II}
-\input{tex/cap_III}
-\input{tex/cap_IV}
-\input{tex/cap_V}
-\input{tex/cap_VI}
+\input{./tex/cap_I}
+\input{./tex/cap_II}
+\input{./tex/cap_III}
+\input{./tex/cap_IV}
+\input{./tex/cap_V}
 
 %------------------------------------------------------------ BIBLIOGRAFIA %
-\cleardoublepage
-%\nocite{*} %%% Retire esta linha para gerar a bibliografia com apenas as
+%%\cleardoublepage
+%%\nocite{*} %%% Retire esta linha para gerar a bibliografia com apenas as
            %%% referências usadas no seu texto!
-\arial
+%\arial
 \bibliography{./monografia} %%% Nomes dos seus arquivos .bib
-\label{ref-bib}
+%\bibliography{./bib/biblio} %%% Nomes dos seus arquivos .bib
+%\label{ref-bib}
 
 %--------------------------------------------------------------- APÊNDICES %
 \apendices
-\includepdfset{pages={-},scale=1,pagecommand={}}
-%\input{tex/pos_apend}
+
+%\input{./pos/apend_I}
+%\input{./pos/apend_II}
 
 \end{document}
 
+%------------------------------------------------------------------------- %
+%        F I M   D O  A R Q U I V O :  m o d e l o - t e s e . t e x       %
+%------------------------------------------------------------------------- %

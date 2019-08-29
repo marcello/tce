@@ -1,20 +1,385 @@
-\chapter{Revisão Bibliográfica}
-\label{cap:cap_2}
+\chapter{Conceitos Preliminares}
+\label{cap:conceitos}
 
-A Organização Mundial da Saúde (OMS)\footnote{http://www.who.int} produz uma série de relatórios, inclusive publicações voltadas para regiões do mundo como: as américas, ásia, europa, etc.
-Possui também, um observatório global para saúde digital (GOe)\footnote{https://www.who.int/goe/en/} uma iniciativa dedicada ao estudo da e-Saúde, sua evolução e impacto na saúde nos países.
+Para facilitar a compreensão sobre este documento, são descritos aqui alguns conceitos utilizados no decorrer do trabalho.
 
-Na $58$\textsuperscript{\underline{a}} Assembléia Mundial da Saúde em maio de 2005 a OMS adotou a resolução WHA58.28, que diz: ``e-Saúde é o uso das tecnologias de informação e comunicação para a saúde'', que incluem assistência ao paciente, pesquisa, educação e capacitação da força de trabalho, monitoramento e avaliação em saúde.
-Estas ações é o reconhecimento que o campo da e-Saúde está transformando rapidamente a prestação de serviços e sistemas de saúde em todo o mundo.
-Dessas iniciativas é importante ressaltar os seguintes documentos:
+\section{Um visão geral sobre ITIL}
+\label{sec:itil}
+
+(citar as referências bibliográficas desse trecho)
+A ITIL\textsuperscript{\textregistered} (\textit{Information Technology Infrastructure Library}) é uma biblioteca conhecida como um \textit{framework} (termo em inglês) para gerenciamento de serviços de TI que abrange, mundialmente, os melhores processos e práticas deste segmento em uso nas mais diferentes organizações.
+
+(acho que pode falar mais da ITIL: quando foi criada, quem a mantém e outras informações)
+Atualmente encontra-se na quarta versão (ITIL\textsuperscript{\textregistered} V4), mas foi tomado como base de estudo deste trabalho a versão 3 (V3), que agrupa as funcionalidades de sua versão anterior em ciclos de vida temporais. O ITIL\textsuperscript{\textregistered} V2 era organizado em sete livros que embasaram o foco na entrega de valor ao cliente, tentando minimizar os custos e riscos associados, dos quais os mais destacados eram o \textit{Service Delivery} (Entrega de Serviços) e o \textit{Service Support} (Suporte de Serviços), por definirem processos e atividades do gerenciamento e da operação dos serviços de TI.
+
+A ITIL\textsuperscript{\textregistered} V3 foi concebida de forma a concatenar as atividades dos processos da V2 em ciclos de vida temporais, de modo que ficassem mais entrelaçados e fossem melhor aplicados na sua implementação tentando, assim, evitar a ação somente da parte operacional e abordar mais a parte tática e estratégica. Dessa maneira, foram adotados os cinco ciclos de vida do ITIL\textsuperscript{\textregistered} V3 com os seguintes nomes:
 
 \begin{itemize}
-	\item Governança de saúde digital (e-Saúde)\footnote{https://www.who.int/ehealth/governance/en/}.
-	\item Difusão global da e-Saúde: Tornar possível a cobertura universal de saúde~\cite{WHO-2010,WHO-2016}.
-	\item Ferramentas de estratégia nacional para e-Saúde~\cite{WHO-2012}.
-	\item Guia da OMS: recomendações sobre intervenções digitais para o fortalecimento do sistema de saúde~\cite{WHO-2019}.
-	\item Saúde Móvel (m-health): Novos horizontes para a saúde através de tecnologias móveis~\cite{WHO-2011}.
+  \item\textit{Service Strategy} (Estratégia de Serviço)
+  \item\textit{Service Design} (Desenho de Serviço)
+  \item\textit{Service Transition} (Transição de Serviço)
+  \item\textit{Service Operations} (Operação de Serviço)
+  \item\textit{Continual Service Improvement} (Melhoria Continuada de Serviço)
 \end{itemize}
 
-A OMS também possui um diretório onde é possível filtrar e encontrar políticas para e-Saúde de vários países.
-Através da página\footnote{https://www.who.int/goe/policies/countries/en/} foi possível, por exemplo, encontrar a Política Nacional de Informação e Informática em Saúde (PNIIS) do Brasil em sua versão de 2004. O endereço para a versão de 2013 encontra-se quebrado. Aproveitou-se a ocasião para enviar o link correto aos administradores do site.
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.4]{./fig/ciclo_itil.png}
+  \caption{Ciclos de vida do ITIL\textsuperscript{\textregistered} V3.}
+  \label{fig:ciclo_itil}
+\end{figure}
+
+Na Figura~\ref{fig:ciclo_itil}, pode-se ter uma melhor visão de como estas fases estão organizadas. Cada parte do ciclo de vida tem uma influência sobre o outro e são dependentes uns dos outros para insumos e \textit{feedback}. Dessa forma, verificações constantes ao longo do ciclo de vida do serviço garantem que, à medida que a demanda de negócios muda, conforme a necessidade do negócio, os serviços podem passar por adaptações e apresentar retornos de forma eficaz a essas mudanças, segundo a OGC~\cite{Cabinet2011}.
+
+Os conceitos repassados  aqui não possuem como finalidade o aprofundamento das teorias de cada fase desses ciclos de vida, visto que serão abordados processos específicos da fase de Desenho de Serviço: Gerenciamento de Catálogo de Serviço e Gerenciamento de Nível de Serviço. Portanto, serão passados apenas alguns conceitos básicos de cada um deles para facilitar o entendimento deste trabalho.
+
+\subsection*{Estratégia de Serviço}
+
+Tem o objetivo de fazer com que organizações de TI se posicionem para lidar com os custos e riscos associados a seu Portfólio de Serviço, e que não estejam apenas focadas na efetividade operacional, mas também na criação de um diferencial competitivo com o uso dos ativos de Tecnologia da Informação, conforme OGC (2007)~\cite{Cabinet2011}.
+
+Este ciclo possui alguns processos associados. São eles:
+
+\begin{itemize}
+  \item Gerenciamento da Estratégia para os Serviços de TI
+  \item Gerenciamento do Portfólio de Serviço
+  \item Gerenciamento Financeiro para os Serviços de TI
+  \item Gerenciamento da Demanda
+  \item Gerenciamento do Relacionamento com o negócio
+\end{itemize}
+
+\subsection*{Desenho de Serviço}
+
+O propósito principal desta fase do ciclo de vida é desenhar serviços novos, ou que tenham sido alterados, e prepará-los para que sejam introduzidos em consonância com o negócio, atendendo aos seus requisitos atuais e futuros.
+
+Assim como o anterior, este ciclo também possui alguns processos associados. São eles:
+
+\begin{itemize}
+  \item \textbf{Gerenciamento de Nível de Serviço}
+  \item \textbf{Gerenciamento de Catálogo de Serviço}
+  \item Gerenciamento da Capacidade
+  \item Gerenciamento da Disponibilidade
+  \item Gerenciamento da Continuidade de Serviço de TI
+  \item Gerenciamento de Segurança da Informação
+  \item Gerenciamento de Fornecedores
+\end{itemize}
+
+Por esta fase ser um dos objetos de estudo deste trabalho os processos serão melhor descritos em seção específica, com ênfase no Gerenciamento de Nível de Serviço e Gerenciamento de Catálogo de Serviço.
+
+\subsection*{Transição de Serviço}
+
+O objetivo desta fase é certificar que serviços (novos, modificados ou removidos) estejam alinhados com as conveniências do negócio atendendo, também, às fases anteriores (Estratégia e Desenho de Serviço).
+
+São processos do ciclo Transição de Serviço:
+
+\begin{itemize}
+  \item Planejamento e Suporte da Transição
+  \item Gerenciamento de Mudanças
+  \item Gerenciamento de Liberação e Implantação
+  \item Gerenciamento da Configuração e Ativo de Serviço
+  \item Validação e Testes de Serviço
+  \item Avaliação da Mudança
+  \item Gerenciamento do Conhecimento
+\end{itemize}
+
+\subsection*{Operação de Serviço}
+
+Conforme o OGC~\cite{Lifecycle2007}, a Operação de Serviço é a fase do ciclo de vida de gerenciamento de serviços da ITIL\textsuperscript{\textregistered} V3 responsável pelas atividades empresariais. O objetivo desta fase é alinhar as necessidades dos usuários com as necessidades do negócio, reduzindo perturbações que possam haver, pelos usuários, nas atividades diárias do negócio, sem abalar sua satisfação e confiança.
+
+São processos do ciclo Operação de Serviço:
+
+\begin{itemize}
+  \item Gerenciamento de Eventos
+  \item Gerenciamento de Incidentes
+  \item Cumprimento de Requisição
+  \item Gerenciamento de Problemas
+  \item Gerenciamento de Acesso
+\end{itemize}
+
+\subsection*{Melhoria Continuada de Serviço}
+
+Como o próprio nome indica, esta fase tem como objetivo cuidar continuamente do alinhamento dos serviços de TI com o negócio, ou com suas necessidades, bem como com as requisições de mudança. Deve identificar e implementar melhorias nos serviços de TI que suportam os processos de negócios, melhorando os custos.
+
+Diferentemente dos outros ciclos, a Melhoria Continuada de Serviço é contemplado por sete passos a serem seguidos. São eles:
+
+\begin{itemize}
+  \item Definir o que será medido
+  \item Definir o que pode ser medido
+  \item Coleta de Dados
+  \item Processar os Dados
+  \item Analisar os Dados
+  \item Apresentar e Utilizar a Informação
+  \item Implementar as Ações Corretivas
+\end{itemize}
+
+A seguir serão apresentados, de forma mais aprofundada, os processos específicos da fase de Desenho de Serviço: Gerenciamento de Catálogo de Serviço e Gerenciamento de Nível de Serviço, foco de estudo deste trabalho para aplicação do estudo de caso junto ao CERCOMP e, de maneira mais específica, à Equipe de Infraestrutura.
+
+\section{O foco em Desenho de Serviços}
+\label{sec:desenho}
+
+O objetivo desta fase é fornecer uma abordagem para o Desenho de Serviços novos ou alterados para a transição ao ambiente de produção. Esta fase é a continuação da Estratégia de Serviços. Segundo Cestari~\cite{Cestari2011a}, ela permite que se avaliem os requisitos ao projetar um serviço e documenta a melhor prática da indústria utilizada nesta fase.
+
+As alterações que venham a existir no Portfólio de Serviços do negócio, sejam pela necessidade de um novo serviço ou uma mudança em um serviço existente, seguem o fluxo visto na Figura~\ref{fig:ciclo_itil}, passando por um planejamento estratégico no ciclo Estratégia de Serviço e, antes de serem implementados, são desenhados e planejados para atender às metas de negócio. É desta fase o processo que origina o Catálogo de Serviços de TI.
+
+Para o Cabinet Office~\cite{Cabinet2011}, existem ainda cinco aspectos para o desenho de serviços que precisam ser considerados:
+
+\begin{itemize}
+  \item \textit{\textbf{Desenho de soluções de serviço para serviços novos ou modificados:}} aborda o desenho dos serviços, inclusive dos seus requisitos funcionais, recursos e capacidades requeridas para a entrega destes serviços;
+  \item \textit{\textbf{Desenho do sistema e ferramentas de gerenciamento da informação:}} basicamente é o desenho do Portfólio de Serviços, inclusive as ferramentas requeridas para controle dos serviços através do seu ciclo de vida;
+  \item \textit{\textbf{Desenho de arquiteturas tecnológicas:}} necessária para prover os serviços, traz o desenho da Solução, envolvendo todos os componentes de TI;
+  \item \textit{\textbf{Desenho dos processos requeridos:}} aqui são desenhados os processos necessários para a transição (Transição de Serviço), operação (Operação de Serviço) e melhoria dos serviços (Melhoria Continuada dos Serviços);
+  \item \textit{\textbf{Desenho das métricas:}} e finalmente o desenho dos sistemas de medição daquilo que será entregue.
+\end{itemize}
+
+Serviços novos ou modificados aparecem todo o tempo, a todo momento dentro da organização, e essas alterações precisam ser controladas e estarem em consonância com as demais fases do processo de entrega de serviço de modo a atender ao planejamento estratégico, para que exista a melhoria continuada (constante) do serviço. Portanto o Desenho de Serviço nada mais é do que a modelagem de uma demanda definida na Estratégia de Serviço.
+
+Ainda dentro dos aspectos mencionados, as melhores práticas do ITIL\textsuperscript{\textregistered} V3 nos levam a desenvolver e aplicar os 4P's do desenho de serviço conforme ilustrado na Figura~\ref{fig:4ps}.
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.5]{./fig/4Ps.png}
+  \caption{Quatro P's do Desenho de Serviço. [Adaptado do livro ITIL\textsuperscript{\textregistered} \textit{Service Design} sob licença do \textit{Cabinet Office.}]}
+  \label{fig:4ps}
+\end{figure}
+
+Muitos planejamentos e desenhos de serviço de TI falham porque não possuem uma estrutura balanceada entre os 4P's propostos para o Desenho de Serviços. Para os 4P's é preciso:
+
+\begin{itemize}
+  \item Pessoas - Determinar os papeis das pessoas nos processos. São pessoas competentes para desempenhar os papéis necessários, da forma necessária, para o cumprimento do SLA, dentro de um prazo e um custo.
+  \item Processos - Definir os Processos. Estes são necessários para manter todos os serviços em operação, monitorá-los, desenhá-los, e até transitá-los para produção, por exemplo.
+  \item Produtos - Determinar Produtos, serviços, tecnologia e ferramentas. Abrange tudo o que está envolvido no provimento dos serviços, direta ou indiretamente.
+  \item Parceiros - Estabelecer parceiros (fornecedores e vendedores de solução). São pessoas ou empresas necessárias para o correto provimento dos serviços dentro do ANS e com a qualidade concebidos.
+\end{itemize}
+
+Existem, aqui, alguns conceitos que precisam ser esclarecidos para facilitar o entendimento do que será tratado a seguir:
+
+\begin{itemize}
+  \item \textit{\textbf{Provedor de Serviço:}} uma entidade que entrega determinado serviço ao cliente interno ou externo;
+  \item \textit{\textbf{Fornecedores:}} são provedores de serviços externos que fornecem o apoio necessário para a entrega dos serviços internos ou entrega de serviços, de forma geral, aos clientes;
+  \item \textit{\textbf{Modelos de Fornecimento de Serviços:}} funcionam em relação ao tipo de contratação. Podem ser
+  de Fornecimento Interno, Terceirização, Parceria, Terceirização de Processos de Negócio, Provedor de Serviço de Aplicativo, Terceirização de Processos de Conhecimento e Nuvem.
+  \item \textit{\textbf{Acordo de Nível de Serviço (ANS):}} esta é uma relação cliente/fornecedor onde são estabelecidas as variáveis de capacidade, continuidade e disponibilidade, entre um cliente interno ou externo com um provedor de serviço de TI;
+  \item \textit{\textbf{Acordo de Nível Operacional (ANO):}} é um acordo de cooperação entre o provedor de serviços de TI interno e uma área interna dentro da organização, bem similar ao ANS só que do ponto de vista da área interna;
+  \item \textit{\textbf{Contrato de Apoio (CA):}} é o contrato firmado entre o fornecedor de serviços externo e o provedor de serviços de TI.
+\end{itemize}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.5]{./fig/conceitos.png}
+  \caption{Acordos de Nível de Serviço, Acordos de Nível Operacional e Contratos de Apoio. [Adaptado do livro ITIL\textsuperscript{\textregistered} \textit{Service Design} sob licença do \textit{Cabinet Office}.]}
+  \label{fig:conceitos}
+\end{figure}
+
+A Figura~\ref{fig:conceitos} descreve visualmente como estes conceitos estão interligados e como funciona o fluxo de comunicação entre os mesmos.
+
+\begin{itemize}
+\item \textit{\textbf{Pacote de Desenho de Serviço:}} é o pacote gerado para toda alteração significante dos serviços de TI, ou seja, para serviços novos, alterados ou desativados por obsolescência. Essas decisões, tomadas no Nível Estratégico e abordadas no Gerenciamento do Portfólio de Serviço, são repassadas ao Pacote de Serviço através de informações que serão utilizadas para \textit{``documentar e definir todos os aspectos de um serviço de TI e seus requisitos para cada fase do ciclo de vida do serviço''} (FREITAS, 2013)~\cite{Freitas2013}. O Pacote de Desenho de Serviço trabalha estas informações sob os cincos aspectos e os Quatro Ps do Desenho de serviço, necessários para que o ciclo Transição de Serviço cumpra o seu propósito. Esse relacionamento pode ser visto na Figura~\ref{fig:pacote_desenho}
+\end{itemize}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=15cm, height=3.5cm]{./fig/pacote_desenho.png}
+  \caption{Pacote de Desenho de Serviço.}
+  \label{fig:pacote_desenho}
+\end{figure}
+
+\begin{itemize}
+  \item \textit{\textbf{Disponibilidade:}} como o próprio nome cita, é a capacidade de um serviço estar disponível dentro dos prazos estabelecidos no ANS. Isso significa que se um serviço não esteve disponível 24 horas por dia e 7 dias por semana, ele só será considerado indisponível se no ANS foi requerida esta disponibilidade.
+\end{itemize}
+
+\subsection{Gerenciamento de Nível de Serviço (GNS)}
+\label{sec:ger_nivel}
+
+Este processo é responsável por assegurar a manutenção e melhora da qualidade do serviço de TI através dos Acordos de Nível de Serviço (ANS), do monitoramento, dos relatórios e das próprias melhorias dos níveis de serviço. Sempre alinhando o negócio com a TI. O sucesso deste processo depende diretamente da boa produção do  Portfólio de Serviços e do Catálogo de Serviços, pois estes ``alimentam'' este processo com os serviços gerenciados.
+
+O objetivo deste processo, segundo a OGC~\cite{Cabinet2011}, é garantir que hajam ANS para todos os serviços e que as metas estipuladas sejam alcançadas. Que estes serviços sejam medidos e monitorados para que atendam às necessidades da empresa e dos clientes.
+
+É importante estar atentos para o que Freitas (2013, p.168)~\cite{Freitas2013} esclarece:
+
+\begin{citacao}
+  \textit{``Também não são gerenciadas as atividades estratégicas, táticas e operacionais necessárias para atender aos níveis de serviços acordados, que somente são definidos, acordados e medidos pelo Gerenciamento de Nível de Serviço para avaliar o atendimento às metas definidas''.}
+\end{citacao}
+
+Com isto, é correto afirmar que o Gerenciamento de Nível de Serviço é quem faz a alteração nos ANS e não somente presta os relatórios e medidas para que outros processos o façam.
+
+Para Cestari~\cite{Cestari2011a}, o objetivo deste processo é manter uma atualização constante dos acordos de maneira que apoie os processos de Transição e Operação de Serviço na execução da melhoria continuada dos serviços, focado no negócio e mantendo um alinhamento entre este e a TI. Portanto é responsável, diretamente, por garantir que a qualidade dos serviços entregues estejam dentro dos níveis de garantia acordados.
+
+Existem, ainda, alguns conceitos complementares básicos que precisam ser levados em consideração para se entender o Gerenciamento de Nível de Serviço:
+
+\begin{itemize}
+  \item \textit{Requisitos de Nível de Serviço (RNS)}: são os requisitos dos clientes relacionados aos serviços de TI. É o ponto de partida para ``firmar'' os ANSs.
+  \item \textit{Especificações de Serviço}: é uma transcrição dos RNS e de como os serviços gerados por estes serão entregues ao cliente pela TI.
+\end{itemize}
+
+Dentro do processo de Gerenciamento de Nível de Serviço, existem três tipos de ANS que podem ser utilizados:
+
+\begin{itemize}
+  \item \textbf{Acordos baseados no Serviço:} são acordos firmados para serviços que atendem a vários clientes ao mesmo tempo. Um bom exemplo para este é o serviço de e-mail, onde o mesmo acordo serve para todos os clientes que utilizam este serviço.
+  \item \textbf{Acordos baseados no Cliente:} ao contrário do anterior, este acordo agrupa todos os serviços que atendem a um determinado cliente. Muito utilizado por Fornecedores e Provedores Internos, para entrega de serviços com características específicas para cada cliente, bem como com um nível único de serviço.
+  \item \textbf{Acordos Multinível:} acordos realizados sob uma das três estruturas possíveis:
+  \subitem \textbf{Acordo Multinível Corporativo:} cobre todos os problemas genéricos de nível de serviço para cada cliente dentro de uma organização, mas o acordo é firmado com a organização e não com cada cliente individualmente.
+  \subitem \textbf{Acordo Multinível baseado no Cliente:} cobre todos os problemas de um grupo determinado de clientes ou unidade de negócios em particular dentro da organização, independentemente do serviço utilizado.
+  \subitem \textbf{Acordo Multinível baseado no Serviço:} abrange todas as questões relativas ao nível de serviço para um serviço específico entregue a um grupo específico de clientes (um para cada serviço coberto pelo ANS).
+\end{itemize}
+
+A Figura~\ref{fig:tipos_ans} expressa graficamente como se dão esses acordos.
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=1]{./fig/tipos_ans.png}
+  \caption{Tipos de Acordos de Nível de Serviço.}
+  \label{fig:tipos_ans}
+\end{figure}
+
+\begin{flushleft}
+  \textbf{Atividades do Gerenciamento de Nível de Serviço}
+\end{flushleft}
+
+São atividades chave do processo Gerenciamento de Nível de Serviço:
+\begin{itemize}
+  \item Determinar, negociar, documentar e acordar requisitos para serviços novos ou alterados em Requisitos de Nível de Serviço (RNS), gerenciá-los e analisá-los por meio do Ciclo de Vida do Serviço em ANS para serviços operacionais.
+  \item Monitorar e medir as metas de desempenho de serviços de todos os serviços operacionais em relação aos destinos nos acordos.
+  \item Agrupar, medir e melhorar a satisfação do cliente, bem como produzir relatórios de serviço.
+  \item Conduzir a revisão do serviço e instigar melhorias em um Plano de Melhoria do Serviço.
+  \item revisar Acordos de Nível de Serviço, de Nível Operacional e quaisquer outros contratos de apoio.
+  \item Desenvolver e documentar contatos e relacionamentos com os negócios, clientes e partes interessadas.
+  \item Desenvolver, manter e operar procedimentos para registro, execução e resolução de todas as reclamações, bem como os elogios.
+  \item Fornecer as informações de gerenciamento apropriadas para auxiliar o gerenciamento de desempenho e demonstrar a realização do serviço.
+  \item Disponibilizar e manter atualizados documentos modelos e padrões de Gerenciamento de Nível de Serviço.
+\end{itemize}
+
+\begin{flushleft}
+  \textbf{O Gerente de Nível de Serviço}
+\end{flushleft}
+
+É de responsabilidade do Gerente de Nível de Serviço a implantação dos processos, manutenção e melhoria dos níveis de serviço por meio de ações de intervenção. Conforme Cestari~\cite{Cestari2011b}, é através do trabalho de  fiscalização do Gerente de Nível de Serviço que os seguintes documentos são obtidos:
+
+\begin{itemize}
+  \item Requisitos de Nível de Serviço (RNS);
+  \item Especificações de Serviços;
+  \item Acordos de Nível de Serviço (ANS);
+  \item Contratos de Apoio (CA);
+  \item Plano de Qualidade de Serviço;
+  \item Programa de Aperfeiçoamento de Serviço.
+\end{itemize}
+
+\begin{flushleft}
+  \textbf{Relacionamentos com outros processos}
+\end{flushleft}
+
+O Gerenciamento de Nível de Serviço está relacionado com todos os processos ITIL\textsuperscript{\textregistered} V3. Não há como implementar este processo para total maturidade sem os demais processos. Pode-se destacar as seguintes interfaces:
+
+\begin{itemize}
+  \item Entradas:
+    \subitem - Informações do negócio que surgem da estratégia de negócios da organização, planos e planos financeiros;
+    \subitem - Exigências do negócio: detalhes de quaisquer requisitos de negócios acordados, novos ou alterados;
+    \subitem - As estratégias, políticas e restrições do processo Estratégia de Serviço;
+    \subitem - Informações sobre mudanças: a partir do processo de Gerenciamento de Mudanças, com um cronograma antecipado de mudanças e uma necessidade de avaliação;
+    \subitem - Sistema de gerenciamento da configuração: contendo informações sobre as relações entre os serviços de negócios, os serviços de suporte e a tecnologia;
+    \subitem - O portfólio de serviços e catálogo de serviços;\\
+  \item Saídas:
+    \subitem - Relatórios de nível de serviço;
+    \subitem - Acordos de Nível de Serviço, Acordos de Nível Operacional e Contratos de Apoio para o ciclo Transição de Serviço e Operação de Serviço;
+    \subitem - Documentos modelo: documentos para ANS, ANO e CA, alinhados com os padrões da organização;
+    \subitem - Plano de Melhoria de Serviço: oportunidades de melhoria identificadas através da análise dos relatórios de nível de Serviço para o ciclo Melhoria Continuada de Serviço;
+    \subitem - Atas das reuniões de revisão de Acordos de Nível de Serviço, Acordos de Nível Operacional e Contratos de Apoio, afim de manter os mesmos sempre alinhados ao negócio.
+\end{itemize}
+
+\subsection{Gerenciamento do Catálogo de Serviço}
+\label{sec:ger_catalogo}
+
+O foco deste processo é disponibilizar, em um único local, informações de todos os serviços acordados, bem como os que estão prontos a entrar em produção, tanto os novos quanto os alterados, e garantir o acesso dos mesmos às devidas pessoas autorizadas.
+
+É imprescindível que as informações do Catálogo de Serviço, para os serviços operacionais, estejam corretas. Para Cestari~\cite{Cestari2011b}, o Catálogo de Serviço necessita ter suas informações confiáveis e precisas, refletindo detalhes, status, interfaces e dependências atuais dos serviços em produção, dos que serão alterados, bem como dos novos serviços.
+
+O Catálogo de Serviço é uma das partes essenciais do Portfólio de Serviços servindo como uma fonte de informações sobre os serviços de TI fornecidos pela organização. Com isso, as várias áreas da empresa terão uma visão mais consistente e precisa dos serviços de TI que são oferecidos, sempre garantindo que todos os detalhes de cada serviço sejam atualizados à medida que um serviço novo ou alterado for entrar em produção. Cada organização deve, cuidadosamente, desenhar seu Portfólio de Serviços e certificar-se de seus conteúdos e dos devidos acessos a estes conteúdos.
+
+O conteúdo dos serviços deve incluir os seguintes itens relacionados abaixo.
+
+\begin{itemize}
+  \item Nome do serviço
+  \item Descrição do serviço
+  \item Status do serviço
+  \item Classificação e criticidade de serviço
+  \item Aplicativos usados
+  \item Esquema de dados e/ou dados usados
+  \item Processos de negócios suportados
+  \item Proprietários de empresas
+  \item Usuários de negócios
+  \item Proprietários de TI
+  \item Nível de garantia de serviço
+  \item Serviços de apoio
+  \item Recursos Suportados
+  \item Serviços dependentes
+  \item Apoiar os ANS, contratos e acordos
+  \item Custos de serviço
+  \item Taxas de serviço (se aplicável)
+  \item Receita de serviço (se aplicável)
+  \item Métricas de serviço
+\end{itemize}
+
+A OGC~\cite{Cabinet2011} recomenda que cada organização deve desenvolver e manter uma política em relação ao Portfólio e ao Catálogo, relacionada aos serviços registrados dentro deles, quais detalhes são registrados e quais status são registrados para cada um dos serviços. A política também deve conter detalhes de responsabilidades para cada seção geral do Portfólio de Serviços e o escopo de cada uma das seções subsequentes.
+
+O Catálogo de Serviços é mantido e gerenciado pelo processo do Gerenciamento de Catálogo de Serviços, certificando que, através de uma fonte central, mais acertiva e consistente de dados, registre-se a operacionalização dos serviços ou, ainda, a transferência desses serviços para o ambiente de produção, junto com o detalhamento de cada serviço. É importante esclarecer que o Catálogo de Serviços faz parte do Portifólio de serviços. A finalidade do processo Gerenciamento de Catálogo de Serviços é manter o documento Catálogo de Serviços publicado e atualizado.
+
+Existem dois tipos de Catálogo de Serviços:
+
+\begin{itemize}
+  \item \textbf{Catálogo de negócio (visível aos clientes/usuários):} contém informações sobre serviços que suportam o negócio. Contém detalhes dos serviços de TI que podem ser entregues ao cliente e os relacionamentos destes serviços com as unidades e os processos de negócio relacionados com os serviços de TI.
+  \item \textbf{Catálogo Técnico (Serviços de suporte):} contém informações sobre serviços técnicos de apoio aos serviços de negócio. Geralmente são serviços técnicos que não têm visibilidade para o cliente (uma visão interna), mas são úteis para a entrega dos serviços de negócio. Contém detalhes dos serviços de TI e o relacionamento destes serviços com os serviços de suporte, serviços compartilhados, componentes e itens de configuração necessários para suportar ou fornecer o serviço ao negócio.
+\end{itemize}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.5]{./fig/cat_service.png}
+  \caption{Catálogo de Serviços de Negócio e Catálogo de Serviços Técnicos.}
+  \label{fig:cat_service}
+\end{figure}
+
+Uma ilustração do relacionamento entre esses dois tipos de Catálogo de Serviços pode ser visto na Figura~\ref{fig:cat_service}.
+
+Existem ainda algumas atividades chave que precisam ser levadas em consideração no processo Gerenciamento de Catálogo de Serviços:
+
+\begin{itemize}
+  \item Concordar e documentar uma definição de serviço com todas as partes relevantes
+  \item Gerenciar a interface com o Gerenciamento de Portifólio de Serviços para concordar com o conteúdo do Portfólio de Serviços e do Catálogo de Serviços
+  \item Produzir e manter um Catálogo de Serviços e seu conteúdo, em conjunto com o Portfólio de Serviços
+  \item Gerenciar a interface com o Negócio e o Gerenciamento de Continuidade de Serviços de TI nas dependências das unidades de negócios e seus processos de negócios com os serviços de suporte TI, contidos no Catálogo de Serviços de Negócios.
+  \item Gerenciamento da interface com equipes de suporte, fornecedores e Gerenciamento de Configuração em interfaces e dependências entre os serviços de TI e os serviços de apoio, componentes e itens de configuração contidos no Catálogo de Serviços Técnicos.
+  \item Gerenciamento da interface com o Gerenciamento de Relacionamento de Negócio e o Gerenciamento de Nível de Serviço para garantir que as informações estejam alinhadas aos negócios e aos processos de negócios.
+\end{itemize}
+
+\textbf{Interação com outros processos}
+
+O processo de Gerenciamento do Catálogo de Serviços pode ter como fonte de entrada, várias informações importantes. Segue algumas:
+
+\begin{itemize}
+  \item Informações estratégicas tanto de TI quanto do negócio e requisitos do potfólio de serviços (atuais e futuros);
+  \item O próprio portfólio de serviços;
+  \item Informações de impacto, risco e prioridade dos serviços sob o negócio;
+  \item Requisios de serviços novos ou alterados;
+  \item Status de retorno (\textit{feedback}) de outros processos.
+\end{itemize}
+
+Como entregas (saídas), temos:
+\begin{itemize}
+  \item Documentação e acordo de uma definição de serviço;
+  \item Atualizações no portfólio de serviços;
+  \item Catálogo de serviços atualizado.
+\end{itemize}
+
+\begin{flushleft}
+  Algumas responsabilidades precisam ser observadas tanto pelo Dono quanto pelo Gerente do Processo Gerenciamento de Catálogo de Serviço:
+\end{flushleft}
+
+\textbf{Responsabilidades do Dono do Processo}
+
+\begin{itemize}
+  \item O Dono do processo Gerenciamento de Catálogo de Serviço é aquele formalmente designado e com autoridade máxima em relação ao processo, garantindo sua especificação e execução. Portanto é de sua responsabilidade garantir que o uso do processo esteja adequado, bem como interagir com os donos de outros processos para que haja uma boa integração entre os mesmos.
+\end{itemize}
+
+\textbf{Responsabilidades do Gerente do Processo}
+
+\begin{itemize}
+  \item O gerente do processo Gerenciamento de Catálogo de Serviço é o responsável por produzir e manter atualizado o Catálogo de Serviço, bem como garantir a execução de todas as atividades relacionadas ao processo.
+\end{itemize}
+

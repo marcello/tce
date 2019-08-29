@@ -1,14 +1,67 @@
-\chapter{Iniciativa da UFG sobre o tema}
-\label{cap:cap_4}
+\chapter{Proposições}
+\label{cap:poposicoes}
 
-Em 2011 foi criada a Comissão de Governança da Informação em Saúde (CGIS) na UFG.
-Sua formação foi em consenso com gestores de unidades de saúde da UFG junto a representantes das secretarias estadual e municipal de sáude.
-A missão da CGIS é:
+A proposta de um Catálogo de Serviços para o ambiente organizacional, alvo do estudo de caso, é de fundamental importância, dado que os mesmo é o registro com informações sobre todos os serviços de TI que estão em produção, incluindo aqueles disponíveis para implantação, e que são disponibilizados aos clientes.
 
-\begin{quote}
-\textit{Contribuir para que a UFG seja um centro de referência em Tecnologia da Informação e Comunicação (TIC) em saúde, na perspectiva da formação de recursos humanos, desenvolvimento de pesquisas, formulação de diretrizes e politicas no Estado de Goiás.}
-\end{quote}
-% fonte: http://www.sbis.org.br/cbis2016?id=217
+Os Acordos de Nível de Serviço e de Nível Operacional, por conseguinte, também complementam as melhores práticas recomendadas pelo ITIL\textsuperscript{\textregistered} V3, garantindo que os serviços disponibilizados sejam entregues com qualidade nos tempos acordados.
 
-Cooperações alinhado à Estratégias de Saúde Digital do Brasil está em andamento com projetos de pesquisa em desenvolvimento\footnote{https://www.ufg.br/n/112753-ufg-firma-convenio-para-fortalecer-estrategia-de-saude-digital} e várias publicações científicas~\cite{Monteiro-2011,Braga-2013,Braga-2014} tem reforçando o trabalho do grupo.
+Esta seção propõe o desenvolvimento de um Catálogo de Serviços, simples e funcional, bem como Acordos de Nível de Serviço e de Nível Operacional para o CERCOMP e mais precisamente à Equipe de Infraestrutura para os serviços por ela ofertados.
+
+\section{Pesquisa de dados}
+\label{pesq_dados}
+
+Um levantamento de dados executado no sistema de gerenciamento de chamados do órgão, indica que 46,5\% das ordens de serviço, de um total de 320 chamados entre os dias 01/01/2019 e 23/05/2019, foram solucionados em menos de 24 horas.
+
+O mais preocupante é que 19,7\% do total dos chamados levaram oito ou mais dias para serem resolvidos, além de mais de 15\%, também do total, foram classificados erroneamente entre ``Requisição'' e ``Incidente'', e estes são índices que precisam ser avaliados nos seus procedimentos e fluxos de atendimento, para garantir que níveis aceitáveis possam ser implementados de forma a atender às necessidades dos usuários.
+
+Através de constatações particulares e das documentações analisadas na gerência do departamento, são citados abaixo alguns dos problemas encontrados:
+
+\begin{itemize}
+  \item Ausência de planos e diretrizes repassadas pela alta administração;
+  \item Ausência de um catálogo de serviços do órgão;
+  \item Métodos e processos mal definidos e sem documentação;
+  \item Falta de padronização tanto nas solicitações como nos atendimentos;
+  \item Falta de definição de níveis de serviço;
+\end{itemize}
+
+\section{Catálogo de Serviços de TI}
+\label{sec:ca_servicos}
+
+Vale, nesse momento, ressaltar que para a implementação do Catlálogo de Serviços, não é necessário listar todos os serviços, mas estes podem ser implementados de forma gradual, separando-se os serviços mais demandados por exemplo. Justamente por ser um modelo de melhores práticas, o ITIL\textsuperscript{\textregistered} V3 pode ser implementado de forma gradativa, visto que o objetivo de seu último ciclo de vida é a melhoria continuada do processo.
+
+Para proposição da formação de um Catálogo de Serviços inicial, foram avaliados os serviços mais demandados ao departamento e, de acordo com os dados disponíveis, sugere-se disponibilizar as seguintes informações:
+
+\begin{itemize}
+  \item Serviço - indica o nome do serviço fornecido;
+  \item Descrição - breve descrição dos termos do serviço ao cliente (não-técnico);
+  \item Tipo (incidente ou requisição);
+  \item Prioridade (Alta, Média ou Baixa);
+  \item Quem pode solicitar - pré-requisito para que tenha acesso ao serviço;
+  \item Horário - Identifica os períodos e horas operacionais em que os usuários podem realizar pedidos de serviço;
+  \item Prazo de solução;
+  \item Responsáveis;
+\end{itemize}
+
+Um exemplo de utilização destes atributos pode ser visto na Tabela \ref{tab:cat_servicos}
+
+\begin{table*}[h]
+  \centering
+  \definecolor{verdemar}{rgb}{0.59,0.78,0.65}
+  \begin{tabular}{|l|p{7cm}|}
+    \hline
+    Serviço & Criação/Alteração/Exclusão de Domínios \\ \hline
+    Descrição & Criar, alterar ou excluir um domínio no Servidor de Nomes de Domínio (DNS)\\ \hline
+    Tipo & Incidente \\ 
+    & Requisição \\ \hline
+    Prioridade & Alta \\
+    & Média \\
+    & Baixa \\ \hline
+    Quem pode solicitar & Gestores (Direção/Coordenação) \\ \hline
+    Horário & Das 07:30 às 11:30 e das 12:30 às 17:30 \\ \hline
+    Prazo de solução & 1 dia \\ \hline
+    Responsáveis & Analistas de TI \\ \hline
+  \end{tabular}
+  \caption{Exemplo de Catálogo de Serviços proposto}
+  \label{tab:cat_servicos}
+\end{table*}
 

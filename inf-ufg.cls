@@ -161,7 +161,7 @@
   \setlength{\unitlength}{1pt}%
   \put(\strip@pt\@tempdimb,\strip@pt\@tempdimc){%
   \makebox(-30,-30){\rotatebox{60}{\textcolor[gray]{0.90}%
-  {\fontsize{8cm}{8cm}\selectfont{Modelo}}}}%
+  {\fontsize{8cm}{8cm}\selectfont{}}}}%
   }}}
 
 % Referências cruzadas
@@ -201,8 +201,7 @@
 \else
  \RequirePackage[dvips]{graphicx}
 \fi
-\RequirePackage[small,bf,up,format=hang]{caption}
-%\RequirePackage[small,bf,up,format=hang,width=1\textwidth]{caption}
+\RequirePackage[small,bf,up,format=hang,width=.75\textwidth]{caption}
 \renewcommand{\captionfont}{\small\itshape}
 \setlength{\abovecaptionskip}{0.5\abovecaptionskip}
 \setlength{\belowcaptionskip}{0.5\belowcaptionskip}
@@ -212,10 +211,8 @@
 \RequirePackage[IT,hang,FIGBOTCAP,TABBOTCAP]{subfigure}
 \subfiglabelskip=3pt
 
-
 %% algorithms
 %% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-\RequirePackage{algorithm}
 \RequirePackage[ruled, algo2e, vlined, portuguese, algochapter]{algorithm2e}
 \renewcommand{\listofalgorithmes}{\begingroup
  \tocfile{\listalgorithmcfname}{loa}
@@ -234,17 +231,6 @@
 % \newcommand{\listofcodes}{\begingroup
 %  \tocfile{Lista de C\'{o}digos de Programas}{loc}
 %  \endgroup}
-
-%% List of Regs
-\RequirePackage{listing}
-\RequirePackage{listings}
-\RequirePackage{float}
-\floatstyle{ruled}  %%% options: plain, boxed, ruled
-\newfloat{listing}{tbhp}{lst}[chapter] %% numera captions com número de seção.
-\floatname{listing}{Registros}
-\renewcommand{\lstlistingname}{Registro}
-\renewcommand{\listlistingname}{Lista de Registros}
-\renewcommand\lstlistlistingname{Registros}
 
 %%======================================================================
 %% Declarations
@@ -446,7 +432,7 @@
   pdfsubject={\@concentracao}
  }
 
- %\modelo%
+ \modelo%
  \singlespacing%
  \begin{titlepage}%
   \textoC{1}{\Large \scshape \@universidade \normalsize \upshape}%
@@ -486,7 +472,7 @@
   \textoC{1.2}{\Large \scshape \bfseries Autorização para Publicação de\ %
    \ifthenelse{\boolean{tese}}{Tese}{%
     \ifthenelse{\boolean{diss}}{Dissertação}{%
-     \ifthenelse{\boolean{mngr}}{Monografia}{%
+     \ifthenelse{\boolean{mngr}}{Trabalho de Conclusão de Curso}{%
       Trabalho de Conclusão de Curso}}} em Formato Eletrônico}%
   \vspace*{30pt}%
   \par%
@@ -511,13 +497,13 @@
   \noindent\textbf{Autor(a):} \@autor%
   \vspace*{40pt}%
   \par%
-  \@cidade, \@dia\ de \@mesP\ de \@ano.
+  \@cidade, \@dia\ de \@mes\ de \@ano.
   \vspace*{60pt}%
   \par
   \textoD{\rule{.75\textwidth}{0.5pt}\\ \small \@autor\ -- Autor}
   \vspace*{30pt}%
   \par
-  \textoD{\rule{.75\textwidth}{0.5pt}\\ \small \@orientador\ -- Orientador}
+  \textoD{\rule{.75\textwidth}{0.5pt}\\ \small Prof. \@orientador\ -- Orientador}
   \vspace*{30pt}%
   \par
   \ifthenelse{\equal{\@coorientador}{}}
@@ -557,9 +543,9 @@
     do \@unidade\ da \@universidade, como requisito parcial para %
     obten\c c\~ao do t\'itulo de Mestre em \@programa.}{%
   \ifthenelse{\boolean{mngr}}%
-   {Monografia apresentada ao Programa de P\'os--Gradua\c c\~ao %
+   {Trabalho de Conclus\~ao de Curso apresentado ao Programa de P\'os--Gradua\c c\~ao Lato Sensu %
     do \@unidade\ da \@universidade, como requisito parcial para\ %
-    obten\c c\~ao do Certificado de Especializa\c{c}\~ao em \@programa.}%
+    obten\c c\~ao do Certificado de Especialista em \@programa.}%
    {Trabalho de Conclus\~ao apresentado \`a Coordena\c c\~ao do Curso de \@programa\ do\ %
     \@unidade\ da\ \@universidade, como requisito parcial para obten\c c\~ao do\ %
     t\'itulo de Bacharel em \@programa.}}}}%
@@ -613,20 +599,20 @@
    {Tese defendida no Programa de P\'os--Gradua\c c\~ao %
     do \@unidade\ da \@universidade\ como requisito parcial %
     para obten\c c\~ao do t\'itulo de Doutor em \@programa, aprovada em %
-    \@dia\ de\@mesP\ de \@ano, pela Banca Examinadora constitu\'{i}da pelos professores:}{%
+    \@dia\ de\@mes\ de \@ano, pela Banca Examinadora constitu\'{i}da pelos professores:}{%
   \ifthenelse{\boolean{diss}}%
    {Disserta\c{c}\~{a}o defendida no Programa de P\'os--Gradua\c c\~ao %
     do \@unidade\ da \@universidade\ como requisito parcial %
     para obten\c c\~ao do t\'itulo de Mestre em \@programa, aprovada em %
-    \@dia\ de\@mesP\ de \@ano, pela Banca Examinadora constitu\'{i}da pelos professores:}{%
+    \@dia\ de\@mes\ de \@ano, pela Banca Examinadora constitu\'{i}da pelos professores:}{%
   \ifthenelse{\boolean{mngr}}%
-   {Monografia apresentada no Programa de P\'os--Gradua\c c\~ao %
+   {Trabalho de Conclus\~ao de Curso apresentado no Programa de P\'os--Gradua\c c\~ao Lato Sensu %
     do \@unidade\ da \@universidade\ como requisito parcial %
-    para obten\c c\~ao do Certificado de Especializa\c{c}\~ao em \@programa, aprovada em %
-    \@dia\ de\@mesP\ de \@ano, pela Banca Examinadora constitu\'{i}da pelos professores:}%
+    para obten\c c\~ao do Certificado de Especialista em \@programa, aprovada em %
+    \@dia\ de \@mes\ de \@ano, pela Banca Examinadora constitu\'{i}da pelos professores:}%
    {Trabalho de Conclus\~ao apresentado \`a Coordena\c c\~ao do Curso de \@programa\ do\ %
     \@unidade\ da\ \@universidade\ como requisito parcial para obten\c c\~ao do\ %
-    t\'itulo de Bacharel em \@programa, aprovada em \@dia\ de\@mesP\ de \@ano, %
+    t\'itulo de Bacharel em \@programa, aprovada em \@dia\ de\@mes\ de \@ano, %
     pela Banca Examinadora constitu\'{i}da pelos professores:}%
     }}}
  \vspace*{\stretch{1.5}}
@@ -654,7 +640,7 @@
  \singlespacing\arial%
  \margem{\normalfont \normalsize Todos os direitos reservados. \'{E} proibida
   a reprodu\c{c}\~{a}o total ou parcial do trabalho sem autoriza\c{c}\~{a}o da
-  universidade, do autor e do orientador(a).}%
+  universidade, do autor e do orientador.}%
  \vspace*{\stretch{2}}%
  \par%
  \margem{\arial \textbf{\@autor}}%
@@ -735,10 +721,10 @@
    \pageref{LastPage}p.
   \ifthenelse{\boolean{tese}}{PhD. Thesis}
  {\ifthenelse{\boolean{diss}}{MSc. Dissertation}}
- {\ifthenelse{\boolean{mngr}}{Monografia de Especializa\c{c}\~{a}o}
+ {\ifthenelse{\boolean{mngr}}{Monograph of specialization}
                              {Relat\'{o}rio de Gradua\c{c}\~{a}o}}.
-  \ifthenelse{\equal{\@departamento}{}}{}{\@departamento,}
-  \ifthenelse{\equal{\@unidade}{}}{}{\@unidade,} \@universidade.%
+  \ifthenelse{\equal{\@departamento}{}}{}{Coordinate Pos-Graduate,}
+  \ifthenelse{\equal{\@unidade}{}}{}{Informatic Institute,} Federal University of Goi\'{a}s.%
 
   \end{minipage}\onehalfspacing%
   \vspace*{\stretch{1}}%
@@ -757,11 +743,20 @@
   \clearpage%
   }
 
+%% Siglas
+%% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\newenvironment{siglas}{
+ \ifpdf
+  \pdfbookmark[1]{Siglas}{pretexto.10}
+ \fi
+ \@makeschapterhead{Lista de Siglas}
+}{\clearpage}
+
 %% Epígrafe
 %% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \newcommand{\epigrafe}[3]{%
   \ifpdf
-   \pdfbookmark[1]{Epígrafe}{pretexto.10}
+   \pdfbookmark[1]{Epígrafe}{pretexto.11}
   \fi
   \thispagestyle{empty}\singlespacing\normalfont%
   \vspace*{\stretch{1}}\par%
@@ -828,10 +823,6 @@
 \IfSubStringInString{cod}{#1}
  {\listofcodes\clearpage
  }{}
-\IfSubStringInString{reg}{#1}
- {\listoflistings\clearpage
- }{}
-
 
 \normalfont\pagestyle{fancy}%
 \onehalfspacing

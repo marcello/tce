@@ -1,28 +1,62 @@
 \chapter{Introdução}
-\label{cap:intro}
+\label{cap:introducao}
+A Universidade Federal de Goiás (UFG) é uma instituição federal de ensino superior (IFES) regida pelas leis e normativas da Administração Pública Federal (APF). A APF, por sua vez, instituiu meios de controle que visam melhorar o atendimento da população brasileira com qualidade e eficiência tanto no atendimento direto como indireto, que são os serviços prestados por seus órgãos e instituições.
 
-O trabalho concentra-se no tema ``mhealth'' ou ``m-health'', termo para mobile health, aplicativos móveis para saúde que permite que pacientes tenham mais facilidades e flexibilidade no acesso às informações e serviços de assistência à saúde.
+O Centro de Recursos Computacionais (CERCOMP) é o órgão de tecnologia da informação e comunicação (TIC) da UFG que tem por objetivos planejar, gerenciar, executar e manter os serviços de infraestrutura computacional da instituição\cite{Cercomp2018}. Constitui-se como um órgão administrativo e executivo para apoiar a instituição a alcançar seus objetivos finalísticos e estratégicos. Já a Equipe de Infraestrutura que é um departamento interno do CERCOMP responsável pela gerência da rede de computadores da UFG, provendo conectividade e infraestrutura de serviços em Data Center (virtualização de máquinas, armazenamento, serviços de e-mail, autenticação, rede sem fio, etc.).
 
-O termo m-health surgiu do termo ``e-health''\footnote{Utilizarem o termo e-Saúde neste trabalho que é amplamente utilizado no Brasil com o mesmo significado.} que apareceu pela primeira vez em um congresso de telemedicina e telecuidado em Londres no final de novembro de 1999~\cite{Della-2001,Pagliari-2005,Ahern-2006}. O termo e-Saúde é abrangente e usado para descrever o uso combinado de comunicação eletrônica e tecnologia da informação no setor da saúde. O m-health, por sua vez, é mais específico e voltado para aplicativos móveis que auxiliam a área da saúde. Segundo Adibi~\cite{Adibi-2015} m-health é a intersecção entre e-health e a tecnologia de telefones inteligentes (\textit{smartphones}).
+O  Centro de Recursos Computacionais (CERCOMP), vinculado à Secretaria de Tecnologia e Informação (SeTI) da UFG, é o órgão central de TI responsável pela execução das políticas e atividades específicas da área. O órgão foi criado em 2008, por meio da Resolução CONSUNI n.º 32/2008, em substituição ao Centro de Informação e Teleprocessamento - CIT (1998), sucessor do Centro de Processamento de Dados - CPD (1974).
 
-A quantidade de assinantes de telefones móveis em 2007 foi estimado em 3,1 bilhões de uma população global estimada em 6,6 bilhões. Esses números devem crescer para 4,5 bilhões até 2012~\cite{Cellular-News, Cellular-World}. Uma porcentagem crescente de aplicativos para \textit{smartphones} relacionados à saúde está disponível e algumas estimativas previram que 500 milhões de pacientes estariam usando esses aplicativos até o ano de 2015~\cite{Wolf-2013}.
+(falar sobre CTI e SeTI)
+A SETI é um órgão diretamente subordinado à Reitoria da Universidade Federal de Goiás e responsável por planejar, desenvolver e administrar o setor de tecnologia e informação da UFG, a SETI elabora, em conjunto com os demais órgãos administrativos, toda a política de TI da Instituição.
 
-(\ldots)
+A área de TI das organizações, de uma forma geral, tem sido cada vez mais requerida a disponibilizar funcionalidades para que os objetivos de negócio sejam suportados tanto na iniciativa privada quanto na pública. Ainda, diante da necessidade do atendimento às portarias, normativas e demais diretrizes dos órgãos de controle que direcionam a parte de governança e gestão de TI da APF, notamos a oportunidade deste trabalho para melhor estudar e implementar práticas consolidadas no atendimento feito pelo referido departamento de infraestrutura do CERCOMP ao seus usuários. Tal implementação trará o estabelecimento de uma maturidade no serviço de TI da UFG, beneficiando diretamente os órgãos e unidades acadêmicas que são atendidos pelo departamento, bem como ao restante da comunidade acadêmica através de outros serviços que também são disponibilizados.
 
-Existe uma carência no registro e guarda de informações de saúde no Brasil [refs] e portanto possibilitar a criação de serviços de saúde para auxiliar a área é importante, tanto do ponto de vista de quem presta serviços tanto para quem é atendido, uma vez que os dados ficam centralizados para consultas em qualquer momento que se fizerem necessários.
+A falta de alinhamento entre TI e negócio só traz prejuízos e portanto o desperdício de recursos financeiros pela falta desse alinhamento pode levar o poder público a responsabilizar seus gestores pela má administração do dinheiro público. De acordo com Freitas\cite{Freitas2013}:
 
-Para armazenar de uma forma minimamente segura, consistente e aberta pode-se utilizar o OpenEHR (https://openehr.org) que é um programa de modelo clínico que pode ser usado para criar padrões e construir soluções de informação e interoperabilidade para assistência em saúde.
+\begin{citacao}
+\textit{``Uma tendência futura é que os investimentos em TI serão cada vez mais condicionados à habilidade da área de TI em agregar valor ao negócio. Nesse sentido, a área de TI deverá estar não somente "alinhada ao negócio", mas "integrada aos planos estratégicos e processos produtivos da empresa".''}
+\end{citacao}
+
+Essa afirmação tem se manifestado cada vez mais presente e necessária nos dias atuais, de maneira que a TI deve entregar o valor que a alta administração espera, contribuindo para o desenvolvimento institucional. A TI tende a ser, necessariamente, sempre mais eficiente e proativa para poder relacionar-se estrategicamente na instituição e, assim, justificar seus investimentos.
+
+\section{Justificativa}
+\label{sec:justificativa}
+
+O Departamento de Segurança da Informação e Comunicação do Gabinete de Segurança Institucional da Presidência da República (DSIC/GSIPR), do Tribunal de Contas da União (TCU) possui normas e de leis complementares para TI que devem ser seguidas por toda APF. Percebeu-se a necessidade de um mapeamento dos processos da área de Gerenciamento de Catálogo de Serviços dentro do departamento referenciado como objeto de estudo deste trabalho, para adequar-se às melhores práticas estabelecidas por tal órgão de controle.
+
+A necessidade de mapeamento dos processos surge não somente do desejo de melhoria contínua na prestação de serviço, mas de exigências dos órgãos de controle e fiscalização na aplicação da governança de TI nos órgãos da Administração Pública direta, indireta, autárquica e fundacional do Governo Federal. Portanto, a aplicação destes processos é requisito de conformidade, ou seja, requerida para atendimento de normativas que regem o funcionamento do órgão em questão, fazendo com que tais exigências sejam cumpridas parcial ou totalmente, dependendo do caso.
+
+Durante sua trajetória, o CERCOMP foi incorporando e disponibilizando, gradativamente, à comunidade universitária diversos serviços relacionados ao desenvolvimento, instalação, manutenção e evolução de sistemas institucionais; infraestrutura de TI, rede de dados e internet; atendimento e suporte ao usuário; assessoria técnica, entre outros. Contudo, a disponibilização desses serviços não foi acompanhada de uma sistemática e/ou processos para garantir a especificação, divulgação e gestão dos serviços oferecidos, os quais algumas vezes não são de conhecimento da própria equipe técnica do órgão e da comunidade universitária.
+
+Além disso, a ferramenta adotada pela instituição para acompanhamento e gerenciamento de chamados de usuários dos serviços (GLPI) não possui integração com o catálogo de serviços de TI, até porque o mesmo é inexistente na instituição. Esse cenário prejudica tanto o atendimento aos usuários quanto o gerenciamento dos serviços de TI pela equipe técnica de TI do órgão. Alguns dos problemas identificados são: dificuldade da equipe do Serviço de Atendimento ao Usuário - SAU/CERCOMP (helpdesk) identificar e direcionar determinados tipos de chamados; ausência de prazos para atendimento ao usuário; indefinição do rol de serviços de TI ativos disponíveis entre outros.
+
+(aprofundar a análise diagnóstica e falar da pulverização dos serviços de TI na UFG)
+
+A disponibilização, divulgação e gerenciamento do Catálogo de Serviços de TI consta como meta do Plano Diretor de Tecnologia da Informação - PDTI/UFG (2018/2022), o que demonstra o reconhecimento e interesse estratégico da alta administração e das equipes técnicas do CERCOMP sobre a sua necessidade e relevância para aprimorar o atendimento e oferta de serviços de TI à comunidade universitária da UFG.
 
 \section{Objetivos}
+\label{sec:objetivos}
 
-O objetivo geral busca iniciar um processo de criação, dando os primeiros passos para a produção de um aplicativo voltado para a saúde das pessoas principalmente no âmbito da UFG.
-Os objetivos específicos deste trabalho são:
-\begin{itemize}
-  \item Produzir um roteiro para produção de aplicativo para saúde.
-  \item Permitir interoperar com dados pessoais institucionais.
-\end{itemize}
+O objetivo geral deste trabalho é propor um modelo de referência para criação e gerenciamento de Catálogo de Serviços de TI, no âmbito da UFG, incluindo modelos para especificação de serviços, acordo de nível de serviços e acordo de nível operacional, bem como definição de processos relacionados, de forma a contribuir para o aprimoramento dos serviços oferecidos pelo CERCOMP à comunidade universitária da UFG.
 
-\section{Organização}
+Por sua vez, os objetivos específicos são:
+\begin{enumerate}
+  \item Levantar e categorizar os serviços de TI oferecidos pelo CERCOMP à comunidade universitária da UFG, de forma a oferecer as condições necessárias para a elaboração, disponibilização e gerenciamento do Catálogo de Serviços de TI da UFG;
+  \item Propor modelos para especificação de serviços, acordo de nível de serviços e acordo de nível operacional, determinando seus atributos e outras informações de interesse, e aplicando-os em um estudo de caso junto ao CERCOMP e, mais especificamente, à Divisão de Infraestrutura;
+  \item Definir processos para elaboração, disponibilização e gerenciamento do Catálogo de Serviços de TI, bem como indicar modelos de documentos e ferramentas que possam apoiar as atividades;
+  \item Avaliar e sugerir alternativas para o aprimoramento do Catálogo de Serviços de TI, considerando possibilidades de integração e automatização com a Central de Serviços.
+\end{enumerate}
 
-O restante desta monografia está organizada como segue: o Capítulo~\ref{cap:cap_2} traz uma revisão bibliográfica dos principais temas envolvidos no presente projeto. O Capítulo~\ref{cap:cap_3} mostra a situação atual da informática e saúde no Brasil. O Capítulo~\ref{cap:cap_4} apresenta as iniciativas da UFG para com o tema. No Capítulo~\ref{cap:cap_5} são apresentadas as contribuições deste trabalho com uma solução inicial de armazenamento e interoperabilidade de dados. Por fim, no Capítulo \ref{cap:conclusao}, encontram-se as conclusões e sugestões para trabalhos futuros.
+\section{Metodologia}
+\label{sec:metodologia}
 
+O presente trabalho constitui-se como um Relatório Técnico Científico, o qual baseia-se nas melhores práticas disponíveis na literatura relacionadas ao gerenciamento dos serviços de TI, no intuito de definir um modelo de referência para elaboração e gerenciamento do Catálogo de Serviços de TI na UFG.
+
+Para tanto, utilizou-se de revisão bibliográfica, análise diagnóstica, consulta e realização de webconferência com outras IFES para compartilhamento de experiências sob o tema, pesquisa exploratória na internet e a colaboração do Grupo de Trabalho (GT) do CERCOMP responsável pela elaboração do catálogo de serviços de TI do órgão, de forma a diversificar a abordagem metodológica a ser aplicada no trabalho.
+
+Conforme será apresentado no Capítulo~\ref{cap:estudo_caso}, para realização do estudo de caso optou-se por empregar uma abordagem contemplando o levantamento e categorização de todos os serviços externos oferecidos pelo CERCOMP à comunidade universitária da UFG e, após, aplicando os modelos de documentos (templates) sugeridos aos serviços oferecidos pela Divisão de Infraestrutura/CERCOMP.
+
+\section{Estrutura}
+\label{sec:estrutura}
+
+Para uma melhor compreensão de como este trabalho está organizado, foi adotada a seguinte estrutura: no Capítulo 1 são apresentados os conceitos básicos e preliminares sobre o que é tratado no decorrer deste trabalho monográfico. No Capítulo 2 um estudo de caso aborda a situação atual, onde é executado um levantamento do fluxo de atendimento e processos realizados no objeto de estudo. No Capítulo 3 são apresentadas algumas propostas para a criação de um modelo de catálogo de serviços, e de modelos de Acordo de Nível de Serviço e Operacional. Por sua vez, no Capítulo 4 as considerações finais, os resultados e perspectivas futuras e por fim no Capítulo 5 as referências bibliográficas.
