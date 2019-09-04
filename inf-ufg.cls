@@ -93,6 +93,10 @@
 \def\subtitulo#1{\def\@subtitulo{#1}}           \subtitulo{}
 \def\autor#1{\def\@autor{#1}}                   \autor{}
 \def\autorR#1{\def\@autorR{#1}}                 \autorR{}
+\def\autorB#1{\def\@autorB{#1}}                 \autorB{}
+\def\autorBR#1{\def\@autorBR{#1}}               \autorBR{}
+\def\autorC#1{\def\@autorC{#1}}                 \autorC{}
+\def\autorCR#1{\def\@autorCR{#1}}               \autorCR{}
 \def\orientador#1{\def\@orientador{#1}}         \orientador{}
 \def\orientadora#1{\def\@orientadora{#1}}       \orientadora{}
 \def\orientadorR#1{\def\@orientadorR{#1}}       \orientadorR{}
@@ -428,7 +432,7 @@
  \fi
  \hypersetup{
   pdftitle={\@titulo},
-  pdfauthor={\@autor},
+  pdfauthor={\@autor\ \@autorB\ e\ \@autorC},
   pdfsubject={\@concentracao}
  }
 
@@ -436,13 +440,13 @@
  \singlespacing%
  \begin{titlepage}%
   \textoC{1}{\Large \scshape \@universidade \normalsize \upshape}%
-   \vspace*{\stretch{-0.8}}%
+   \vspace*{\stretch{-0.65}}%
   \textoC{1}{\Large \scshape \@unidade \normalsize \upshape}%
   \ifthenelse{\equal{\@departamento}{}}{}{%
-   \vspace*{\stretch{-0.8}}%
+   \vspace*{\stretch{-0.7}}%
    \textoC{1}{\Large \scshape \@departamento\relax \normalsize \upshape} }%
   \vspace*{\stretch{.1}}%
-  \textoC{1}{\Large \scshape \@autor \normalsize \upshape}%
+  \textoC{1}{\Large \scshape \@autor \\ \@autorB \\ \vspace{\stretch{.4}} \@autorC \normalsize \upshape}%
   \vspace*{\stretch{8}}%
   \textoC{1.8}{\huge \textbf{\@titulo\relax} \normalsize}%
   \ifthenelse{\equal{\@subtitulo}{}}{}{%
@@ -489,21 +493,21 @@
   desta data.
   \vspace*{15pt}%
   \par%
-  \noindent\textbf{T\'{i}tulo:} \@titulo\
+  \noindent\textbf{T\'{i}tulo:} \@titulo.\
    \ifthenelse{\equal{\@subtitulo}{}}{}{%
     {-- \@subtitulo} }%
   \vspace*{15pt}%
   \par%
-  \noindent\textbf{Autor(a):} \@autor%
+  \noindent\textbf{Autores:} \@autor, \@autorB\ e\ \@autorC. %
   \vspace*{40pt}%
   \par%
   \@cidade, \@dia\ de \@mes\ de \@ano.
   \vspace*{60pt}%
   \par
-  \textoD{\rule{.75\textwidth}{0.5pt}\\ \small \@autor\ -- Autor}
+  \textoD{\rule{.75\textwidth}{0.5pt}\\ \small \@autor, \@autorB\ e\ \@autorC\\ -- Autores}
   \vspace*{30pt}%
   \par
-  \textoD{\rule{.75\textwidth}{0.5pt}\\ \small Prof. \@orientador\ -- Orientador}
+  \textoD{\rule{.75\textwidth}{0.5pt}\\ \small Prof. \@orientador\\ -- Orientador}
   \vspace*{30pt}%
   \par
   \ifthenelse{\equal{\@coorientador}{}}
@@ -526,7 +530,7 @@
   \pdfbookmark[1]{Folha de Rosto}{pretexto.3}
  \fi
  \singlespacing%
- \textoC{1}{\Large \scshape \@autor \normalsize \upshape}%
+ \textoC{1}{\Large \scshape \@autor\\ \@autorB\\ \vspace{\stretch{.3}} \@autorC \normalsize \upshape}%
  \vspace*{\stretch{6}}%
  \textoC{1.7}{\huge \textbf{\@titulo\relax} \normalsize}%
  \ifthenelse{\equal{\@subtitulo}{}}{}{%
@@ -586,7 +590,7 @@
  \fi
  \singlespacing
  \par
- \textoC{1}{\Large \scshape \@autor \normalsize \upshape}
+ \textoC{1}{\Large \scshape \@autor\\ \@autorB\\ \vspace{\stretch{.2}} \@autorC \normalsize \upshape}
  \vspace*{\stretch{2}}
  \par
  \textoC{1.7}{\huge \textbf{\@titulo\relax} \normalsize}
@@ -633,7 +637,7 @@
 
 %% Direitos autorais
 %% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-\newcommand{\direitos}[1]{
+\newcommand{\direitos}[3]{
  \ifpdf
   \pdfbookmark[1]{Direitos Autorais}{pretexto.5}
  \fi
@@ -643,10 +647,15 @@
   universidade, do autor e do orientador.}%
  \vspace*{\stretch{2}}%
  \par%
- \margem{\arial \textbf{\@autor}}%
- \vspace*{\stretch{0.2}}%
- \par%
- \margem{\normalfont #1}%
+ %\vspace*{\stretch{0.1}}%
+ \margem{
+   \normalfont #1
+   \begin{flushright}\arial \textbf{\@autor}\end{flushright}
+   \normalfont #2
+   \begin{flushright}\arial \textbf{\@autorB}\end{flushright}
+   \normalfont #3
+   \begin{flushright}\arial \textbf{\@autorC}\end{flushright}
+ }
  \clearpage\onehalfspacing\normalfont%
 }
 
@@ -678,7 +687,7 @@
  \@makeschapterhead{Resumo}
  \begin{minipage}{13.5cm}
   \singlespacing%
-  \@autorR.
+  \@autorR,\ \@autorBR\ e\ \@autorCR.
   \textbf{\@titulo}.
   \@cidade, \@ano.
   \pageref{LastPage}p.
@@ -715,7 +724,7 @@
   \@makeschapterhead{Abstract}
   \begin{minipage}{13.5cm}
    \singlespacing%
-   \@autorR.
+   \@autorR,\ \@autorBR\ e\ \@autorCR.
    \textbf{#1}.
    \@cidade, \@ano.
    \pageref{LastPage}p.
@@ -835,7 +844,7 @@
 %% inf-ufg Class Delayed Codes
 %%======================================================================
 \AtBeginDocument{%
-  \author{\LARGE \arial \autor}%
+  \author{\LARGE \arial \autor\ \autorB\ e\ \autorC}%
   \title{\Huge \arial \titulo}%
   \date{\large \arial \data}%
   \ifthenelse{\boolean{abnt}}

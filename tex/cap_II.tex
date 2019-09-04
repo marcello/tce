@@ -1,6 +1,7 @@
 \chapter{Conceitos Preliminares}
 \label{cap:conceitos}
 
+Os conceitos repassados  aqui não possuem como finalidade o aprofundamento das teorias, portanto, serão passados apenas alguns conceitos básicos de cada um deles para facilitar o entendimento deste trabalho.
 Para facilitar a compreensão sobre este documento, são descritos aqui alguns conceitos utilizados no decorrer do trabalho.
 
 \section{Um visão geral sobre ITIL}
@@ -8,7 +9,7 @@ Para facilitar a compreensão sobre este documento, são descritos aqui alguns con
 
 A \textit{Information Technology Infrastructure Library} (ITIL\textsuperscript{\textregistered}) é uma biblioteca conhecida como um \textit{framework} (termo em inglês) para gerenciamento de serviços de TI que abrange, mundialmente, os melhores processos e práticas deste segmento em uso nas mais diferentes organizações~\cite{Itsmf2012}.
 
-A sua primeira versão (V1) foi desenvolvida pela \textit{Central Computer and Telecommunication Agency} (CCTA) conhecida como \textit{Government Information Technology Infrastructure Management Methodology} (GITMM) com o objetivo de aumentar a eficiência no governo do Reino Unido e desenvolver um conjunto de orientações operacionais.
+A sua primeira versão (V1) foi desenvolvida pela \textit{Central Computer and Telecommunication Agency} (CCTA) e conhecida como \textit{Government Information Technology Infrastructure Management Methodology} (GITMM) com o objetivo de aumentar a eficiência no governo do Reino Unido e desenvolver um conjunto de orientações operacionais.
 
 A segunda versão (V2) foi organizada em sete livros que embasaram o foco na entrega de valor ao cliente, tentando minimizar os custos e riscos associados, dos quais os mais destacados eram a Entrega de Serviços (\textit{Service Delivery})  e o Suporte de Serviços (\textit{Service Support}), por definirem processos e atividades do gerenciamento e da operação dos serviços de TI lançados em 2000 e 2001 onde a CCTA tornou-se parte do \textit{Office of Government Commerce} (OGC).
 Foi Publicado o Glossário da \textit{ITILv2A British Standard 15000} que foi seguida por normas nacionais em vários países. É importante destacar a norma ISO 20000:2005 ganhou reconhecimento global rapidamente.
@@ -30,12 +31,12 @@ Na Figura~\ref{fig:ciclo_itil}, pode-se ter uma melhor visão de como estas fases
 
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.4]{./fig/ciclo_itil.png}
-  \caption{Ciclos de vida do ITIL\textsuperscript{\textregistered} V3.}
+  \includegraphics[scale=0.7]{./fig/ServiceLifecycle.jpg}
+  \caption{Ciclos de vida do ITIL V3~\cite{Lifecycle2007}.}
   \label{fig:ciclo_itil}
 \end{figure}
 
-Os conceitos repassados  aqui não possuem como finalidade o aprofundamento das teorias de cada fase desses ciclos de vida, visto que serão abordados processos específicos da fase de Desenho de Serviço: Gerenciamento de Catálogo de Serviço e Gerenciamento de Nível de Serviço. Portanto, serão passados apenas alguns conceitos básicos de cada um deles para facilitar o entendimento deste trabalho.
+Serão abordados processos específicos da fase de Desenho de Serviço: Gerenciamento de Catálogo de Serviço e Gerenciamento de Nível de Serviço.
 
 \subsection*{Estratégia de Serviço}
 
@@ -138,7 +139,7 @@ Serviços novos ou modificados aparecem todo o tempo, a todo momento dentro da or
 
 Ainda dentro dos aspectos mencionados, as melhores práticas do ITIL\textsuperscript{\textregistered} V3 nos levam a desenvolver e aplicar os 4P's do desenho de serviço conforme ilustrado na Figura~\ref{fig:4ps}.
 
-\begin{figure}
+\begin{figure}[h]
   \centering
   \includegraphics[scale=0.5]{./fig/4Ps.png}
   \caption{Quatro P's do Desenho de Serviço. [Adaptado do livro ITIL\textsuperscript{\textregistered} \textit{Service Design} sob licença do \textit{Cabinet Office.}]}
@@ -176,19 +177,16 @@ A Figura~\ref{fig:conceitos} descreve visualmente como estes conceitos estão int
 \end{figure}
 
 \begin{itemize}
-\item \textit{\textbf{Pacote de Desenho de Serviço:}} é o pacote gerado para toda alteração significante dos serviços de TI, ou seja, para serviços novos, alterados ou desativados por obsolescência. Essas decisões, tomadas no Nível Estratégico e abordadas no Gerenciamento do Portfólio de Serviço, são repassadas ao Pacote de Serviço através de informações que serão utilizadas para \textit{``documentar e definir todos os aspectos de um serviço de TI e seus requisitos para cada fase do ciclo de vida do serviço''} (FREITAS, 2013)~\cite{Freitas2013}. O Pacote de Desenho de Serviço trabalha estas informações sob os cincos aspectos e os Quatro Ps do Desenho de serviço, necessários para que o ciclo Transição de Serviço cumpra o seu propósito. Esse relacionamento pode ser visto na Figura~\ref{fig:pacote_desenho}
+  \item \textit{\textbf{Pacote de Desenho de Serviço:}} é o pacote gerado para toda alteração significante dos serviços de TI, ou seja, para serviços novos, alterados ou desativados por obsolescência. Essas decisões, tomadas no Nível Estratégico e abordadas no Gerenciamento do Portfólio de Serviço, são repassadas ao Pacote de Serviço através de informações que serão utilizadas para documentar e definir todos os aspectos de um serviço de TI e seus requisitos para cada fase do ciclo de vida do serviço. O Pacote de Desenho de Serviço trabalha estas informações sob os cincos aspectos e os Quatro Ps do Desenho de serviço, necessários para que o ciclo Transição de Serviço cumpra o seu propósito. Esse relacionamento pode ser visto na Figura~\ref{fig:pacote_desenho}.
+  \item \textit{\textbf{Disponibilidade:}} como o próprio nome cita, é a capacidade de um serviço estar disponível dentro dos prazos estabelecidos no ANS. Isso significa que se um serviço não esteve disponível 24 horas por dia e 7 dias por semana, ele só será considerado indisponível se no ANS foi requerida esta disponibilidade.
 \end{itemize}
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=15cm, height=3.5cm]{./fig/pacote_desenho.png}
-  \caption{Pacote de Desenho de Serviço.}
+  \caption{Pacote de Desenho de Serviço~\cite{Freitas2013}.}
   \label{fig:pacote_desenho}
 \end{figure}
-
-\begin{itemize}
-  \item \textit{\textbf{Disponibilidade:}} como o próprio nome cita, é a capacidade de um serviço estar disponível dentro dos prazos estabelecidos no ANS. Isso significa que se um serviço não esteve disponível 24 horas por dia e 7 dias por semana, ele só será considerado indisponível se no ANS foi requerida esta disponibilidade.
-\end{itemize}
 
 \subsection{Gerenciamento de Nível de Serviço (GNS)}
 \label{sec:ger_nivel}
@@ -230,7 +228,7 @@ A Figura~\ref{fig:tipos_ans} expressa graficamente como se dão esses acordos.
 \begin{figure}
   \centering
   \includegraphics[scale=1]{./fig/tipos_ans.png}
-  \caption{Tipos de Acordos de Nível de Serviço.}
+  \caption{Tipos de Acordos de Nível de Serviço~\cite{Freitas2013}.}
   \label{fig:tipos_ans}
 \end{figure}
 
@@ -332,14 +330,14 @@ Existem dois tipos de Catálogo de Serviços:
   \item \textbf{Catálogo Técnico (Serviços de suporte):} contém informações sobre serviços técnicos de apoio aos serviços de negócio. Geralmente são serviços técnicos que não têm visibilidade para o cliente (uma visão interna), mas são úteis para a entrega dos serviços de negócio. Contém detalhes dos serviços de TI e o relacionamento destes serviços com os serviços de suporte, serviços compartilhados, componentes e itens de configuração necessários para suportar ou fornecer o serviço ao negócio.
 \end{itemize}
 
+Uma ilustração do relacionamento entre esses dois tipos de Catálogo de Serviços pode ser visto na Figura~\ref{fig:cat_service}.
+
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.5]{./fig/cat_service.png}
-  \caption{Catálogo de Serviços de Negócio e Catálogo de Serviços Técnicos.}
+  \includegraphics[scale=0.6]{./fig/catalogo-negocio-e-servicos.png}
+  \caption{Catálogo de Serviços do Negócio e Catálogo de Serviços Técnicos.}
   \label{fig:cat_service}
 \end{figure}
-
-Uma ilustração do relacionamento entre esses dois tipos de Catálogo de Serviços pode ser visto na Figura~\ref{fig:cat_service}.
 
 Existem ainda algumas atividades chave que precisam ser levadas em consideração no processo Gerenciamento de Catálogo de Serviços:
 
