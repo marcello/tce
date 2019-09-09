@@ -1,16 +1,150 @@
 \chapter{O Estudo de Caso}
 \label{cap:estudo_caso}
 
-\section{A Divisão de Infraestrutura}
-\label{sec:div_infra} 
-O alvo do nosso estudo de caso é a Divisão de Infraestrutura do Centro de Recursos Computacionais (CERCOMP) da UFG, ligado, hoje, à Secretaria de Infraestrutura e Informação (SeTI) e esta à Reitoria da Universidade.
+Em uma análise do cenário atual no CERCOMP que é o órgão central de TI da UFG responsável pela execução das principais políticas da área e tem por objetivos planejar, gerenciar, executar e manter os serviços de infraestrutura computacional da instituição. Ao longo de sua trajetória, o órgão foi agregando e disponibilizando vários serviços de TI, no intuito de atender principalmente às demandas apresentadas pela Alta Administração, com foco no apoio à gestão de atividades acadêmicas e administrativas.
 
-O CERCOMP tem por objetivos planejar, gerenciar, executar e manter os serviços de infraestrutura computacional da Universidade Federal de Goiás. A Divisão de Infraestrutura é um departamento interno do CERCOMP que cuida da parte de infraestrutura de redes, conectividade e serviços avançados de data center.
+Contudo, observa-se, em uma avaliação livre da atual equipe gestora da área de TI da UFG, que esse crescimento no número de serviços não foi acompanhado de uma sistemática de planejamento, organização, disponibilização e divulgação, o que acabou por criar alguns cenários desafiadores, dos quais destacam-se alguns:
 
-O CERCOMP possui um Escritório de Gestão que está fazendo o trabalho de mapeamento e desenho dos processos dentro dos departamentos internos do órgão, mas este trabalho ainda não foi realizado dentro da Divisão de Infraestrutura.
+\begin{itemize}
+  \item Atualmente, há uma fragmentação da oferta dos serviços de TI entre vários órgãos da UFG. Por exemplo, a administração do Moodle (plataforma para ensino à distância) é de responsabilidade do Centro Integrado de Aprendizagem em Rede (CIAR), já o serviço de acesso aos Periódicos é administrado pela Biblioteca Central (BC). A princípio, não há problema em outros órgãos serem responsáveis pela oferta de determinado serviço de TI, contudo é necessário uma articulação, hoje pouco efetiva, entre esses órgãos e o CERCOMP para disponibilização e manutenção destes serviços na perspectiva do usuário final;
+  \item O Catálogo de Serviços de TI é inexistente na instituição, colaborando para o desconhecimento do usuário final quanto aos serviços de TI oferecidos e suas características, bem como para o desalinhamento de informações entre a equipe técnica responsável pelo atendimento em questões relacionadas aos requisitos, fronteira de atuação e interação com outras equipes;
+  \item Por ser inexistente, obviamente, não há integração entre o Catálogo de Serviços e a solução de gerenciamento de chamados de TI - GLPI, adotada na instituição, dificultando a triagem e atendimento dos chamados por parte do SAU e equipes técnicas, respectivamente.
+\end{itemize}
 
-\section{Análise do Cenário Atual}
-\label{sec:analise}
+Assim, esse cenário de dificuldades, somado ao desejo de aprimorar as estratégias de disponibilização dos serviços de TI junto à comunidade universitária, de forma mais eficiente e satisfatória, motivou a realização do presente trabalho aplicado ao contexto do CERCOMP e da sua Equipe de Infraestrutura.
+
+Adicionalmente, a disponibilização, divulgação e gerenciamento do Catálogo de Serviços de TI consta como meta do Plano Diretor de Tecnologia da Informação - PDTI/UFG (2018/2021, p.49)\footnote{Disponível em \url{https://www.cti.ufg.br/up/921/o/PDTI_2018-2021-02_02_18_atual.pdf}.}, o que demonstra a necessidade e interesse estratégico da Governança Institucional e das equipes técnicas do CERCOMP na sua implantação.
+
+Como resultado, espera-se propor um conjunto de orientações e modelos de referência, baseando-se nas melhores práticas de gerenciamento de serviços de TI disponíveis na literatura e de experiências e estratégias empregadas por outras IFES, que possam ser aplicados ao contexto do CERCOMP (e replicados a outros órgãos da UFG e a outras instituições de ensino), de forma a contribuir para o aprimoramento dos serviços oferecidos à comunidade universitária.
+
+\section{Estatísticas de Atendimento}
+Com base em um levantamento de dados executado junto ao o sistema de gerenciamento de chamados de TI (GLPI), no período de 01/01/2017 a 02/09/2019, observamos uma média anual de mais de 10 mil chamados direcionados para atendimento do CERCOMP, conforme apresentado na Tabela~\ref{tab:estat-glpi} e Gráfico~\ref{fig:estat-glpi}.
+
+\begin{table*}[ht]
+  \centering
+  \renewcommand{\arraystretch}{1.3}
+  \footnotesize
+  \begin{tabular}{|m{4cm}|r|r|r|}
+    \hline
+    \centering{\textbf{Equipe/Ano}} & \textbf{2017} & \textbf{2018} & \textbf{2019} \\
+    \hline
+    Sistemas de Informação  &  4060 &  4173 &  2802 \\ \hline
+    Serviços/Suporte        &  3285 &  3675 &  2598 \\ \hline
+    Infraestrutura/Redes    &  1114 &  1207 &   946 \\ \hline
+    Triagem/SAU             &  1210 &   791 &   447 \\ \hline
+    SEI - Cidarq            &   402 &   699 &   519 \\ \hline
+    \centering{\textbf{TOTAL}} & 10071 & 10545 &  7312 \\ \hline
+  \end{tabular}
+  \caption{Estatísticas de chamados recebidos via GLPI - 2017 a 2019.}
+  \label{tab:estat-glpi}
+\end{table*}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.6]{./fig/atendimentos-glpi.png}
+  \caption{Estatísticas de chamados por Equipe - 2017 a 2019.}
+  \label{fig:estat-glpi}
+\end{figure}
+
+Observa-se ainda que há uma uniformidade na quantidade de chamados recebidos pela Equipe de Infraestrutura entre os anos analisados, correspondendo, em média a 12\% do total. Um levantamento mais detalhado desses chamados, considerando um intervalo de tempo específico - de 01/01 a 23/05/2019, indicou que dos 320 chamados direcionados à Equipe de Infraestrutura, 46,5\% das ordens de serviços foram solucionadas e um prazo inferior à 24 horas.
+
+Contudo, é preocupante observar que 19,7\% do total dos chamados levaram 8 (oito) ou mais dias para serem resolvidos, e que de mais de 15\% do total foram classificados erroneamente entre ``Requisição'' e ``Incidente''. Esses são índices que precisam ser avaliados em seus procedimentos e fluxos de atendimento, para garantir que níveis aceitáveis possam ser implementados de forma a atender às necessidades dos usuários.
+
+Com base na análise desses dados, bem como em uma avaliação livre da atual gerência da Equipe de Infraestrutura/CERCOMP, destacam-se alguns problemas relacionados ao gerenciamento dos serviços de TI oferecidos pela Equipe, a saber:
+
+\begin{itemize}
+  \item Ausência de planos e diretrizes repassadas pela Governança Institucional;
+  \item Ausência de um catálogo de serviços do órgão;
+  \item Métodos e processos mal definidos e sem documentação;
+  \item Falta de padronização tanto nas solicitações como nos atendimentos;
+  \item Falta de definição de níveis de serviço;
+\end{itemize}
+
+\section{Etapas do estudo de caso}
+
+Alinhado aos objetivos apresentados neste trabalho, adotou-se a seguinte abordagem para realização do estudo de caso:
+
+\begin{description}
+  \item[Etapa 01: Alinhamento e Planejamento.]
+    Alinhamento da proposta do estudo de caso ao trabalho em desenvolvimento pelo Grupo de Trabalho (GT) de Catálogo de Serviços do CERCOMP; Planejamento do estudo de caso com a definição do escopo, metodologia e responsabilidades, bem como proposição de modelos de documentos e processo ``elaborar catálogo de serviços de TI'';
+  \item[Etapa 02: Levantamento e Categorização dos Serviços (aplicação horizontal).]
+    Realização do levantamento e categorização de todos os serviços externos oferecidos pelo CERCOMP à comunidade universitária;
+  \item[Etapa 03: Especificação de Serviços e Acordos  (aplicação vertical).]
+    Aplicação, no contexto da Equipe de Infraestrutura/CERCOMP, dos modelos de documentos para especificação de serviços, acordo de nível de serviço e acordo de nível operacional (aplicação vertical) e fluxo de processos de atendimento;
+  \item[Etapa 04: Gestão e Aprimoramento do Catálogo de Serviços.]
+    Proposição de processo de ``gerenciamento do catálogo de serviços'', incluindo a disponibilização de novos produtos/serviços; (fazer vinculação com a fase ``Melhoria Contínua - ITIL'')
+Avaliação de alternativas para disponibilização e divulgação do catálogo de serviços e integração com a Central de Serviços.
+\end{description}
+
+\subsection{Etapa 01: Alinhamento e Planejamento}
+
+Um Grupo de Trabalho (GT) de Catálogo de Serviços do CERCOMP foi criado pela Direção com a responsabilidade de elaborar e disponibilizar o Catálogo de Serviços de TI do órgão. O GT iniciou suas atividades em setembro de 2018, sendo composto por um representante da cada uma das equipes técnicas e assessorias do CERCOMP (Sistemas, Infraestrutura/Redes, Serviços/Suporte, Secretaria Administrativa e Escritório de Gestão de Processos e Projetos), com a participação da Direção e de outros servidores/colaboradores com experiência na área de gerenciamento de serviços de TI.
+
+Como atividade inicial, o GT definiu a estratégia de orientar cada equipe a fazer um levantamento prévio dos serviços oferecidos para, na sequência, refiná-los em uma discussão conjunta. Durante essa atividade, houve alguns questionamentos sobre as características de alguns serviços, especialmente se eles eram oferecidos internamente (apenas entre as equipes do CERCOMP) ou externamente (para a comunidade universitária). Observou-se que as equipes de assessoria à Direção - Secretaria Administrativa e Escritório de Gestão de Processos e Projetos - possuíam apenas ``serviços internos''. Posteriormente, definiu-se que, nesta etapa, o escopo do trabalho do GT contemplaria apenas os ``serviços externos'' oferecidos à comunidade universitária. Outra observação do grupo diz respeito a sobreposição de serviços entre as equipes técnicas e a ausência de limitação e/ou transição entre os serviços de uma equipe para outra.
+
+Ainda em setembro de 2018, a Direção do CERCOMP fez uma consulta informal em um grupo de mensagens instantânea, junto ao Colégio de Gestores de Tecnologia da Informação e Comunicação - CGTIC/Andifes, com o intuito de verificar quais instituições federais de ensino superior já haviam elaborado e/ou disponibilizado seu catálogo de serviços de TI. Essa consulta obteve o retorno espontâneo de 10 (dez) universidades federais, das quais considerou-se o seguinte levantamento para orientação deste trabalho conforme apresentado na Tabela~\ref{tab:ifes-catalogo}.
+
+\begin{table*}[ht]
+  \centering
+  \renewcommand{\arraystretch}{1.3}
+  \footnotesize
+  \begin{tabular}{|>{\centering\arraybackslash}m{0.2cm}|m{1.8cm}|p{5.8cm}|p{5.5cm}|}
+    \toprule
+    \textbf{\#} & \textbf{Sigla} & \textbf{Instituição Federal de Ensino Superior} & \textbf{Link para Catálogo de Serviços de TI} \\
+    \midrule
+    1  & UFGRS & Universidade Federal do Rio Grande do Sul & \url{https://www1.ufrgs.br/catalogoti/} \\ \hline
+    2  & UFBA & Universidade Federal da Bahia & \url{https://sti.ufba.br/catalogo-servicos} \\ \hline
+    3  & UNIFESSPA & Universidade Federal do Sul e Sudeste do Pará & \url{https://ctic.unifesspa.edu.br/nossos-servicos.html} \\ \hline
+    4  & UFPE & Universidade Federal de Pernambuco & \url{https://www.ufpe.br/nti/catalogo-de-servicos} \\ \hline
+    5  & UFVJM & Universidade Federal dos Vales do Jequitinhonha e Mucuri & \url{http://novo.ufvjm.edu.br/dti/catalogo-de-servicos/} \\ \hline
+    6  & UNIFAL & Universidade Federal de Alfenas & \url{https://www.unifal-mg.edu.br/nti/catalogo-de-servicos/} \\ \hline
+    7  & UFOB & Universidade Federal do Oeste da Bahia & \url{https://protic.ufob.edu.br/catalogo} \\ \hline
+    8  & UFRB & Universidade Federal do Recôncavo da Bahia & \url{https://ufrb.edu.br/cotec/catalogo-de-ti} \\ \hline
+    9  & UFERSA & Universidade Federal Rural do Semi-Árido & \url{https://sutic.ufersa.edu.br/catalogodeservicos/} \\ \hline
+    10 & UFMG & Universidade Federal de Minas Gerais & \url{https://www.ufmg.br/dti/pagina-inicial/portfolio/servicos/} \\
+    \bottomrule
+  \end{tabular}
+  \caption{Instituições que possuem catálogo de serviço.}
+  \label{tab:ifes-catalogo}
+\end{table*}
+
+Em continuidade ao trabalho, o GT refletiu sobre a necessidade de mapear o processo ``Elaborar catálogo de serviços de TI'' (Figura~\ref{fig:elaborar-csti}), de forma a orientar as ações e responsabilidades dos envolvidos no processo. O processo sugerido pelo GT e adaptado para este trabalho considera o fluxo que vai desde a designação do grupo de trabalho até à chamada ao subprocesso ``disponibilizar produto/serviço'' (???). A dinâmica empregada no processo atribui aos representantes do GT a responsabilidade pelo levantamento inicial da informação entre sua equipe para, posteriormente, discutir essas informações conjuntamente com o grupo. O resultado de cada etapa do processo é encaminhado para validação/homologação da equipe gestora do CERCOMP e, encerrado o ciclo, o catálogo de serviços de TI é disponibilizado.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.48]{./fig/BPM_catalogo-servicos_elaboracao_resumido.png}
+  \caption{Processo - Elaborar Catálogo de Serviços de TI.}
+  \label{fig:elaborar-csti}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.6]{./fig/BPM_catalogo-servicos_sub-levantar-servicos.png}
+  \caption{Subprocesso - Realizar levantamento de serviços de TI.}
+  \label{fig:levantamento-servicos-ti}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.6]{./fig/BPM_catalogo-servicos_sub-especificar-servicos.png}
+  \caption{Subprocesso - Especificar serviços de TI.}
+  \label{fig:especificar-servicos-ti}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.6]{./fig/BPM_catalogo-servicos_sub-categorizar-servicos.png}
+  \caption{Subprocesso - Categorizar serviços de TI.}
+  \label{fig:categorizar-servicos-ti}
+\end{figure}
+
+Durante o desenvolvimento das atividades do GT buscou-se estabelecer um alinhamento entre suas ações e a proposta estabelecida nos objetivos deste trabalho. Essa primeira etapa apoiou-se no trabalho conduzido pelo GT e, como base nas informações disponíveis, definiu-se o escopo e metodologia do estudo de caso.
+
+O estudo de caso a ser apresentado nas etapas seguintes contemplará a definição de processos (``elaborar catálogo de serviços'' e ``gerenciar catálogo de serviços'', incluindo o subprocesso ``disponibilizar produto/serviço''), a proposição de modelos de documentos (especificação de serviços, acordo de nível de serviços e acordo de nível operacional) e a aplicação desses modelos de documentos e processos ao contexto do CERCOMP e da Equipe de Infraestrutura.
+
+\subsection{Etapa 02: Levantamento e Categorização dos Serviços (aplicação horizontal)}
+
+%%% Mark %%%
 
 \subsection{Fluxo de Atendimentos}
 Ao realizar a análise da situação atual, encontrou-se um cenário em que usuários poderiam abrir chamados, isto é, solicitar um serviço de TI ou reportar uma falha em hardware ou software por meio do uso de um sistema de gerenciamento destes chamados.
