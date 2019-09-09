@@ -11,14 +11,14 @@ Contudo, observa-se, em uma avaliação livre da atual equipe gestora da área de T
   \item Por ser inexistente, obviamente, não há integração entre o Catálogo de Serviços e a solução de gerenciamento de chamados de TI - GLPI, adotada na instituição, dificultando a triagem e atendimento dos chamados por parte do SAU e equipes técnicas, respectivamente.
 \end{itemize}
 
-Assim, esse cenário de dificuldades, somado ao desejo de aprimorar as estratégias de disponibilização dos serviços de TI junto à comunidade universitária, de forma mais eficiente e satisfatória, motivou a realização do presente trabalho aplicado ao contexto do CERCOMP e da sua Equipe de Infraestrutura.
+Assim, esse cenário de dificuldades, somado ao desejo de aprimorar as estratégias de disponibilização de serviços de TI e de atendimento à comunidade universitária, motivou a realização do presente estudo de caso aplicado ao contexto do CERCOMP e da sua Equipe de Infraestrutura.
 
 Adicionalmente, a disponibilização, divulgação e gerenciamento do Catálogo de Serviços de TI consta como meta do Plano Diretor de Tecnologia da Informação - PDTI/UFG (2018/2021, p.49)\footnote{Disponível em \url{https://www.cti.ufg.br/up/921/o/PDTI_2018-2021-02_02_18_atual.pdf}.}, o que demonstra a necessidade e interesse estratégico da Governança Institucional e das equipes técnicas do CERCOMP na sua implantação.
 
 Como resultado, espera-se propor um conjunto de orientações e modelos de referência, baseando-se nas melhores práticas de gerenciamento de serviços de TI disponíveis na literatura e de experiências e estratégias empregadas por outras IFES, que possam ser aplicados ao contexto do CERCOMP (e replicados a outros órgãos da UFG e a outras instituições de ensino), de forma a contribuir para o aprimoramento dos serviços oferecidos à comunidade universitária.
 
 \section{Estatísticas de Atendimento}
-Com base em um levantamento de dados executado junto ao o sistema de gerenciamento de chamados de TI (GLPI), no período de 01/01/2017 a 02/09/2019, observamos uma média anual de mais de 10 mil chamados direcionados para atendimento do CERCOMP, conforme apresentado na Tabela~\ref{tab:estat-glpi} e Gráfico~\ref{fig:estat-glpi}.
+Com base em um levantamento de dados executado junto ao o sistema de gerenciamento de chamados de TI (GLPI), no período de 01/01/2017 a 02/09/2019, observamos uma média anual de mais de 10 mil chamados direcionados para atendimento do CERCOMP, conforme apresentado na Tabela~\ref{tab:estat-glpi} e Figura~\ref{fig:estat-glpi}.
 
 \begin{table*}[ht]
   \centering
@@ -53,9 +53,9 @@ Contudo, é preocupante observar que 19,7\% do total dos chamados levaram 8 (oito
 Com base na análise desses dados, bem como em uma avaliação livre da atual gerência da Equipe de Infraestrutura/CERCOMP, destacam-se alguns problemas relacionados ao gerenciamento dos serviços de TI oferecidos pela Equipe, a saber:
 
 \begin{itemize}
-  \item Ausência de planos e diretrizes repassadas pela Governança Institucional;
+  \item Ausência de políticas e diretrizes definidas pela Alta Administração;
   \item Ausência de um catálogo de serviços do órgão;
-  \item Métodos e processos mal definidos e sem documentação;
+  \item Métodos e processos mal definidos e/ou sem documentação;
   \item Falta de padronização tanto nas solicitações como nos atendimentos;
   \item Falta de definição de níveis de serviço;
 \end{itemize}
@@ -65,50 +65,27 @@ Com base na análise desses dados, bem como em uma avaliação livre da atual gerên
 Alinhado aos objetivos apresentados neste trabalho, adotou-se a seguinte abordagem para realização do estudo de caso:
 
 \begin{description}
-  \item[Etapa 01: Alinhamento e Planejamento.]
-    Alinhamento da proposta do estudo de caso ao trabalho em desenvolvimento pelo Grupo de Trabalho (GT) de Catálogo de Serviços do CERCOMP; Planejamento do estudo de caso com a definição do escopo, metodologia e responsabilidades, bem como proposição de modelos de documentos e processo ``elaborar catálogo de serviços de TI'';
-  \item[Etapa 02: Levantamento e Categorização dos Serviços (aplicação horizontal).]
-    Realização do levantamento e categorização de todos os serviços externos oferecidos pelo CERCOMP à comunidade universitária;
-  \item[Etapa 03: Especificação de Serviços e Acordos  (aplicação vertical).]
-    Aplicação, no contexto da Equipe de Infraestrutura/CERCOMP, dos modelos de documentos para especificação de serviços, acordo de nível de serviço e acordo de nível operacional (aplicação vertical) e fluxo de processos de atendimento;
+  \item[Etapa 01: Alinhamento, planejamento e levantamento de serviços de TI.]
+    Alinhamento da proposta deste estudo de caso com o trabalho desenvolvido pelo Grupo de Trabalho (GT) de Catálogo de Serviços do CERCOMP;
+    Levantamento preliminar dos serviços de TI junto às equipes técnicas;
+    Planejamento do estudo de caso com a definição do escopo, metodologia e responsabilidades, bem como proposição do processo ``elaborar catálogo de serviços de TI'';
+  \item[Etapa 02: Proposição de modelos de documentos e categorização dos serviços.]
+    Proposição do template de especificação de serviços de TI e dos modelos de acordo de nível de serviços e acordo de nível operacional;
+    Refinamento do levantamento de serviços das equipes e categorização dos serviços externos oferecidos pelo CERCOMP à comunidade universitária;
+  \item[Etapa 03: Especificação de Serviços e Acordos.]
+    Aplicação, no contexto da Equipe de Infraestrutura/CERCOMP, dos modelos de documentos para especificação de serviços de TI, acordo de nível de serviço e acordo de nível operacional, bem como dos fluxos de processos de atendimento;
   \item[Etapa 04: Gestão e Aprimoramento do Catálogo de Serviços.]
-    Proposição de processo de ``gerenciamento do catálogo de serviços'', incluindo a disponibilização de novos produtos/serviços; (fazer vinculação com a fase ``Melhoria Contínua - ITIL'')
-Avaliação de alternativas para disponibilização e divulgação do catálogo de serviços e integração com a Central de Serviços.
+    Proposição do processo de ``gerenciamento do catálogo de serviços de TI'', incluindo a disponibilização de novos produtos/serviços;
+    Avaliação de alternativas para disponibilização e divulgação do catálogo de serviços, bem como a integração com a ferramenta GLPI.
 \end{description}
 
-\subsection{Etapa 01: Alinhamento e Planejamento}
+\subsection{Etapa 01: Alinhamento, planejamento e levantamento de serviços de TI}
 
-Um Grupo de Trabalho (GT) de Catálogo de Serviços do CERCOMP foi criado pela Direção com a responsabilidade de elaborar e disponibilizar o Catálogo de Serviços de TI do órgão. O GT iniciou suas atividades em setembro de 2018, sendo composto por um representante da cada uma das equipes técnicas e assessorias do CERCOMP (Sistemas, Infraestrutura/Redes, Serviços/Suporte, Secretaria Administrativa e Escritório de Gestão de Processos e Projetos), com a participação da Direção e de outros servidores/colaboradores com experiência na área de gerenciamento de serviços de TI.
+\subsubsection{Alinhamento e planejamento do trabalho}
 
-Como atividade inicial, o GT definiu a estratégia de orientar cada equipe a fazer um levantamento prévio dos serviços oferecidos para, na sequência, refiná-los em uma discussão conjunta. Durante essa atividade, houve alguns questionamentos sobre as características de alguns serviços, especialmente se eles eram oferecidos internamente (apenas entre as equipes do CERCOMP) ou externamente (para a comunidade universitária). Observou-se que as equipes de assessoria à Direção - Secretaria Administrativa e Escritório de Gestão de Processos e Projetos - possuíam apenas ``serviços internos''. Posteriormente, definiu-se que, nesta etapa, o escopo do trabalho do GT contemplaria apenas os ``serviços externos'' oferecidos à comunidade universitária. Outra observação do grupo diz respeito a sobreposição de serviços entre as equipes técnicas e a ausência de limitação e/ou transição entre os serviços de uma equipe para outra.
+O Grupo de Trabalho (GT) de Catálogo de Serviços do CERCOMP foi criado pela Direção com a responsabilidade de elaborar e disponibilizar o Catálogo de Serviços de TI do órgão. O GT iniciou suas atividades em setembro de 2018, sendo composto por um representante da cada uma das equipes técnicas e assessorias do CERCOMP (Sistemas, Infraestrutura/Redes, Serviços/Suporte, Secretaria Administrativa e Escritório de Gestão de Processos e Projetos), com a participação da Direção e de outros servidores/colaboradores com experiência na área de gerenciamento de serviços de TI.
 
-Ainda em setembro de 2018, a Direção do CERCOMP fez uma consulta informal em um grupo de mensagens instantânea, junto ao Colégio de Gestores de Tecnologia da Informação e Comunicação - CGTIC/Andifes, com o intuito de verificar quais instituições federais de ensino superior já haviam elaborado e/ou disponibilizado seu catálogo de serviços de TI. Essa consulta obteve o retorno espontâneo de 10 (dez) universidades federais, das quais considerou-se o seguinte levantamento para orientação deste trabalho conforme apresentado na Tabela~\ref{tab:ifes-catalogo}.
-
-\begin{table*}[ht]
-  \centering
-  \renewcommand{\arraystretch}{1.3}
-  \footnotesize
-  \begin{tabular}{|>{\centering\arraybackslash}m{0.2cm}|m{1.8cm}|p{5.8cm}|p{5.5cm}|}
-    \toprule
-    \textbf{\#} & \textbf{Sigla} & \textbf{Instituição Federal de Ensino Superior} & \textbf{Link para Catálogo de Serviços de TI} \\
-    \midrule
-    1  & UFGRS & Universidade Federal do Rio Grande do Sul & \url{https://www1.ufrgs.br/catalogoti/} \\ \hline
-    2  & UFBA & Universidade Federal da Bahia & \url{https://sti.ufba.br/catalogo-servicos} \\ \hline
-    3  & UNIFESSPA & Universidade Federal do Sul e Sudeste do Pará & \url{https://ctic.unifesspa.edu.br/nossos-servicos.html} \\ \hline
-    4  & UFPE & Universidade Federal de Pernambuco & \url{https://www.ufpe.br/nti/catalogo-de-servicos} \\ \hline
-    5  & UFVJM & Universidade Federal dos Vales do Jequitinhonha e Mucuri & \url{http://novo.ufvjm.edu.br/dti/catalogo-de-servicos/} \\ \hline
-    6  & UNIFAL & Universidade Federal de Alfenas & \url{https://www.unifal-mg.edu.br/nti/catalogo-de-servicos/} \\ \hline
-    7  & UFOB & Universidade Federal do Oeste da Bahia & \url{https://protic.ufob.edu.br/catalogo} \\ \hline
-    8  & UFRB & Universidade Federal do Recôncavo da Bahia & \url{https://ufrb.edu.br/cotec/catalogo-de-ti} \\ \hline
-    9  & UFERSA & Universidade Federal Rural do Semi-Árido & \url{https://sutic.ufersa.edu.br/catalogodeservicos/} \\ \hline
-    10 & UFMG & Universidade Federal de Minas Gerais & \url{https://www.ufmg.br/dti/pagina-inicial/portfolio/servicos/} \\
-    \bottomrule
-  \end{tabular}
-  \caption{Instituições que possuem catálogo de serviço.}
-  \label{tab:ifes-catalogo}
-\end{table*}
-
-Em continuidade ao trabalho, o GT refletiu sobre a necessidade de mapear o processo ``Elaborar catálogo de serviços de TI'' (Figura~\ref{fig:elaborar-csti}), de forma a orientar as ações e responsabilidades dos envolvidos no processo. O processo sugerido pelo GT e adaptado para este trabalho considera o fluxo que vai desde a designação do grupo de trabalho até à chamada ao subprocesso ``disponibilizar produto/serviço'' (???). A dinâmica empregada no processo atribui aos representantes do GT a responsabilidade pelo levantamento inicial da informação entre sua equipe para, posteriormente, discutir essas informações conjuntamente com o grupo. O resultado de cada etapa do processo é encaminhado para validação/homologação da equipe gestora do CERCOMP e, encerrado o ciclo, o catálogo de serviços de TI é disponibilizado.
+Em continuidade ao trabalho, o GT refletiu sobre a necessidade de mapear o processo ``Elaborar catálogo de serviços de TI'' (Figura ~\ref{fig:elaborar-csti}, de forma a orientar as ações e responsabilidades dos envolvidos no processo. O processo sugerido pelo GT e adaptado para este trabalho considera o fluxo que vai desde a designação do grupo de trabalho até à chamada ao subprocesso ``disponibilizar produto/serviço'' (???). A dinâmica empregada no processo atribui aos representantes do GT a responsabilidade pelo levantamento inicial da informação entre sua equipe para, posteriormente, discutir essas informações conjuntamente com o grupo. O resultado de cada etapa do processo é encaminhado para validação/homologação da equipe gestora do CERCOMP e, encerrado o ciclo, o catálogo de serviços de TI é disponibilizado.
 
 \begin{figure}[ht]
   \centering
@@ -140,74 +117,169 @@ Em continuidade ao trabalho, o GT refletiu sobre a necessidade de mapear o proce
 
 Durante o desenvolvimento das atividades do GT buscou-se estabelecer um alinhamento entre suas ações e a proposta estabelecida nos objetivos deste trabalho. Essa primeira etapa apoiou-se no trabalho conduzido pelo GT e, como base nas informações disponíveis, definiu-se o escopo e metodologia do estudo de caso.
 
-O estudo de caso a ser apresentado nas etapas seguintes contemplará a definição de processos (``elaborar catálogo de serviços'' e ``gerenciar catálogo de serviços'', incluindo o subprocesso ``disponibilizar produto/serviço''), a proposição de modelos de documentos (especificação de serviços, acordo de nível de serviços e acordo de nível operacional) e a aplicação desses modelos de documentos e processos ao contexto do CERCOMP e da Equipe de Infraestrutura.
+\subsubsection{Levantamento preliminar de serviços de TI}
 
-\subsection{Etapa 02: Levantamento e Categorização dos Serviços (aplicação horizontal)}
+Como atividade inicial, o GT definiu a estratégia de orientar cada equipe a fazer um levantamento prévio dos serviços oferecidos para, na sequência, refiná-los em uma discussão conjunta. Durante essa atividade, houve alguns questionamentos sobre as características de alguns serviços, especialmente se eles eram oferecidos internamente (apenas entre as equipes do CERCOMP) ou externamente (para a comunidade universitária). Observou-se que as equipes de assessoria à Direção - Secretaria Administrativa e Escritório de Gestão de Processos e Projetos - possuíam apenas ``serviços internos''. Posteriormente, definiu-se que, nesta etapa, o escopo do trabalho do GT contemplaria apenas os ``serviços externos'' oferecidos à comunidade universitária. Outra observação do grupo diz respeito a sobreposição de serviços entre as equipes técnicas e a ausência de limitação e/ou transição entre os serviços de uma equipe para outra.
 
-%%% Mark %%%
+Ainda em setembro de 2018, a Direção do CERCOMP fez uma consulta informal em um grupo de mensagens instantânea, junto ao Colégio de Gestores de Tecnologia da Informação e Comunicação - CGTIC/Andifes, com o intuito de verificar quais instituições federais de ensino superior já haviam elaborado e/ou disponibilizado seu catálogo de serviços de TI. Essa consulta obteve o retorno espontâneo de 10 (dez) universidades federais, das quais considerou-se o seguinte levantamento para orientação deste trabalho conforme apresentado na Tabela~\ref{tab:ifes-catalogo}.
 
-\subsection{Fluxo de Atendimentos}
-Ao realizar a análise da situação atual, encontrou-se um cenário em que usuários poderiam abrir chamados, isto é, solicitar um serviço de TI ou reportar uma falha em hardware ou software por meio do uso de um sistema de gerenciamento destes chamados.
+\begin{table*}[ht]
+  \centering
+  \renewcommand{\arraystretch}{1.3}
+  \footnotesize
+  \begin{tabular}{|>{\centering\arraybackslash}m{0.2cm}|m{1.8cm}|p{5.8cm}|p{5.5cm}|}
+    \toprule
+    \textbf{\#} & \textbf{Sigla} & \textbf{Instituição Federal de Ensino Superior} & \textbf{Link para Catálogo de Serviços de TI} \\
+    \midrule
+    1  & UFGRS & Universidade Federal do Rio Grande do Sul & \url{https://www1.ufrgs.br/catalogoti/} \\ \hline
+    2  & UFBA & Universidade Federal da Bahia & \url{https://sti.ufba.br/catalogo-servicos} \\ \hline
+    3  & UNIFESSPA & Universidade Federal do Sul e Sudeste do Pará & \url{https://ctic.unifesspa.edu.br/nossos-servicos.html} \\ \hline
+    4  & UFPE & Universidade Federal de Pernambuco & \url{https://www.ufpe.br/nti/catalogo-de-servicos} \\ \hline
+    5  & UFVJM & Universidade Federal dos Vales do Jequitinhonha e Mucuri & \url{http://novo.ufvjm.edu.br/dti/catalogo-de-servicos/} \\ \hline
+    6  & UNIFAL & Universidade Federal de Alfenas & \url{https://www.unifal-mg.edu.br/nti/catalogo-de-servicos/} \\ \hline
+    7  & UFOB & Universidade Federal do Oeste da Bahia & \url{https://protic.ufob.edu.br/catalogo} \\ \hline
+    8  & UFRB & Universidade Federal do Recôncavo da Bahia & \url{https://ufrb.edu.br/cotec/catalogo-de-ti} \\ \hline
+    9  & UFERSA & Universidade Federal Rural do Semi-Árido & \url{https://sutic.ufersa.edu.br/catalogodeservicos/} \\ \hline
+    10 & UFMG & Universidade Federal de Minas Gerais & \url{https://www.ufmg.br/dti/pagina-inicial/portfolio/servicos/} \\
+    \bottomrule
+  \end{tabular}
+  \caption{Instituições que possuem catálogo de serviço.}
+  \label{tab:ifes-catalogo}
+\end{table*}
 
-Após o recebimento do chamado, o Serviço de Atendimento ao Usuário - SAU (estrutura organizacional da TI projetada para ser a responsável pelo recebimento, categorização e encaminhamento de todas as demandas do negócio para a TI) deveria definir se a demanda se tratava de uma requisição de serviço ou de um incidente, isto é, uma falha que estaria impactando negativamente um usuário final e, por consequência, algum processo de negócio.
+O estudo de caso a ser apresentado nas etapas seguintes contemplará, a proposição de modelos de documentos (especificação de serviços, acordo de nível de serviços e acordo de nível operacional) e a aplicação desses modelos de documentos e ao contexto do CERCOMP e da sua Equipe de Infraestrutura.
 
-Ao avaliar este item, foi verificado o primeiro ponto de atenção. A classificação entre requisição de serviço (que, por definição, não gera impacto negativo para nenhum usuário/processo de negócio, nem perdas para a organização) e incidentes (por definição, gera interrupção total ou parcial de processo de negócio) era feita de forma dependente da interpretação dos atendentes do SAU, que têm pouco conhecimento na área de TI. O processo de classificação era baseado em leitura dos dados que o usuário havia digitado no sistema de gerenciamento de chamados tendo, às vezes, que o SAU entrar novamente em contato telefônico ou pelo próprio sistema, com o usuário que gerou o chamado, para identificá-lo melhor, classificá-lo e encaminhá-lo ao departamento correto para atendimento.
+\subsection{Etapa 02: Proposição de modelos de documentos e categorização dos serviços}
 
-Após a classificação, os chamados relacionados à Divisão de Infraestrutra eram encaminhados e novamente analisados pelo Gerente de departamento, que verifica se todos os requisitos inerentes para o atendimento do chamado foram preenchidos, antes de encaminhar o mesmo a um Analista de TI que fará o atendimento propriamente dito. O Analista realiza as interações no chamado que achar pertinente para o atendimento e após a conclusão registra o chamado como solucionado. Uma visualisação do fluxo de atendimento pode ser visto na Figura~\ref{fig:atendim}
+\subsubsection{Template de especificação de serviços de TI}
 
-\begin{figure}
+O levantamento realizado junto às universidades federais serviu de base para o GT definir os atributos para o modelo de especificação de serviços de TI, bem como visualizar algumas abordagens para disponibilização do catálogo de serviços e sua integração com a ferramenta GLPI. Dessa forma, considerando tanto os atributos observados no levantamento, bem como aqueles apresentados no processo de ``Gerenciamento do Catálogo de Serviços'' (???), foi considerado o conjunto de atributos propostos no template de especificação de serviços de TI.
+
+O template apresentado na Figura~\ref{fig:modelo-espec-de-servicos-ti} foi adaptado à realidade do CERCOMP e agrupou seus atributos em níveis de informação. A aplicação dessa abordagem tem por objetivo proporcionar o seu preenchimento gradual por parte da equipe responsável pela elaboração do catálogo de serviços. Justamente por ser um modelo de melhores práticas, o ITIL V3 pode ser implementado de forma gradativa, visto que o objetivo de seu último ciclo de vida é a melhoria continuada do processo.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.5]{./fig/modelo-espec-de-servicos-ti.png}
+  \caption{Modelo de Especificação de Serviços de TI.}
+  \label{fig:modelo-espec-de-servicos-ti}
+\end{figure}
+
+\subsubsection{Categorização dos serviços de TI}
+
+Após o levantamento e especificação dos serviços o GT buscou agrupá-los por categorias sob a perspectiva do usuário dos serviços, independente de qual equipe seria responsável pelo atendimento. Estabeleceu-se, assim, 10 (dez) categorias de serviços de TI oferecidos pelo CERCOMP: aquisições de bens e serviços de TI, comunicação institucional, desenvolvimento de software, eventos e conferências, gestão de identidade, redes e internet, servidores e armazenamento, segurança da informação, sistemas de informação e suporte ao usuário. Essa abordagem permitiu refinar mais uma vez o levantamento dos serviços e conseguiu eliminar algumas inconsistências e redundâncias na oferta e/ou atendimento. O resultado desse trabalho é apresentado no mapa mental~\ref{fig:mapa-mental-ti}.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.3]{./fig/mapa-mental_categorizacao_servicos-TI_CERCOMP.png}
+  \caption{Mapa Mental da Categorização de Servicos de TI do CERCOMP.}
+  \label{fig:mapa-mental-ti}
+\end{figure}
+
+\subsubsection{Modelo de Acordo de Nível de Serviços (ANS)}
+
+%%% Incluir Modelo de ANS
+
+\subsection{Etapa 03: Especificação de Serviços e Acordos}
+
+A aplicação do modelo de especificação de serviços considerando todos os níveis/atributos do documento e todos os serviços oferecidos pelo CERCOMP é um trabalho dispendioso, mas necessário, e será assumido pelo GT. Na abordagem desta etapa do estudo de caso optou-se por restringir o escopo de aplicação do modelo de especificação de serviços e dos modelos de documentos (acordo de nível de serviço e acordo de nível operacional) ao contexto da Equipe de Infraestrutura, divisão interna do CERCOMP responsável pela manutenção e evolução da infraestrutura de redes, conectividade e serviços avançados de data center.
+
+Para realização dessa atividade foi analisado o atual fluxo de atendimento dos chamados realizado pela Equipe. A abertura de chamados é realizada livremente por qualquer membro da comunidade universitária por meio da ferramenta ITSM adotada pela UFG - GLPI (anacrônico francês para Gestionnaire Libre de Parc Informatique). Observa-se que após o recebimento do chamado, o SAU (equipe responsável pelo recebimento, categorização e encaminhamento de todas os chamados recebidos via ferramenta ITSM) classifica se a demanda trata-se de uma requisição de serviço ou de um incidente.
+
+Ao avaliar essa atividades observou-se o primeiro ponto de atenção. A classificação entre requisição de serviço (que, por definição, não gera impacto negativo para nenhum usuário/processo de negócio, nem perdas para a organização) e incidentes (por definição, gera interrupção total ou parcial de processo de negócio) era feita pelo próprio usuário final e de forma dependente da interpretação dos atendentes do SAU. O processo de classificação era baseado em leitura dos dados que o usuário informou no chamado sendo que, algumas vezes, o SAU necessitava entrar em contato com o usuário para obter mais informações sobre a demanda e, assim, orientar o melhor encaminhamento.
+
+Após essa triagem, os chamados eram encaminhados à Equipe de Infraestrutura e novamente analisados pelo Gerente da equipe, o qual realizava uma análise preliminar para verificar se todos os requisitos inerentes para o atendimento do chamado foram preenchidos e, estando em conformidade, atribui o chamado ao Analista de TI responsável pelo atendimento. O Analista realiza as interações no chamado que achar pertinente para o atendimento e após a conclusão registra o chamado como solucionado. Ao ser notificado da solução do chamado o usuário tem a oportunidade de avaliar a solução/atendimento. Uma visualização do fluxo de atendimento é apresentada na Figura~\ref{fig:atendim}.
+
+\begin{figure}[ht]
   \centering
   \includegraphics[scale=0.6]{./fig/atendimento.png}
   \caption{Fluxo de atendimento dos chamados de TI para a Divisão de Infraestrutura.}
   \label{fig:atendim}
- \end{figure}
- 
-\subsection{Levantamento dos Principais Subprocessos}
-Como não há a definição institucional, ou mesmo do órgão, para o Catálogo de Serviços, os processos aqui levantados e desenhados foram realizados através dos fluxos de atendimentos e atribuições definidos pela gerência de departamento existente na atualidade. Para o desenho dos fluxos dos subprocessos foi utilizada a modelagem na notação BPMN.
+\end{figure} 
 
-O foco abordado neste estudo de caso foram os subprocessos de serviços voltados para o cliente, que são visíveis para o negócio.
+\subsubsection{Catálogo de Serviços de TI}
 
-\subsubsection*{Criação/Alteração/Exclusão de Domínios}
-Para criar, alterar ou excluir um domínio no Servidor de Nomes de Domínio (DNS), o gerente de departamento recebe a solicitação, analisa se há necessidade de algum esclarecimento, se houver a necessidade ele solicita essas informações ao usuário que solicitou o serviço. O usuário retorna com as informações solicitadas e o gerente encaminha a solicitação a um analista de TI que será responsável pela execução do serviço. Caso não haja a necessidade de esclarecimentos, a solicitação é encaminhada diretamente ao analista de TI.
+Para proposição da formação de um Catálogo de Serviços inicial, foram avaliados os serviços mais demandados ao departamento e, de acordo com os dados disponíveis, sugere-se disponibilizar as seguintes informações:
 
-Ao receber a solicitação o analista de TI designado realiza a criação, alteração ou exclusão do registro do domínio no DNS, registra no sistema de Ordem de Serviços (OS) o atendimento da solicitação e finaliza o mesmo. O fluxo deste processo pode ser observado na Figura~\ref{fig:criar_dominio}.
+A proposta de um Catálogo de Serviços para o ambiente organizacional, alvo do estudo de caso, é de fundamental importância, dado que os mesmo é o registro com informações sobre todos os serviços de TI que estão em produção, incluindo aqueles disponíveis para implantação, e que são disponibilizados aos clientes.
 
-\begin{figure}
+Os Acordos de Nível de Serviço e de Nível Operacional, por conseguinte, também complementam as melhores práticas recomendadas pelo ITIL V3, garantindo que os serviços disponibilizados sejam entregues com qualidade nos tempos acordados.
+
+Esta seção propõe o desenvolvimento de um Catálogo de Serviços, simples e funcional, bem como Acordos de Nível de Serviço e de Nível Operacional para o CERCOMP e mais precisamente à Equipe de Infraestrutura para os serviços por ela ofertados.
+
+Para este estudo de caso adotou-se uma aplicação horizontal do modelo de especificação de serviços de TI dentre todos os serviços de TI oferecidos pelo CERCOMP. Contudo, essa aplicação considerou apenas o nível básico com os seguintes atributos: nome do serviço, categoria, descrição e público alvo. A Figura (???) apresenta a especificação dos serviços de TI do CERCOMP.
+
+\subsubsection{Levantamento dos Principais Processos}
+
+O departamento que é o foco do estudo de caso deste trabalho levantou seus principais processos de trabalho através dos fluxos de atendimentos executados aos seus clientes. Para a modelagem destes processos foi utilizada a ferramenta Bizagi na versão livre empregando o uso da notação BPMN (Business Process Model and Notation).
+
+Os principais processos identificados pela equipe são:
+
+\begin{enumerate}
+  \item \textbf{Alocação de recursos computacionais no Data Center.}
+  \item \textbf{Backup e restauração de dados.}
+  \item Certificado digital para sistemas e sites.
+  \item \textbf{Configuração/manutenção de servidor de arquivos.}
+  \item Criação/alteração de sites e Domínios.
+  \item Criação de grupos de e-mail.
+  \item Criação de Listas de Discussão.
+  \item Habilitação de Pontos de Rede.
+  \item \textbf{Hospedagem de equipamentos no Data Center.}
+  \item Manutenção do WiFi institucional / Criação de rede sem fio para eventos.
+\end{enumerate}
+
+Será apresentado apenas os processos destacados uma vez que a definição extensiva de todos não colabora para didática deste trabalho. A escolha destes processos se deve ao fato deles fazerem parte da categoria ``Servidores e Armazenamento'' descritos no Mapa Mental apresentado anteriormente. O serviço ``File Sender (compartilhamento de arquivos)'' que também faz parte dessa categoria não foi mapeado por se tratar de um serviço oferecido por outra equipe.
+
+\subsubsection*{Alocação de recursos computacionais no Data Center}
+
+Para as solicitações de hospedagem de servidores virtuais no Data Center da UFG, o gerente de departamento recebe a solicitação, analisa se a solicitação possui as autorizações e os requisitos para o atendimento, bem como se haverá uma pessoa designada como responsável pelo mesmo em caso de problemas de configuração.
+
+Caso a solicitação não atenda aos requisitos, ou não haja a designação de pessoa responsável, a solicitação é recusada, o gerente de departamento comunica ao solicitante, registra no sistema de Ordem de Serviços (OS) o motivo da recusa e o processo é finalizado.
+
+No caso dos requisitos do servidor serem atendidos, bem como haja a designação de pessoa responsável pelo mesmo, o gerente encaminha a solicitação a um analista de TI que será responsável pela execução do serviço.
+
+Ao receber a solicitação, o analista de TI fará um agendamento com a pessoa designada para que o servidor virtual seja configurado e entregue as credenciais de acesso. Até a data agendada as configurações são realizadas, o servidor fica ativo e os dados e credenciais de acesso são enviados à pessoa designada como responsável pelo servidor virtual. O analista de TI registra no sistema de Ordem de Serviços (OS) o atendimento da solicitação e finaliza a mesma. O fluxo deste processo pode ser observado na Figura~\ref{fig:criar_vm}.
+
+\begin{figure}[ht]
   \centering
-  \includegraphics[scale=0.7]{./fig/criar_dominio.png}
-  \caption{Processo de atendimento para criar, alterar ou excluir domínios no DNS.}
-  \label{fig:criar_dominio}
- \end{figure}
- 
-\subsubsection*{Configuração de rede WiFi}
-Para configuração de redes sem fio (WiFi) o gerente de departamento recebe a solicitação, analisa se a necessidade na solicitação é para uma nova rede WiFi ou para algum problema na rede existente, se houver a necessidade ele solicita informações adicionais ou complementares ao usuário que solicitou o serviço. O usuário retorna com as informações solicitadas e o gerente encaminha a solicitação a um analista de TI que será responsável pela execução do serviço. Caso não haja a necessidade de esclarecimentos, ou seja uma nova rede, a solicitação é encaminhada diretamente ao analista de TI.
+  \includegraphics[scale=0.6]{./fig/criar_vm.png}
+  \caption{Processo de atendimento para criação de máquinas virtuais.}
+  \label{fig:criar_vm}
+\end{figure}
 
-Ao receber a solicitação o analista de TI designado, caso a solicitação seja para uma nova rede WiFi, realiza a criação  da rede, registra no sistema de Ordem de Serviços (OS) o atendimento da solicitação, envia um e-mail ao usuário solicitante com os dados sensíveis da rede criada e finaliza o mesmo. 
+\subsubsection*{Backup e restauração de dados}
 
-Caso a solicitação seja para um problema em uma rede existente, o analista faz a verificação do problema pelo \textit{software} de gerenciamento da solução WiFi, realiza as correções necessárias e verifica com o usuário solicitante se a intervenção foi suficiente para solucionar o problema ou se será necessária uma visita no local para verificação. Se o usuário retornar com uma resposta positiva, o analista de TI registra no sistema de OS o atendimento da solicitação e finaliza o mesmo. Caso contrário, é agendada uma visita no local para verificação/correção do problema, que após resolvido é realizado o registro de atendimento da solicitação no sistema de OS. O fluxo deste processo pode ser observado na Figura~\ref{fig:config_wifi}.
+Para criar, alterar ou excluir uma rotina de backup de arquivos em algum Servidor, o gerente de departamento recebe a solicitação, analisa se o servidor em questão é, ou não, administrado pelo departamento.
 
-\begin{figure}
+Se o servidor, onde a rotina será executada, for administrado pelo departamento, o gerente verifica se há necessidade de algum esclarecimento, se houver a necessidade ele solicita essas informações ao usuário que solicitou o serviço. O usuário retorna com as informações solicitadas e o gerente encaminha a solicitação a um analista de TI que será responsável pela execução do serviço. Caso não haja a necessidade de esclarecimentos, a solicitação é encaminhada diretamente ao analista de TI.
+
+Se o servidor não for administrado pelo departamento, o gerente solicita informações complementares ao usuário que solicitou o serviço. O usuário retorna com as informações solicitadas e o gerente encaminha a solicitação a um analista de TI que será responsável pela execução do serviço.
+
+Ao receber a solicitação o analista de TI designado realiza a criação, alteração ou exclusão da rotina de backup dos arquivos solicitados, registra no sistema de Ordem de Serviços (OS) o atendimento da solicitação e finaliza o mesmo. O fluxo deste processo pode ser observado na Figura~\ref{fig:criar_rotina_backup}.
+
+\begin{figure}[ht]
   \centering
-  \includegraphics[scale=0.5]{./fig/config_wifi.png}
-  \caption{Processo de atendimento para configuração de WiFi.}
-  \label{fig:config_wifi}
- \end{figure}
- 
-\subsubsection*{Ativação de Pontos de Rede}
-Para ativação de pontos de rede o gerente de departamento recebe a solicitação, analisa se há necessidade de algum esclarecimento, se houver a necessidade ele solicita essas informações ao usuário que solicitou o serviço. O usuário retorna com as informações solicitadas e o gerente encaminha a solicitação a um analista de TI que será responsável pela execução do serviço. Caso não haja a necessidade de esclarecimentos, a solicitação é encaminhada diretamente ao analista de TI.
+  \includegraphics[scale=0.6]{./fig/criar_rotina_backup.png}
+  \caption{Processo de atendimento para criar, alterar ou excluir rotina de backup.}
+  \label{fig:criar_rotina_backup}
+\end{figure}
 
-Ao receber a solicitação o analista de TI designado realiza a verificação se existe algum switch com porta disponível para ativação do ponto de rede. Caso não haja porta disponível nos switches, o analista envia uma comunicação ao gerente de departamento, registra no sistema de Ordem de Serviços (OS) o problema encontrado e aborta a solicitação por não ser possível atendê-la. 
+\subsubsection*{Configuração/manutenção de servidor de arquivos}
 
-No caso de haver switches com porta disponível, o analista de TI agenda uma visita ao local para ativação do ponto. Na data e horário agendados, o analista de TI ativa o ponto, testa se o mesmo ficou funcional, registra no sistema de Ordem de Serviços (OS) o atendimento da solicitação e finaliza o mesmo.  O fluxo deste processo pode ser observado na Figura~\ref{fig:ativa_ponto}.
+Para criar, alterar ou excluir um usuário no Servidor de arquivos, o gerente de departamento recebe a solicitação, analisa se o servidor em questão é, ou não, administrado pelo departamento. Caso o servidor não seja administrado pelo departamento, a solicitação é recusada, o gerente de departamento registra no sistema de Ordem de Serviços (OS) o motivo da recusa e o processo é finalizado.
 
-\begin{figure}
+Se o servidor for administrado pelo departamento, o gerente verifica se há necessidade de algum esclarecimento, se houver a necessidade ele solicita essas informações ao usuário que solicitou o serviço. O usuário retorna com as informações solicitadas e o gerente encaminha a solicitação a um analista de TI que será responsável pela execução do serviço. Caso não haja a necessidade de esclarecimentos, a solicitação é encaminhada diretamente ao analista de TI.
+
+Ao receber a solicitação o analista de TI designado realiza a criação, alteração ou exclusão do usuário no servidor de arquivos solicitado, registrar no sistema de Ordem de Serviços (OS) o atendimento da solicitação e finaliza o mesmo. O fluxo deste processo pode ser observado na Figura~\ref{fig:criar_usuario}.
+
+\begin{figure}[ht]
   \centering
-  \includegraphics[scale=0.6]{./fig/ativa_ponto.png}
-  \caption{Processo de atendimento para ativar pontos de rede.}
-  \label{fig:ativa_ponto}
- \end{figure}
- 
-\subsubsection*{Hospedagem de Servidores Físicos}
+  \includegraphics[scale=0.6]{./fig/criar_usuario.png}
+  \caption{Processo de atendimento para criar, alterar ou excluir usuário no servidor de arquivos.}
+  \label{fig:criar_usuario}
+\end{figure}
+
+\subsubsection*{Hospedagem de equipamentos no Data Center}
+
 Para as solicitações de hospedagem de servidores físicos no Data Center da UFG, o gerente de departamento recebe a solicitação, analisa se o servidor alvo da solicitação possui as características e requisitos necessários para ser instalado no Data Center, bem como se haverá uma pessoa designada como responsável pelo mesmo em caso de problemas físicos ou de configuração. Caso o servidor não atenda aos requisitos, ou não haja a designação de pessoa responsável, a solicitação é recusada, o gerente de departamento registra no sistema de Ordem de Serviços (OS) o motivo da recusa e o processo é finalizado.
 
 No caso dos requisitos do servidor serem atendidos, bem como haja a designação de pessoa responsável pelo mesmo, o gerente encaminha a solicitação a um analista de TI que será responsável pela execução do serviço.
@@ -216,63 +288,10 @@ Ao receber a solicitação, o analista de TI fará um agendamento com a pessoa desi
 
 Após a instalação física, é agendada uma nova data, com a pessoa designada como responsável, a configuração e ativação do servidor, por parte do analista de TI, para que o mesmo esteja acessível. Até a data agendada as configurações são realizadas, o servidor fica ativo e os dados e credenciais de acesso são enviados à pessoa designada como responsável pelo servidor. O analista de TI registra no sistema de Ordem de Serviços (OS) o atendimento da solicitação e finaliza a mesma. O fluxo deste processo pode ser observado na Figura~\ref{fig:colocation}.
 
-\begin{figure}
+\begin{figure}[ht]
   \centering
-  \includegraphics[scale=0.7]{./fig/colocation.png}
+  \includegraphics[scale=0.6]{./fig/colocation.png}
   \caption{Processo de atendimento para hospedagem de servidores físicos.}
   \label{fig:colocation}
- \end{figure}
- 
-\subsubsection*{Hospedagem de Máquinas Virtuais}
-Para as solicitações de hospedagem de servidores virtuais no Data Center da UFG, o gerente de departamento recebe a solicitação, analisa se a solicitação possui as autorizações e os requisitos para o atendimento, bem como se haverá uma pessoa designada como responsável pelo mesmo em caso de problemas de configuração. Caso a solicitação não atenda aos requisitos, ou não haja a designação de pessoa responsável, a solicitação é recusada, o gerente de departamento ccomnica ao solicitante, registra no sistema de Ordem de Serviços (OS) o motivo da recusa e o processo é finalizado.
+\end{figure}
 
-No caso dos requisitos do servidor serem atendidos, bem como haja a designação de pessoa responsável pelo mesmo, o gerente encaminha a solicitação a um analista de TI que será responsável pela execução do serviço.
-
-Ao receber a solicitação, o analista de TI fará um agendamento com a pessoa designada para que o servidor virtal seja configurado e entregue as credenciais de acesso. Até a data agendada as configurações são realizadas, o servidor fica ativo e os dados e credenciais de acesso são enviados à pessoa designada como responsável pelo servidor virtal. O analista de TI registra no sistema de Ordem de Serviços (OS) o atendimento da solicitação e finaliza a mesma. O fluxo deste processo pode ser observado na Figura~\ref{fig:criar_vm}.
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale=0.6]{./fig/criar_vm.png}
-  \caption{Processo de atendimento para criação de máquinas virtuais.}
-  \label{fig:criar_vm}
- \end{figure}
- 
-\subsubsection*{Criação de e-mails de grupo}
-Para as solicitações de criação de e-mails de grupo, o gerente de departamento recebe a solicitação, analisa se a solicitação possui os requisitos para o atendimento, se houver a necessidade ele solicita informações adicionais ao usuário que solicitou o serviço. O usuário retorna com as informações solicitadas e o gerente encaminha a solicitação a um analista de TI que será responsável pela execução do serviço. Caso não haja a necessidade de esclarecimentos, a solicitação é encaminhada diretamente ao analista de TI.
-
-Ao receber a solicitação o analista de TI designado realiza a criação do e-mail de grupo, registra no sistema de Ordem de Serviços (OS) o atendimento da solicitação e finaliza o mesmo. O fluxo deste processo pode ser observado na Figura~\ref{fig:criar_email}.
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale=0.7]{./fig/criar_email.png}
-  \caption{Processo de atendimento para criação de e-mails de grupo.}
-  \label{fig:criar_email}
- \end{figure}
- 
-\subsubsection*{Criação de Certificados SSL}
-Para as solicitações de criação de certificados SSL (\textit{Secure Sockets Layer}), utilizado em páginas seguras da internet e domínios determinados, o gerente de departamento recebe a solicitação, analisa se a solicitação possui os requisitos para o atendimento, se houver a necessidade ele solicita informações adicionais ao usuário que solicitou o serviço. O usuário retorna com as informações solicitadas e o gerente encaminha a solicitação a um analista de TI que será responsável pela execução do serviço. Caso não haja a necessidade de esclarecimentos, a solicitação é encaminhada diretamente ao analista de TI.
-
-Ao receber a solicitação, o analista de TI designado verifica se já existe certificado emitido para o domínio em questão, caso exista o analista de TI comunica ao usuário e solicita ao mesmo que se apresente pessoalmente no departamento com uma mídia removível e o formulário de autorização, preenchido e assinado pela direção do órgão/unidade, para que o certificado e a chave privada sejam entregues, depois de realizada entrega do certificado, registra no sistema de Ordem de Serviços (OS) o atendimento da solicitação e finaliza o mesmo. 
-
-Caso não exista certificado emitido, o analista procede a emissão do certificado, comunica ao usuário e solicita ao mesmo que se apresente pessoalmente no departamento com uma mídia removível e o formulário de autorização, preenchido e assinado pela direção do órgão/unidade, para que o certificado e a chave privada sejam entregues, depois  de realizada entrega do certificado, registra no sistema de Ordem de Serviços (OS) o atendimento da solicitação e finaliza o mesmo. O fluxo deste processo pode ser observado na Figura~\ref{fig:criar_certificado}.
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale=0.6]{./fig/criar_certificado.png}
-  \caption{Processo de atendimento para criação de certificados SSL.}
-  \label{fig:criar_certificado}
- \end{figure}
- 
-\subsubsection*{Criação/Alteração/Exclusão de Usuário no Servidor de Arquivos}
-Para criar, alterar ou excluir um usuário no Servidor de arquivos, o gerente de departamento recebe a solicitação, analisa se o servidor em questão é, ou não, administrado pelo departamento. Caso o servidor não seja administrado pelo departamento, a solicitação é recusada, o gerente de departamento registra no sistema de Ordem de Serviços (OS) o motivo da recusa e o processo é finalizado.
-
-Se o servidor for administrado pelo deparamento, o gerente verifica se há necessidade de algum esclarecimento, se houver a necessidade ele solicita essas informações ao usuário que solicitou o serviço. O usuário retorna com as informações solicitadas e o gerente encaminha a solicitação a um analista de TI que será responsável pela execução do serviço. Caso não haja a necessidade de esclarecimentos, a solicitação é encaminhada diretamente ao analista de TI.
-
-Ao receber a solicitação o analista de TI designado realiza a criação, alteração ou exclusão do usuário no servidor de arquivos solicitado, registra no sistema de Ordem de Serviços (OS) o atendimento da solicitação e finaliza o mesmo. O fluxo deste processo pode ser observado na Figura~\ref{fig:criar_usuario}.
-
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.7]{./fig/criar_usuario.png}
-  \caption{Processo de atendimento para criar, alterar ou excluir usuário no servidor de arquivos.}
-  \label{fig:criar_usuario}
- \end{figure}
