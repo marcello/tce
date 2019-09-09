@@ -1,50 +1,21 @@
-\chapter{Proposições}
-\label{cap:proposicoes}
+\chapter{Considerações Finais}
+\label{cap:consideracoes_finais}
 
-A proposta de um Catálogo de Serviços para o ambiente organizacional, alvo do estudo de caso, é de fundamental importância, dado que os mesmo é o registro com informações sobre todos os serviços de TI que estão em produção, incluindo aqueles disponíveis para implantação, e que são disponibilizados aos clientes.
+\section{Conclusão}
+\label{conclusao}
 
-Os Acordos de Nível de Serviço e de Nível Operacional, por conseguinte, também complementam as melhores práticas recomendadas pelo ITIL\textsuperscript{\textregistered} V3, garantindo que os serviços disponibilizados sejam entregues com qualidade nos tempos acordados.
+A Equipe de Infraestrutura do CERCOMP é apenas parte de um todo que necessita melhorar, ainda mais, o atendimento de seus usuários com os serviços de TI ofertados, de maneira que seus recursos sejam disponibilizados e utilizados de forma mais sistematizada e mais otimizada possível.
 
-Esta seção propõe o desenvolvimento de um Catálogo de Serviços, simples e funcional, bem como Acordos de Nível de Serviço e de Nível Operacional para o CERCOMP e mais precisamente à Equipe de Infraestrutura para os serviços por ela ofertados.
+A UFG, como instituição de ensino, precisa normatizar seus processos, definir estrategicamente as atividades de TI desempenhadas pela instituição: planejar, projetar, fornecer, operar e gerenciar os serviços de TI que são oferecidos aos seus clientes principais, a comunidade acadêmica.
 
-\section{Catálogo de Serviços de TI}
-\label{sec:ca_servicos}
+Os serviços quando bem definidos na fase de desenho do serviço, principalmente os serviços críticos, trazem uma garantia de alta disponibilidade, pois evitam falhas operacionais através da documentação e melhoramento contínuo dos processos.
 
-Vale, nesse momento, ressaltar que para a implementação do Catlálogo de Serviços, não é necessário listar todos os serviços, mas estes podem ser implementados de forma gradual, separando-se os serviços mais demandados por exemplo. Justamente por ser um modelo de melhores práticas, o ITIL\textsuperscript{\textregistered} V3 pode ser implementado de forma gradativa, visto que o objetivo de seu último ciclo de vida é a melhoria continuada do processo.
+Em um curto tempo, pode-se notar que o estudo de caso trouxe resultados satisfatórios, permitindo, através da fase Desenho de Serviço, melhor visualização dos processos executados no departamento e melhorias que poderiam ser executadas a curto, médio e longo prazo, como, por exemplo, definição de métricas para medição da melhoria continuada dos serviços oferecidos. Com essas melhorias os processos abordados fluirão de forma mais ágil, trazendo resultados mais eficazes à prestação de serviços de TI e consequentemente à UFG.
 
-Para proposição da formação de um Catálogo de Serviços inicial, foram avaliados os serviços mais demandados ao departamento e, de acordo com os dados disponíveis, sugere-se disponibilizar as seguintes informações:
+\section{Trabalhos Futuros}
+\label{trabalhos_futuros}
 
-\begin{itemize}
-  \item Serviço - indica o nome do serviço fornecido;
-  \item Descrição - breve descrição dos termos do serviço ao cliente (não-técnico);
-  \item Tipo (incidente ou requisição);
-  \item Prioridade (Alta, Média ou Baixa);
-  \item Quem pode solicitar - pré-requisito para que tenha acesso ao serviço;
-  \item Horário - Identifica os períodos e horas operacionais em que os usuários podem realizar pedidos de serviço;
-  \item Prazo de solução;
-  \item Responsáveis;
-\end{itemize}
+Para a implantação do ITIL V3 no CERCOMP, grande parte dos processos podem ser automatizados através do sistema web utilizado no órgão para o atendimento das ordens de serviço, chamado GLPI. O GLPI é um software ITSM\footnote{do inglês \textit{Information Technology Service Management}}, ou um programa web para gestão de serviços, uma solução bem abrangente, com vários recursos que contemplam as melhores práticas sugeridas pelo ITIL V3, dentre elas a possibilidade de automatizar os processos destacados neste trabalho: o gerenciamento de catálogo de serviços e gerenciamento de nível de serviço (ANS e ANO).
 
-Um exemplo de utilização destes atributos pode ser visto na Tabela \ref{tab:cat_servicos}
-
-\begin{table*}[h]
-  \centering
-  \definecolor{verdemar}{rgb}{0.59,0.78,0.65}
-  \begin{tabular}{|l|p{7cm}|}
-    \hline
-    Serviço & Criação/Alteração/Exclusão de Domínios \\ \hline
-    Descrição & Criar, alterar ou excluir um domínio no Servidor de Nomes de Domínio (DNS)\\ \hline
-    Tipo & Incidente \\ 
-    & Requisição \\ \hline
-    Prioridade & Alta \\
-    & Média \\
-    & Baixa \\ \hline
-    Quem pode solicitar & Gestores (Direção/Coordenação) \\ \hline
-    Horário & Das 07:30 às 11:30 e das 12:30 às 17:30 \\ \hline
-    Prazo de solução & 1 dia \\ \hline
-    Responsáveis & Analistas de TI \\ \hline
-  \end{tabular}
-  \caption{Exemplo de Catálogo de Serviços proposto}
-  \label{tab:cat_servicos}
-\end{table*}
+Portanto, sugere-se como trabalhos futuros o desenvolvimento do Catálogo de Serviços, o melhor detalhamento dos processos aqui relacionados, a definição de ANS's e ANO's para os serviços relacionados e o cadastramento desses dados no GPLI para automatização dos processos.
 
