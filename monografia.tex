@@ -14,6 +14,8 @@
 \usepackage{array,booktabs}
 \usepackage{longtable}
 \usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{subcaption}
 \begin{document}
 
 %------------------------------------------ AUTOR, TÍTULO E DATA DE DEFESA %
@@ -108,7 +110,8 @@
 %--------------------------------------------------------------- APÊNDICES %
 \apendices
 
-%\input{./pos/apend_I}
+\includepdfset{pages={-},scale=1,pagecommand={}}
+\input{./tex/pos_apendices}
 %\input{./pos/apend_II}
 
 \end{document}

@@ -13,14 +13,15 @@ Contudo, observa-se, em uma avaliação livre da atual equipe gestora da área de T
 
 Assim, esse cenário de dificuldades, somado ao desejo de aprimorar as estratégias de disponibilização de serviços de TI e de atendimento à comunidade universitária, motivou a realização do presente estudo de caso aplicado ao contexto do CERCOMP e da sua Equipe de Infraestrutura.
 
-Adicionalmente, a disponibilização, divulgação e gerenciamento do Catálogo de Serviços de TI consta como meta do Plano Diretor de Tecnologia da Informação - PDTI/UFG (2018/2021, p.49)\footnote{Disponível em \url{https://www.cti.ufg.br/up/921/o/PDTI_2018-2021-02_02_18_atual.pdf}.}, o que demonstra a necessidade e interesse estratégico da Governança Institucional e das equipes técnicas do CERCOMP na sua implantação.
+Adicionalmente, a disponibilização, divulgação e gerenciamento do Catálogo de Serviços de TI consta como meta do Plano Diretor de Tecnologia da Informação - PDTI/UFG (2018/2021, p.49)~\cite{PDTI2018}, o que demonstra a necessidade e interesse estratégico da Governança Institucional e das equipes técnicas do CERCOMP na sua implantação.
 
 Como resultado, espera-se propor um conjunto de orientações e modelos de referência, baseando-se nas melhores práticas de gerenciamento de serviços de TI disponíveis na literatura e de experiências e estratégias empregadas por outras IFES, que possam ser aplicados ao contexto do CERCOMP (e replicados a outros órgãos da UFG e a outras instituições de ensino), de forma a contribuir para o aprimoramento dos serviços oferecidos à comunidade universitária.
 
 \section{Estatísticas de Atendimento}
-Com base em um levantamento de dados executado junto ao o sistema de gerenciamento de chamados de TI (GLPI), no período de 01/01/2017 a 02/09/2019, observamos uma média anual de mais de 10 mil chamados direcionados para atendimento do CERCOMP, conforme apresentado na Tabela~\ref{tab:estat-glpi} e Figura~\ref{fig:estat-glpi}.
 
-\begin{table*}[ht]
+Com base em um levantamento de dados executado junto ao sistema de gerenciamento de chamados de TI (GLPI), no período de 01/01/2017 a 02/09/2019, observamos uma média anual de mais de 10 mil chamados direcionados para atendimento do CERCOMP, conforme apresentado na Tabela~\ref{tab:estat-glpi} e Figura~\ref{fig:estat-glpi}.
+
+\begin{table*}[!ht]
   \centering
   \renewcommand{\arraystretch}{1.3}
   \footnotesize
@@ -38,8 +39,7 @@ Com base em um levantamento de dados executado junto ao o sistema de gerenciamen
   \caption{Estatísticas de chamados recebidos via GLPI - 2017 a 2019.}
   \label{tab:estat-glpi}
 \end{table*}
-
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=0.6]{./fig/atendimentos-glpi.png}
   \caption{Estatísticas de chamados por Equipe - 2017 a 2019.}
@@ -70,7 +70,7 @@ Alinhado aos objetivos apresentados neste trabalho, adotou-se a seguinte abordag
     Levantamento preliminar dos serviços de TI junto às equipes técnicas;
     Planejamento do estudo de caso com a definição do escopo, metodologia e responsabilidades, bem como proposição do processo ``elaborar catálogo de serviços de TI'';
   \item[Etapa 02: Proposição de modelos de documentos e categorização dos serviços.]
-    Proposição do template de especificação de serviços de TI e dos modelos de acordo de nível de serviços e acordo de nível operacional;
+    Proposição do \textit{template} de especificação de serviços de TI e dos modelos de acordo de nível de serviços e acordo de nível operacional;
     Refinamento do levantamento de serviços das equipes e categorização dos serviços externos oferecidos pelo CERCOMP à comunidade universitária;
   \item[Etapa 03: Especificação de Serviços e Acordos.]
     Aplicação, no contexto da Equipe de Infraestrutura/CERCOMP, dos modelos de documentos para especificação de serviços de TI, acordo de nível de serviço e acordo de nível operacional, bem como dos fluxos de processos de atendimento;
@@ -87,33 +87,51 @@ O Grupo de Trabalho (GT) de Catálogo de Serviços do CERCOMP foi criado pela Dire
 
 Em continuidade ao trabalho, o GT refletiu sobre a necessidade de mapear o processo ``Elaborar catálogo de serviços de TI'' (Figura ~\ref{fig:elaborar-csti}, de forma a orientar as ações e responsabilidades dos envolvidos no processo. O processo sugerido pelo GT e adaptado para este trabalho considera o fluxo que vai desde a designação do grupo de trabalho até à chamada ao subprocesso ``disponibilizar produto/serviço'' (???). A dinâmica empregada no processo atribui aos representantes do GT a responsabilidade pelo levantamento inicial da informação entre sua equipe para, posteriormente, discutir essas informações conjuntamente com o grupo. O resultado de cada etapa do processo é encaminhado para validação/homologação da equipe gestora do CERCOMP e, encerrado o ciclo, o catálogo de serviços de TI é disponibilizado.
 
-\begin{figure}[ht]
-  \centering
-  \includegraphics[scale=0.48]{./fig/BPM_catalogo-servicos_elaboracao_resumido.png}
-  \caption{Processo - Elaborar Catálogo de Serviços de TI.}
-  \label{fig:elaborar-csti}
+\begin{figure}[!ht]
+  \subfigure[Processo - Elaborar Catálogo de Serviços de TI com subprocessos condensados.]{
+    \label{fig:elaborar-csti}
+    \includegraphics[width=\textwidth]{./fig/BPM_catalogo-servicos_elaboracao_resumido.png}
+  }\\
+  \subfigure[Subprocesso - Realizar levantamento de serviços de TI.]{%
+    \label{fig:levantamento-servicos-ti}
+    \includegraphics[width=.31\textwidth]{./fig/BPM_catalogo-servicos_sub-levantar-servicos.png}
+  }
+  \subfigure[Subprocesso - Especificar serviços de TI.]{
+    \label{fig:especificar-servicos-ti}
+    \includegraphics[width=.31\textwidth]{./fig/BPM_catalogo-servicos_sub-especificar-servicos.png}
+  }
+  \subfigure[Subprocesso - Categorizar serviços de TI.]{
+    \label{fig:categorizar-servicos-ti}
+    \includegraphics[width=.31\textwidth]{./fig/BPM_catalogo-servicos_sub-categorizar-servicos.png}
+  }
+  \caption{MacroProcesso - Elaborar Catálogo de Serviços de TI.}
+  \label{fig:marcro-elaborar-csti}
 \end{figure}
 
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.65]{./fig/BPM_catalogo-servicos_sub-levantar-servicos.png}
-  \caption{Subprocesso - Realizar levantamento de serviços de TI.}
-  \label{fig:levantamento-servicos-ti}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.65]{./fig/BPM_catalogo-servicos_sub-especificar-servicos.png}
-  \caption{Subprocesso - Especificar serviços de TI.}
-  \label{fig:especificar-servicos-ti}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \includegraphics[scale=0.65]{./fig/BPM_catalogo-servicos_sub-categorizar-servicos.png}
-  \caption{Subprocesso - Categorizar serviços de TI.}
-  \label{fig:categorizar-servicos-ti}
-\end{figure}
+%\begin{figure}[ht]
+%  \centering
+%  \includegraphics[scale=0.48]{./fig/BPM_catalogo-servicos_elaboracao_resumido.png}
+%  \caption{Processo - Elaborar Catálogo de Serviços de TI.}
+%  \label{fig:elaborar-csti}
+%\end{figure}
+%\begin{figure}[ht!]
+%  \centering
+%  \includegraphics[scale=0.65]{./fig/BPM_catalogo-servicos_sub-levantar-servicos.png}
+%  \caption{Subprocesso - Realizar levantamento de serviços de TI.}
+%  \label{fig:levantamento-servicos-ti}
+%\end{figure}
+%\begin{figure}[ht!]
+%  \centering
+%  \includegraphics[scale=0.65]{./fig/BPM_catalogo-servicos_sub-especificar-servicos.png}
+%  \caption{Subprocesso - Especificar serviços de TI.}
+%  \label{fig:especificar-servicos-ti}
+%\end{figure}
+%\begin{figure}[ht!]
+%  \centering
+%  \includegraphics[scale=0.65]{./fig/BPM_catalogo-servicos_sub-categorizar-servicos.png}
+%  \caption{Subprocesso - Categorizar serviços de TI.}
+%  \label{fig:categorizar-servicos-ti}
+%\end{figure}
 
 Durante o desenvolvimento das atividades do GT buscou-se estabelecer um alinhamento entre suas ações e a proposta estabelecida nos objetivos deste trabalho. Essa primeira etapa apoiou-se no trabalho conduzido pelo GT e, como base nas informações disponíveis, definiu-se o escopo e metodologia do estudo de caso.
 
@@ -127,25 +145,49 @@ Ainda em setembro de 2018, a Direção do CERCOMP fez uma consulta informal em um 
   \centering
   \renewcommand{\arraystretch}{1.3}
   \footnotesize
-  \begin{tabular}{|>{\centering\arraybackslash}m{0.2cm}|m{1.8cm}|p{5.8cm}|p{5.5cm}|}
+  \begin{tabular}{|>{\centering\arraybackslash}m{0.3cm}|p{6.8cm}|p{6.2cm}|}
     \toprule
-    \textbf{\#} & \textbf{Sigla} & \textbf{Instituição Federal de Ensino Superior} & \textbf{Link para Catálogo de Serviços de TI} \\
+    \textbf{\#} & \textbf{Instituição Federal de Ensino Superior} & \textbf{Link para Catálogo de Serviços de TI} \\
     \midrule
-    1  & UFGRS & Universidade Federal do Rio Grande do Sul & \url{https://www1.ufrgs.br/catalogoti/} \\ \hline
-    2  & UFBA & Universidade Federal da Bahia & \url{https://sti.ufba.br/catalogo-servicos} \\ \hline
-    3  & UNIFESSPA & Universidade Federal do Sul e Sudeste do Pará & \url{https://ctic.unifesspa.edu.br/nossos-servicos.html} \\ \hline
-    4  & UFPE & Universidade Federal de Pernambuco & \url{https://www.ufpe.br/nti/catalogo-de-servicos} \\ \hline
-    5  & UFVJM & Universidade Federal dos Vales do Jequitinhonha e Mucuri & \url{http://novo.ufvjm.edu.br/dti/catalogo-de-servicos/} \\ \hline
-    6  & UNIFAL & Universidade Federal de Alfenas & \url{https://www.unifal-mg.edu.br/nti/catalogo-de-servicos/} \\ \hline
-    7  & UFOB & Universidade Federal do Oeste da Bahia & \url{https://protic.ufob.edu.br/catalogo} \\ \hline
-    8  & UFRB & Universidade Federal do Recôncavo da Bahia & \url{https://ufrb.edu.br/cotec/catalogo-de-ti} \\ \hline
-    9  & UFERSA & Universidade Federal Rural do Semi-Árido & \url{https://sutic.ufersa.edu.br/catalogodeservicos/} \\ \hline
-    10 & UFMG & Universidade Federal de Minas Gerais & \url{https://www.ufmg.br/dti/pagina-inicial/portfolio/servicos/} \\
+    1  & UFGRS - Universidade Federal do Rio Grande do Sul & \url{https://www1.ufrgs.br/catalogoti/} \\ \hline
+    2  & UFBA - Universidade Federal da Bahia & \url{https://sti.ufba.br/catalogo-servicos} \\ \hline
+    3  & UNIFESSPA - Universidade Federal do Sul e Sudeste do Pará & \url{https://ctic.unifesspa.edu.br/nossos-servicos.html} \\ \hline
+    4  & UFPE - Universidade Federal de Pernambuco & \url{https://www.ufpe.br/nti/catalogo-de-servicos} \\ \hline
+    5  & UFVJM - Universidade Federal dos Vales do Jequitinhonha e Mucuri & \url{http://novo.ufvjm.edu.br/dti/catalogo-de-servicos/} \\ \hline
+    6  & UNIFAL - Universidade Federal de Alfenas & \url{https://www.unifal-mg.edu.br/nti/catalogo-de-servicos/} \\ \hline
+    7  & UFOB - Universidade Federal do Oeste da Bahia & \url{https://protic.ufob.edu.br/catalogo} \\ \hline
+    8  & UFRB - Universidade Federal do Recôncavo da Bahia & \url{https://ufrb.edu.br/cotec/catalogo-de-ti} \\ \hline
+    9  & UFERSA - Universidade Federal Rural do Semi-Árido & \url{https://sutic.ufersa.edu.br/catalogodeservicos/} \\ \hline
+    10 & UFMG - Universidade Federal de Minas Gerais & \url{https://www.ufmg.br/dti/pagina-inicial/portfolio/servicos/} \\
     \bottomrule
   \end{tabular}
-  \caption{Instituições que possuem catálogo de serviço.}
+  \caption{Instituições respondentes à consulta sobre Catálogo de Serviços de TI.}
   \label{tab:ifes-catalogo}
 \end{table*}
+
+%\begin{table*}[ht]
+%  \centering
+%  \renewcommand{\arraystretch}{1.3}
+%  \footnotesize
+%  \begin{tabular}{|>{\centering\arraybackslash}m{0.2cm}|m{1.8cm}|p{5.8cm}|p{5.5cm}|}
+%    \toprule
+%    \textbf{\#} & \textbf{Sigla} & \textbf{Instituição Federal de Ensino Superior} & \textbf{Link para Catálogo de Serviços de TI} \\
+%    \midrule
+%    1  & UFGRS & Universidade Federal do Rio Grande do Sul & \url{https://www1.ufrgs.br/catalogoti/} \\ \hline
+%    2  & UFBA & Universidade Federal da Bahia & \url{https://sti.ufba.br/catalogo-servicos} \\ \hline
+%    3  & UNIFESSPA & Universidade Federal do Sul e Sudeste do Pará & \url{https://ctic.unifesspa.edu.br/nossos-servicos.html} \\ \hline
+%    4  & UFPE & Universidade Federal de Pernambuco & \url{https://www.ufpe.br/nti/catalogo-de-servicos} \\ \hline
+%    5  & UFVJM & Universidade Federal dos Vales do Jequitinhonha e Mucuri & \url{http://novo.ufvjm.edu.br/dti/catalogo-de-servicos/} \\ \hline
+%    6  & UNIFAL & Universidade Federal de Alfenas & \url{https://www.unifal-mg.edu.br/nti/catalogo-de-servicos/} \\ \hline
+%    7  & UFOB & Universidade Federal do Oeste da Bahia & \url{https://protic.ufob.edu.br/catalogo} \\ \hline
+%    8  & UFRB & Universidade Federal do Recôncavo da Bahia & \url{https://ufrb.edu.br/cotec/catalogo-de-ti} \\ \hline
+%    9  & UFERSA & Universidade Federal Rural do Semi-Árido & \url{https://sutic.ufersa.edu.br/catalogodeservicos/} \\ \hline
+%    10 & UFMG & Universidade Federal de Minas Gerais & \url{https://www.ufmg.br/dti/pagina-inicial/portfolio/servicos/} \\
+%    \bottomrule
+%  \end{tabular}
+%  \caption{Instituições respondentes à consulta sobre Catálogo de Serviços de TI.}
+%  \label{tab:ifes-catalogo}
+%\end{table*}
 
 O estudo de caso a ser apresentado nas etapas seguintes contemplará, a proposição de modelos de documentos (especificação de serviços, acordo de nível de serviços e acordo de nível operacional) e a aplicação desses modelos de documentos e ao contexto do CERCOMP e da sua Equipe de Infraestrutura.
 
@@ -157,7 +199,7 @@ O levantamento realizado junto às universidades federais serviu de base para o G
 
 O template apresentado na Figura~\ref{fig:modelo-espec-de-servicos-ti} foi adaptado à realidade do CERCOMP e agrupou seus atributos em níveis de informação. A aplicação dessa abordagem tem por objetivo proporcionar o seu preenchimento gradual por parte da equipe responsável pela elaboração do catálogo de serviços. Justamente por ser um modelo de melhores práticas, o ITIL V3 pode ser implementado de forma gradativa, visto que o objetivo de seu último ciclo de vida é a melhoria continuada do processo.
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=0.5]{./fig/modelo-espec-de-servicos-ti.png}
   \caption{Modelo de Especificação de Serviços de TI.}
@@ -168,7 +210,7 @@ O template apresentado na Figura~\ref{fig:modelo-espec-de-servicos-ti} foi adapt
 
 Após o levantamento e especificação dos serviços o GT buscou agrupá-los por categorias sob a perspectiva do usuário dos serviços, independente de qual equipe seria responsável pelo atendimento. Estabeleceu-se, assim, 10 (dez) categorias de serviços de TI oferecidos pelo CERCOMP: aquisições de bens e serviços de TI, comunicação institucional, desenvolvimento de software, eventos e conferências, gestão de identidade, redes e internet, servidores e armazenamento, segurança da informação, sistemas de informação e suporte ao usuário. Essa abordagem permitiu refinar mais uma vez o levantamento dos serviços e conseguiu eliminar algumas inconsistências e redundâncias na oferta e/ou atendimento. O resultado desse trabalho é apresentado no mapa mental~\ref{fig:mapa-mental-ti}.
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=0.3]{./fig/mapa-mental_categorizacao_servicos-TI_CERCOMP.png}
   \caption{Mapa Mental da Categorização de Servicos de TI do CERCOMP.}
@@ -177,9 +219,7 @@ Após o levantamento e especificação dos serviços o GT buscou agrupá-los por cate
 
 \subsubsection*{Modelo de Acordo de Nível de Serviços (ANS)}
 
-Os Acordos de Nível de Serviço e de Nível Operacional, por conseguinte, também complementam as melhores práticas recomendadas pelo ITIL V3, garantindo que os serviços disponibilizados sejam entregues com qualidade nos tempos acordados. Para tanto apresentamos um Modelo de Acordo de Nível de Serviço.
-%%% Incluir Modelo de ANS
-\includepdf[pages=-,pagecommand={},width=\textwidth]{./mods/modelo-de-ANS.pdf}
+Os Acordos de Nível de Serviço e de Nível Operacional, por conseguinte, também complementam as melhores práticas recomendadas pelo ITIL V3, garantindo que os serviços disponibilizados sejam entregues com qualidade nos tempos acordados. Para tanto foi disponibilizado no Apêndice~\ref{ape:a} um Modelo de Acordo de Nível de Serviço.
 
 \subsection{Etapa 03: Especificação de Serviços e Acordos}
 
@@ -227,7 +267,7 @@ Os principais processos identificados pela equipe são:
   \item Manutenção do WiFi institucional / Criação de rede sem fio para eventos.
 \end{enumerate}
 
-Será apresentado apenas os processos destacados uma vez que a definição extensiva de todos não colabora para didática deste trabalho. A escolha destes processos se deve ao fato deles fazerem parte da categoria ``Servidores e Armazenamento'' descritos no Mapa Mental apresentado anteriormente. O serviço ``File Sender (compartilhamento de arquivos)'' que também faz parte dessa categoria não foi mapeado por se tratar de um serviço oferecido por outra equipe.
+Serão apresentados apenas os processos destacados, uma vez que a definição extensiva de todos não colabora para didática deste trabalho. A escolha destes processos se deve ao fato deles fazerem parte da categoria ``Servidores e Armazenamento'' descritos no Mapa Mental apresentado anteriormente. O serviço ``File Sender (compartilhamento de arquivos)'' que também faz parte dessa categoria não foi mapeado por se tratar de um serviço oferecido por outra equipe.
 
 \subsubsection*{Alocação de recursos computacionais no Data Center}
 
