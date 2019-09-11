@@ -170,9 +170,9 @@ O estudo de caso a ser apresentado nas etapas seguintes contemplará, a proposiçã
 
 \subsubsection*{Template de especificação de serviços de TI}
 
-O levantamento realizado junto às universidades federais serviu de base para o GT definir os atributos para o modelo de especificação de serviços de TI, bem como visualizar algumas abordagens para disponibilização do catálogo de serviços e sua integração com a ferramenta GLPI. Dessa forma, considerando tanto os atributos observados no levantamento, bem como aqueles apresentados no processo de ``Gerenciamento do Catálogo de Serviços'' (???), foi considerado o conjunto de atributos propostos no template de especificação de serviços de TI.
+O levantamento realizado junto às universidades federais serviu de base para o GT definir os atributos para o modelo de especificação de serviços de TI, bem como visualizar algumas abordagens para disponibilização do catálogo de serviços e sua integração com a ferramenta GLPI. Dessa forma, considerando tanto os atributos observados no levantamento, bem como aqueles apresentados no processo de ``Gerenciamento do Catálogo de Serviços'' (Figura~\ref{fig:gerenciar-cs}), foi considerado o conjunto de atributos propostos no template de especificação de serviços de TI.
 
-O template apresentado na Figura~\ref{fig:modelo-espec-de-servicos-ti} foi adaptado à realidade do CERCOMP e agrupou seus atributos em níveis de informação. A aplicação dessa abordagem tem por objetivo proporcionar o seu preenchimento gradual por parte da equipe responsável pela elaboração do catálogo de serviços. Justamente por ser um modelo de melhores práticas, o ITIL V3 pode ser implementado de forma gradativa, visto que o objetivo de seu último ciclo de vida é a melhoria continuada do processo.
+O template apresentado na Figura~\ref{fig:modelo-espec-de-servicos-ti} foi adaptado à realidade do CERCOMP e agrupou seus atributos em níveis de informação. A aplicação dessa abordagem tem por objetivo proporcionar o seu preenchimento gradual por parte da equipe responsável pela elaboração do catálogo de serviços. Justamente por ser um modelo de melhores práticas, o ITIL V3 pode ser implementado de forma gradativa, visto que o objetivo de seu último ciclo de vida é a melhoria continuada do processo. Alguns modelos preenchidos do departamento alvo deste estudo de caso são apresentados no Apêndice~\ref{ape:c}.
 
 \begin{figure}[!ht]
   \centering
@@ -183,7 +183,7 @@ O template apresentado na Figura~\ref{fig:modelo-espec-de-servicos-ti} foi adapt
 
 \subsubsection*{Categorização dos serviços de TI}
 
-Após o levantamento e especificação dos serviços o GT buscou agrupá-los por categorias sob a perspectiva do usuário dos serviços, independente de qual equipe seria responsável pelo atendimento. Estabeleceu-se, assim, 10 (dez) categorias de serviços de TI oferecidos pelo CERCOMP: aquisições de bens e serviços de TI, comunicação institucional, desenvolvimento de software, eventos e conferências, gestão de identidade, redes e internet, servidores e armazenamento, segurança da informação, sistemas de informação e suporte ao usuário. Essa abordagem permitiu refinar mais uma vez o levantamento dos serviços e conseguiu eliminar algumas inconsistências e redundâncias na oferta e/ou atendimento. O resultado desse trabalho é apresentado no mapa mental~\ref{fig:mapa-mental-ti}.
+Após o levantamento e especificação dos serviços o GT buscou agrupá-los por categorias sob a perspectiva do usuário dos serviços, independente de qual equipe seria responsável pelo atendimento. Estabeleceu-se, assim, 10 (dez) categorias de serviços de TI oferecidos pelo CERCOMP: aquisições de bens e serviços de TI, comunicação institucional, desenvolvimento de software, eventos e conferências, gestão de identidade, redes e internet, servidores e armazenamento, segurança da informação, sistemas de informação e suporte ao usuário. Essa abordagem permitiu refinar mais uma vez o levantamento dos serviços e conseguiu eliminar algumas inconsistências e redundâncias na oferta e/ou atendimento. O resultado desse trabalho é apresentado no mapa mental através da Figura~\ref{fig:mapa-mental-ti}.
 
 \begin{figure}[!ht]
   \centering
@@ -217,11 +217,9 @@ Após essa triagem, os chamados eram encaminhados à Equipe de Infraestrutura e no
 
 Para proposição da formação de um Catálogo de Serviços inicial, foram avaliados os serviços mais demandados ao departamento e, de acordo com os dados disponíveis, sugere-se disponibilizar as seguintes informações:
 
-A proposta de um Catálogo de Serviços para o ambiente organizacional, alvo do estudo de caso, é de fundamental importância, dado que os mesmo é o registro com informações sobre todos os serviços de TI que estão em produção, incluindo aqueles disponíveis para implantação, e que são disponibilizados aos clientes.
+A proposta de um Catálogo de Serviços para o ambiente organizacional, alvo do estudo de caso, é de fundamental importância, dado que o mesmo é o registro com informações sobre todos os serviços de TI que estão em produção, incluindo aqueles disponíveis para implantação, e que são disponibilizados aos clientes.
 
 Esta seção propõe o desenvolvimento de um Catálogo de Serviços, simples e funcional, bem como Acordos de Nível de Serviço e de Nível Operacional para o CERCOMP e mais precisamente à Equipe de Infraestrutura para os serviços por ela ofertados.
-
-Para este estudo de caso adotou-se uma aplicação horizontal do modelo de especificação de serviços de TI dentre todos os serviços de TI oferecidos pelo CERCOMP. Contudo, essa aplicação considerou apenas o nível básico com os seguintes atributos: nome do serviço, categoria, descrição e público alvo. A Figura (???) apresenta a especificação dos serviços de TI do CERCOMP.
 
 \subsubsection*{Levantamento dos Principais Processos}
 
@@ -303,7 +301,7 @@ Ao receber a solicitação, o analista de TI fará um agendamento com a pessoa desi
 
 Após a instalação física, é agendada uma nova data, com a pessoa designada como responsável, a configuração e ativação do servidor, por parte do analista de TI, para que o mesmo esteja acessível. Até a data agendada as configurações são realizadas, o servidor fica ativo e os dados e credenciais de acesso são enviados à pessoa designada como responsável pelo servidor. O analista de TI registra no sistema de Ordem de Serviços (OS) o atendimento da solicitação e finaliza a mesma. O fluxo deste processo pode ser observado na Figura~\ref{fig:colocation}.
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
   \centering
   \includegraphics[scale=0.6]{./fig/colocation.png}
   \caption{Processo de atendimento para hospedagem de servidores físicos.}
@@ -312,21 +310,46 @@ Após a instalação física, é agendada uma nova data, com a pessoa designada como 
 
 \subsection{Etapa 04: Gestão e Aprimoramento do Catálogo de Serviços}
 
-A quarta e última etapa deste estudo de caso tem por objetivo apresentar propostas e estratégias para a gestão e aprimoramento do Catálogo de Serviços de TI do CERCOMP. Para tanto, duas iniciativas foram desenvolvidas: a definição de um processo ``gerenciar catálogo de serviço'', incluindo o subprocesso de ``disponibilizar (novo) produto/serviço'' e a avaliação de alternativas para disponibilização, automatização e integração do catálogo de serviços ao GLPI (ferramenta ITSM adotada pela CERCOMP). O processo ``gerenciar catálogo de serviços'' é apresentado Na Figura (???).
+\subsubsection*{Gerenciamento do Catálogo de Serviços de TI do CERCOMP}
+
+A quarta e última etapa deste estudo de caso tem por objetivo apresentar propostas e estratégias para a gestão e aprimoramento do Catálogo de Serviços de TI do CERCOMP. Para tanto, duas iniciativas foram desenvolvidas: a definição de um processo ``gerenciar catálogo de serviço'', incluindo o subprocesso de ``disponibilizar (novo) produto/serviço'' e a avaliação de alternativas para disponibilização, automatização e integração do catálogo de serviços ao GLPI (ferramenta ITSM adotada pela CERCOMP). O processo ``gerenciar catálogo de serviços'' é apresentado na Figura~\ref{fig:gerenciar-cs}.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=\textwidth]{./fig/BPM_gerenciar-catalogo-de-servico.jpeg}
+  \caption{Processo de gerenciar catálogo de serviço.}
+  \label{fig:gerenciar-cs}
+\end{figure}
 
 Quanto ao processo ``gerenciar catálogo de serviços'', inicialmente, buscou-se o posicionamento do GT quanto ao responsável por seu gerenciamento, chegando-se à conclusão que a alternativa mais efetiva seria ter uma Comissão responsável por sua gestão, sendo esta composta por representantes de cada uma das equipes técnicas e assessorias do CERCOMP. A Comissão de Gestão do Catálogo de Serviços de TI do CERCOMP teria por atribuição: a) definir sobre a incorporação de outros serviços de TI, oferecido por outros órgãos da UFG; b) definir sobre a descontinuidade de oferta de determinado serviço de TI; c) definir a política de evolução e atualização do GLPI ou até mesmo a adoção de outra ferramenta ITSM; d) interagir com o SAU e as equipes técnicas do CERCOMP quanto ao uso, organização e atualização do Catálogo de Serviços; e) envidar esforços para a elaboração e disponibilização do Portfólio de Serviços.
-
-(inserir imagem do mapeamento do processo ``gerenciar catálogo de serviços''...)
 
 (fazer vinculação com a fase ``Melhoria Contínua - ITIL'')
 
 Em linhas gerais, a dinâmica do processo ``gerenciar catálogo de serviços'' considera (ver processo)...
 
+\subsubsection*{Aprimoramento do Catálogo de Serviços de TI do CERCOMP}
+
 O GLPI é uma ferramenta consolidada na UFG no gerenciamento dos chamados de TI, tanto por parte da equipe técnica quanto da equipe usuária, ainda que em algumas situações observa-se uma ``cultura de indisposição'' de alguns usuários em reportar problemas com a abertura do respectivo chamado. Ciente disso, a equipe técnica do CERCOMP vem trabalhando na atualização e reconfiguração da ferramenta de forma a aprimorar a interface de abertura de chamados e seu atendimento e gerenciamento.
 
-Nesse sentido, duas abordagens foram avaliadas: criação de uma interface para disponibilização do Catálogo de Serviços de TI e abertura de chamado, a qual seria integrada ao GLPI por meio da utilização de uma API da ferramenta\footnote{Disponível em https://glpi-developer-documentation.readthedocs.io/en/master/devapi/} (referência); ou a utilização de um plugin - Form (referência) do GLPI que permite a organização do Catálogo de Serviços dentro da própria ferramenta, bem como a configuração específica de cada formulário com base no tipo de serviço. Na primeira abordagem, a visualização do Catálogo de Serviços é pública e apenas no momento da solicitação do serviço (requisição/incidente) é necessário a autenticação do usuário no GLPI. Já na segunda abordagem, a primeira ação do usuário necessariamente é a autenticação no GLPI e, após isso, ele realiza a navegação pelo Catálogo de Serviços e encaminha a sua solicitação.
+No que se refere à disponibilização do Catálogo de Serviços e sua integração com o GLPI, duas abordagens foram avaliadas: criação de uma interface web para disponibilização do Catálogo de Serviços de TI e abertura de chamados, a qual seria integrada ao GLPI por meio da utilização de uma API (referência) da ferramenta\footnote{Disponível em https://glpi-developer-documentation.readthedocs.io/en/master/devapi/}; ou a utilização de um plugin - Form Creator (referência: \url{https://glpi-plugins.readthedocs.io/en/latest/formcreator/}) do GLPI que permite a organização do Catálogo de Serviços dentro da própria ferramenta, bem como a configuração específica de cada formulário com base no tipo e atributos do serviço. Na primeira abordagem, a visualização do Catálogo de Serviços é pública e apenas no momento da solicitação do serviço (requisição/incidente) é necessário a autenticação do usuário no GLPI. Já na segunda abordagem, a primeira ação do usuário necessariamente é a autenticação no GLPI e, após isso, ele realiza a navegação pelo Catálogo de Serviços e encaminha a sua solicitação.
 
-(inserir imagem das telas do protótipo)
+A abordagem adotada pelo GT e ratificada neste trabalho considera uma proposta que permite maior visibilidade ao Catálogo de Serviços de TI. Para tanto, a intenção é criar uma interface web, hospedada no site do CERCOMP, para disponibilização do Catálogo, conforme pode ser observado na Figura~\ref{fig:proto-cs-home}. Dessa forma, o usuário poderá conhecer e navegar pelos vários serviços oferecidos, obtendo informações prévias sobre sua descrição, categoria, público-alvo, requisitos e outros, além de poder solicitar um serviço (requisição) ou relatar um problema (incidente). A Figura~\ref{fig:proto-cs-int} apresenta o protótipo de interface da página interna do serviço. Nessa abordagem, após autenticação, a criação do chamado (requisição/incidente) seria realizada pela interface e encaminhada ao GLPI, por meio de integração via API (???), e a interação do usuário para acompanhamento do chamado seria diretamente no GLPI, além de notificações por e-mail.
 
-Um trabalho semelhante foi apresentado por Rosa~\cite{Rosa2019} na Universidade Federal dos Vales do Jequitinhonha e Mucuvi (UFVJM) onde apresentaram um case de implementação no sistema de ordens de serviço (GLPI) que utilizam para desburocratizar e automatizar o processo de requisição de serviços através de seu catálogo de serviço. O resultado apresentou alta satisfação de seus usuários.
+Ainda que a primeira abordagem seja implementada no âmbito do CERCOMP (interface web integrada via API), pode-se utilizar uma implementação híbrida que considere tanto a página web do Catálogo de Serviços de TI, bem como sua disponibilização e organização dentro da própria ferramenta GLPI (utilizando o plugin Form Creator). Neste caso, para evitar retrabalho e/ou inconsistência das informações, pode-se avaliar a possibilidade de cadastrar as informações do Catálogo nos formulários do GLPI e consumir essas informações na interface web. Obviamente, tanto o esforço de implementação dessa solução híbrida bem como a existência de (duas) experiências de usuários distintas devem ser consideradas na avaliação e decisão final sobre a abordagem de disponibilização do Catálogo de Serviços de TI.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=\textwidth]{./fig/prototipo_catalogo-servicos_principal.jpg}
+  \caption{Protótipo de Interface - página principal do Catálogo de Serviços de TI.}
+  \label{fig:proto-cs-home}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=\textwidth]{./fig/prototipo_catalogo-servicos_pagina-interna.jpg}
+  \caption{Protótipo de Interface - página interna de descrição e solicitação de serviços.}
+  \label{fig:proto-cs-int}
+\end{figure}
+
+Na época da consulta às instituições de ensino, apresentada anteriormente, a jovem Universidade Federal dos Vales do Jequitinhonha e Mucuvi (UFVJM) estava finalizando o trabalho de documentação da especificação dos seus serviços de TI. Após esta etapa, iniciou-se o processo de implantação do Catálogo de Serviços de TI, integrando-o à ferramenta ITSM adotada pela instituição - GLPI, utilizando o plugin Form Creator. O trabalho desenvolvido por Rosa~\cite{Rosa2019} na UFVJM apresenta a implementação modularizada do GLPI com foco na satisfação do usuário final e o intuito de desburocratizar e automatizar o processo de solicitação de serviços de TI. O resultado do trabalho apresentou alto grau de satisfação dos usuários na UFVJM após a implantação do Catálogo de Serviços de TI integrado ao GLPI.
 
