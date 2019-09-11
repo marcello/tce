@@ -432,7 +432,7 @@
  \fi
  \hypersetup{
   pdftitle={\@titulo},
-  pdfauthor={\@autor\ \@autorB\ e\ \@autorC},
+  pdfauthor={\@autor,\ \@autorB\ e\ \@autorC},
   pdfsubject={\@concentracao}
  }
 
@@ -686,27 +686,30 @@
 
  \@makeschapterhead{Resumo}
  \begin{minipage}{13.5cm}
-  \singlespacing%
-  \@autorR,\ \@autorBR\ e\ \@autorCR.
-  \textbf{\@titulo}.
-  \@cidade, \@ano.
-  \pageref{LastPage}p.
-  \ifthenelse{\boolean{tese}}{Tese de Doutorado}
- {\ifthenelse{\boolean{diss}}{Disserta\c{c}\~{a}o de Mestrado}}
- {\ifthenelse{\boolean{mngr}}{Monografia de Especializa\c{c}\~{a}o}
-                             {Relat\'{o}rio de Gradua\c{c}\~{a}o}}.
-  \ifthenelse{\equal{\@departamento}{}}{}{\@departamento,}
-  \ifthenelse{\equal{\@unidade}{}}{}{\@unidade,} \@universidade.%
+    %\singlespacing%
+  \vspace{-.6cm}%%%
+    \@autorR,\ \@autorBR\ e\ \@autorCR.
+    \textbf{\@titulo}.
+    \@cidade, \@ano.
+    \pageref{LastPage}p.
+    \ifthenelse{\boolean{tese}}{Tese de Doutorado}
+   {\ifthenelse{\boolean{diss}}{Disserta\c{c}\~{a}o de Mestrado}}
+   {\ifthenelse{\boolean{mngr}}{Monografia de Especializa\c{c}\~{a}o}
+                               {Relat\'{o}rio de Gradua\c{c}\~{a}o}}.
+    \ifthenelse{\equal{\@departamento}{}}{}{\@departamento,}
+    \ifthenelse{\equal{\@unidade}{}}{}{\@unidade,} \@universidade.%
+  \vspace{.6cm}%%%
  \end{minipage}
- \onehalfspacing%
- \vspace*{\stretch{1}}%
- \par%
+   \onehalfspacing%
+   \vspace*{\stretch{1}}%
+   \par%
  \noindent\begin{minipage}{15cm}%
 }
 {%
  \end{minipage}%
  \vspace*{\stretch{3}}%
  \par%
+ \vspace{.3cm}%%%
  \noindent \arial \textbf{Palavras--chave} \normalfont \normalsize%
  \par%
  \indent \@chaves%
