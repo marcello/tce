@@ -734,6 +734,7 @@
   \@makeschapterhead{Abstract}
   \begin{minipage}{13.5cm}
    \singlespacing%
+  \vspace{-.6cm}%%%
    \@autorR,\ \@autorBR\ e\ \@autorCR.
    \textbf{#1}.
    \@cidade, \@ano.
@@ -744,6 +745,7 @@
                              {Relat\'{o}rio de Gradua\c{c}\~{a}o}}.
   \ifthenelse{\equal{\@departamento}{}}{}{Coordinate Pos-Graduate,}
   \ifthenelse{\equal{\@unidade}{}}{}{Informatic Institute,} Federal University of Goi\'{a}s.%
+  \vspace{.6cm}%%%
 
   \end{minipage}\onehalfspacing%
   \vspace*{\stretch{1}}%
@@ -783,7 +785,7 @@
   #1%
   \par%
   \begin{flushright}
-  \textbf{#2}, \\ \textit{#3}.
+  \textbf{#2} \\ \textit{#3}
   \end{flushright}%
   \end{quotation}%
   \onehalfspacing
