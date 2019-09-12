@@ -388,6 +388,13 @@
 \renewcommand{\cftfigfont}{\arial}
 \renewcommand{\cfttabfont}{\arial}
 
+%%% Minhas alteracoes faraohh
+%% subsubsection
+\renewcommand{\thesubsubsection}{\hspace{.5cm}\alph{subsubsection})}
+\setcounter{secnumdepth}{4}
+%% subsubsubsection
+\newcommand{\subsubsubsection}[1]{\vspace{.5cm} \textbullet\hspace{.2cm}\textbf{#1} \vspace{.5cm}}
+
 %% theorems environments
 %% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \renewcommand{\theequation}{\thechapter-\arabic{equation}}
@@ -649,12 +656,12 @@
  \par%
  %\vspace*{\stretch{0.1}}%
  \margem{
-   \normalfont #1
    \begin{flushright}\arial \textbf{\@autor}\end{flushright}
-   \normalfont #2
+   \normalfont #1
    \begin{flushright}\arial \textbf{\@autorB}\end{flushright}
-   \normalfont #3
+   \normalfont #2
    \begin{flushright}\arial \textbf{\@autorC}\end{flushright}
+   \normalfont #3
  }
  \clearpage\onehalfspacing\normalfont%
 }
