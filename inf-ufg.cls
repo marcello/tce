@@ -832,6 +832,9 @@
 \clearpage\singlespacing%
 \tableofcontents%
 \clearpage%
+\IfSubStringInString{sig}{#1}
+ {\input{./tex/pre_siglas}
+ }{}
 \IfSubStringInString{fig}{#1}
  {\listoffigures\clearpage
  }{}
