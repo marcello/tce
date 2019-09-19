@@ -428,6 +428,8 @@
 \newcommand{\textoC}[2]{\begin{center}\linespread{#1}#2\end{center}}
 \newcommand{\textoF}[1]{\begin{minipage}[top]{12.0cm}#1\end{minipage}}
 \newcommand{\textoD}[1]{\margem{\begin{flushright}#1\end{flushright}}}
+\newcommand{\textoL}[1]{\margem{\begin{flushleft}#1\end{flushleft}}}
+\newcommand{\textoM}[2]{\begin{center}#1\end{center}}
 \newcommand{\margemD}[1]{\hspace{3.5cm}\begin{minipage}[top]{10cm}#1\end{minipage}}
 
 %% Capa
@@ -509,12 +511,17 @@
   \vspace*{40pt}%
   \par%
   \@cidade, \@dia\ de \@mes\ de \@ano.
-  \vspace*{60pt}%
-  \par
-  \textoD{\rule{.75\textwidth}{0.5pt}\\ \small \@autor, \@autorB\ e\ \@autorC\\ -- Autores}
+  \vspace*{50pt}%
+  \\
+  %% Autores
+  \rule{.3\textwidth}{0.5pt} \hspace{.5cm} \rule{.3\textwidth}{0.5pt} \hspace{.5cm} \rule{.3\textwidth}{0.5pt} \\
+  \hspace*{.7cm} \small \@autor \hspace{2cm} \small \@autorB \hspace{1.45cm} \small Marcello H. D. de Moura \\
+  \vspace{-.5cm}
+  \begin{flushright}-- Autores\end{flushright}
+  %%
   \vspace*{30pt}%
   \par
-  \textoD{\rule{.75\textwidth}{0.5pt}\\ \small Prof. \@orientador\\ -- Orientador}
+  \textoD{\rule{.75\textwidth}{0.5pt}\\ \small Prof. \@orientador\ -- Orientador}
   \vspace*{30pt}%
   \par
   \ifthenelse{\equal{\@coorientador}{}}
