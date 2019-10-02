@@ -527,10 +527,10 @@
   \ifthenelse{\equal{\@coorientador}{}}
    {\ifthenelse{\equal{\@coorientadora}{}}
     {}
-    {\textoD{\rule{.75\textwidth}{0.5pt}\\ \small \@coorientadora\ -- Co-Orientadora}
+    {\textoD{\rule{.75\textwidth}{0.5pt}\\ \small Profa. \@coorientadora\ -- Co-Orientadora}
     }%
   }
-  {\textoD{\rule{.75\textwidth}{0.5pt}\\ \small \@coorientador\ -- Co-Orientador}
+  {\textoD{\rule{.75\textwidth}{0.5pt}\\ \small Prof. \@coorientador\ -- Co-Orientador}
   }%
  \end{titlepage}%
  \onehalfspacing%
