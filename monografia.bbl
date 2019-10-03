@@ -1,0 +1,94 @@
+\begin{thebibliography}{10}
+
+\bibitem{Cercomp2018}
+{\sffamily\scshape {Cercomp - Centro de Recursos Computacionais da UFG}.}
+\newblock {\bfseries {Resolu\c{c}\~ao CONSUNI 32/2008}}.
+\newblock
+  \url{https://www.cercomp.ufg.br/up/18/o/Resolucao_CONSUNI_2008_0032.pdf},
+  2018.
+\newblock [Acessado em Novembro de 2018].
+
+\bibitem{Cervone2008}
+{\sffamily\scshape Cervone, F.}
+\newblock {\bfseries {ITIL: a framework for managing digital library
+  services}}.
+\newblock {\itshape OCLC Systems \& Services: International digital library
+  perspectives}, 24(2):87--90, 2008.
+
+\bibitem{Cestari2011a}
+{\sffamily\scshape CESTARI~FILHO, F.}
+\newblock {\bfseries {Gerenciamento de Servi{\c{c}}os de TI}}.
+\newblock {\itshape Rio de Janeiro: RNP/ESR}, 2011.
+
+\bibitem{Cestari2011b}
+{\sffamily\scshape CESTARI~FILHO, F.}
+\newblock {\bfseries {ITIL v3 Fundamentos}}.
+\newblock {\itshape Rio de Janeiro: RNP/ESR}, 2011.
+
+\bibitem{Formcreator2019}
+{\sffamily\scshape {Form Creator Team}.}
+\newblock {\bfseries {Form Creator}}.
+\newblock \url{https://github.com/pluginsGLPI/formcreator}, 2019.
+\newblock [Acessado em Setembro de 2019].
+
+\bibitem{Freitas2013}
+{\sffamily\scshape Freitas, M. A. d.~S.}
+\newblock {\bfseries {Fundamentos do Gerenciamento de Servi{\c{c}}os de TI}}.
+\newblock {\itshape Rio de Janeiro: Brasport}, 2, 2013.
+
+\bibitem{Glpi2019}
+{\sffamily\scshape {GLPI Team}.}
+\newblock {\bfseries {GLPI Developer Documentation}}.
+\newblock
+  \url{https://glpi-developer-documentation.readthedocs.io/en/master/devapi/},
+  2019.
+\newblock [Acessado em Setembro de 2019].
+
+\bibitem{Itsmf2012}
+{\sffamily\scshape itSMF UK.}
+\newblock {\bfseries ITIL Foundation Handbook}.
+\newblock The Stationery Office, Norwich, 3rd edition, 2012.
+
+\bibitem{Cabinet2011}
+{\sffamily\scshape Office, C.}
+\newblock {\bfseries {ITIL Service Design}}.
+\newblock The Stationery Office, 2011.
+
+\bibitem{Lifecycle2007}
+{\sffamily\scshape {Office of Government Commerce Gro{\ss}britannien}.}
+\newblock {\bfseries {The Official Introduction to the ITIL Service
+  Lifecycle}}.
+\newblock TSO, (The Stationary Office), 2007.
+
+\bibitem{Silva2019}
+{\sffamily\scshape {Paulo Fernando da Silva}.}
+\newblock {\bfseries {Infra TIC - Cap\'itulo 03 -- ITIL}}.
+\newblock \url{https://slideplayer.com.br/slide/7543143/}, 2019.
+\newblock [Acessado em Setembro de 2019].
+
+\bibitem{Rosa2019}
+{\sffamily\scshape Rosa, E.~P.}
+\newblock {\bfseries {Case de Implementa\c{c}\~ao modularizada do GLPI com foco
+  na satisfa\c{c}\~ao do usu\'ario final}}.
+\newblock {\itshape {WTICIFES - Workshop de Tecnologia de Informa\c{c}\~ao e
+  Comunica\c{c}\~ao das Institui\c{c}\~oes Federais de Ensino Superior}}, p.
+  53--58, 2019.
+
+\bibitem{PDI2018}
+{\sffamily\scshape {Universidade Federal de Goi\'as}.}
+\newblock {\bfseries {Plano de Desenvolvimento Institucional - UFG 2018-2022}}.
+\newblock
+  \url{https://www.ufg.br/up/1/o/PDI_UFG_-_Plano_de_desenvolvimento_institucional_2018-2022.pdf},
+  2018.
+\newblock [Acessado em Setembro de 2019].
+
+\bibitem{PDTI2018}
+{\sffamily\scshape {Universidade Federal de Goi\'as}.}
+\newblock {\bfseries {Plano Diretor de Tecnologia da Informa\c{c}\~ao - PDTI
+  2018-2021}}.
+\newblock
+  \url{https://www.cti.ufg.br/up/921/o/PDTI_2018-2021-02_02_18_atual.pdf},
+  2018.
+\newblock [Acessado em Setembro de 2019].
+
+\end{thebibliography}
