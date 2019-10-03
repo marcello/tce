@@ -13,13 +13,13 @@
 \contentsline {subsection}{\numberline {2.2.2}Gerenciamento do Cat\'alogo de Servi\c co}{31}{subsection.27}
 \contentsline {chapter}{\numberline {3}Unidade de An\'alise}{35}{chapter.29}
 \contentsline {section}{\numberline {3.1}Estat\IeC {\'\i }sticas de Atendimento}{36}{section.30}
-\contentsline {section}{\numberline {3.2}Etapas do estudo de caso}{37}{section.33}
+\contentsline {section}{\numberline {3.2}Etapas do projeto t\'ecnico}{37}{section.33}
 \contentsline {subsection}{\numberline {3.2.1}Etapa 01: Alinhamento, planejamento e levantamento de servi\c cos de TI}{38}{subsection.44}
 \contentsline {subsubsection}{\numberline {\hspace {.5cm}a)}Alinhamento do trabalho}{38}{subsubsection.45}
 \contentsline {subsubsection}{\numberline {\hspace {.5cm}b)}Levantamento preliminar de servi\c cos de TI}{38}{subsubsection.46}
 \contentsline {subsubsection}{\numberline {\hspace {.5cm}c)}Fluxos de processos de atendimento}{40}{subsubsection.48}
-\contentsline {subsubsection}{\numberline {\hspace {.5cm}d)}Planejamento e defini\c c\~oes do estudo de caso}{41}{subsubsection.52}
-\contentsline {subsection}{\numberline {3.2.2}Etapa 02: Categoriza\c c\~ao e Especifica\c c\~ao de Servi\c cos e Modelo de Acordos}{41}{subsection.54}
+\contentsline {subsubsection}{\numberline {\hspace {.5cm}d)}Planejamento e defini\c c\~oes do projeto t\'ecnico}{41}{subsubsection.52}
+\contentsline {subsection}{\numberline {3.2.2}Etapa 02: Especifica\c c\~ao e Categoriza\c c\~ao de Servi\c cos e Modelo de Acordos}{41}{subsection.54}
 \contentsline {subsubsection}{\numberline {\hspace {.5cm}a)}Refinamento do levantamento de servi\c cos das equipes e categoriza\c c\~ao dos servi\c cos de TI}{41}{subsubsection.55}
 \contentsline {subsubsection}{\numberline {\hspace {.5cm}b)}Categoriza\c c\~ao dos servi\c cos oferecidos pelo CERCOMP}{46}{subsubsection.70}
 \contentsline {subsubsection}{\numberline {\hspace {.5cm}c)}Aplica\c c\~ao da especifica\c c\~ao de servi\c cos de TI e acordos}{46}{subsubsection.72}
