@@ -2,35 +2,36 @@
 \contentsline {chapter}{Lista de Figuras}{13}{table.1}
 \contentsline {chapter}{Lista de Tabelas}{14}{table.1}
 \contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{15}{chapter.2}
-\contentsline {section}{\numberline {1.1}Justificativa}{17}{section.5}
-\contentsline {section}{\numberline {1.2}Objetivos}{18}{section.6}
-\contentsline {section}{\numberline {1.3}Metodologia}{19}{section.11}
-\contentsline {section}{\numberline {1.4}Estrutura}{19}{section.12}
-\contentsline {chapter}{\numberline {2}Conceitos Preliminares}{20}{chapter.13}
-\contentsline {section}{\numberline {2.1}Uma vis\~ao geral sobre ITIL}{20}{section.14}
-\contentsline {section}{\numberline {2.2}O foco em Desenho de Servi\c cos}{24}{section.21}
-\contentsline {subsection}{\numberline {2.2.1}Gerenciamento de N\IeC {\'\i }vel de Servi\c co (GNS)}{27}{subsection.25}
-\contentsline {subsection}{\numberline {2.2.2}Gerenciamento do Cat\'alogo de Servi\c co}{31}{subsection.27}
-\contentsline {chapter}{\numberline {3}Unidade de An\'alise}{35}{chapter.29}
-\contentsline {section}{\numberline {3.1}Estat\IeC {\'\i }sticas de Atendimento}{36}{section.30}
-\contentsline {section}{\numberline {3.2}Etapas do projeto t\'ecnico}{37}{section.33}
-\contentsline {subsection}{\numberline {3.2.1}Etapa 01: Alinhamento, planejamento e levantamento de servi\c cos de TI}{38}{subsection.44}
-\contentsline {subsubsection}{\numberline {\hspace {.5cm}a)}Alinhamento do trabalho}{38}{subsubsection.45}
-\contentsline {subsubsection}{\numberline {\hspace {.5cm}b)}Levantamento preliminar de servi\c cos de TI}{38}{subsubsection.46}
-\contentsline {subsubsection}{\numberline {\hspace {.5cm}c)}Fluxos de processos de atendimento}{40}{subsubsection.48}
-\contentsline {subsubsection}{\numberline {\hspace {.5cm}d)}Planejamento e defini\c c\~oes do projeto t\'ecnico}{41}{subsubsection.52}
-\contentsline {subsection}{\numberline {3.2.2}Etapa 02: Especifica\c c\~ao e Categoriza\c c\~ao de Servi\c cos e Modelo de Acordos}{41}{subsection.54}
-\contentsline {subsubsection}{\numberline {\hspace {.5cm}a)}Refinamento do levantamento de servi\c cos das equipes e categoriza\c c\~ao dos servi\c cos de TI}{41}{subsubsection.55}
-\contentsline {subsubsection}{\numberline {\hspace {.5cm}b)}Categoriza\c c\~ao dos servi\c cos oferecidos pelo CERCOMP}{46}{subsubsection.70}
-\contentsline {subsubsection}{\numberline {\hspace {.5cm}c)}Aplica\c c\~ao da especifica\c c\~ao de servi\c cos de TI e acordos}{46}{subsubsection.72}
-\contentsline {subsubsection}{\numberline {\hspace {.5cm}d)}Proposi\c c\~ao dos modelos de especifica\c c\~ao de servi\c cos e acordos}{48}{subsubsection.73}
-\contentsline {subsection}{\numberline {3.2.3}Etapa 03: Gest\~ao e Aprimoramento do Cat\'alogo de Servi\c cos}{50}{subsection.75}
-\contentsline {subsubsection}{\numberline {\hspace {.5cm}a)}Gerenciamento do Cat\'alogo de Servi\c cos de TI do CERCOMP}{50}{subsubsection.76}
-\contentsline {subsubsection}{\numberline {\hspace {.5cm}b)}Aprimoramento do Cat\'alogo de Servi\c cos de TI do CERCOMP}{51}{subsubsection.83}
-\contentsline {chapter}{\numberline {4}Considera\c c\~oes Finais}{55}{chapter.86}
-\contentsline {section}{\numberline {4.1}Trabalhos Futuros}{56}{section.87}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{57}{section.87}
-\contentsline {chapter}{\numberline {A}Ap\^endice}{59}{appendix.88}
-\contentsline {chapter}{\numberline {B}Ap\^endice}{62}{appendix.97}
-\contentsline {chapter}{\numberline {C}Ap\^endice}{83}{appendix.98}
+\contentsline {section}{\numberline {1.1}A estrutura de TI da UFG}{16}{section.3}
+\contentsline {section}{\numberline {1.2}Justificativa}{17}{section.6}
+\contentsline {section}{\numberline {1.3}Objetivos}{19}{section.7}
+\contentsline {section}{\numberline {1.4}Metodologia}{19}{section.12}
+\contentsline {section}{\numberline {1.5}Estrutura}{20}{section.13}
+\contentsline {chapter}{\numberline {2}Conceitos Preliminares}{21}{chapter.14}
+\contentsline {section}{\numberline {2.1}Uma vis\~ao geral sobre ITIL}{21}{section.15}
+\contentsline {section}{\numberline {2.2}O foco em Desenho de Servi\c cos}{25}{section.22}
+\contentsline {subsection}{\numberline {2.2.1}Gerenciamento de N\IeC {\'\i }vel de Servi\c co (GNS)}{28}{subsection.26}
+\contentsline {subsection}{\numberline {2.2.2}Gerenciamento do Cat\'alogo de Servi\c co}{32}{subsection.28}
+\contentsline {chapter}{\numberline {3}Unidade de An\'alise}{36}{chapter.30}
+\contentsline {section}{\numberline {3.1}Estat\IeC {\'\i }sticas de Atendimento}{37}{section.31}
+\contentsline {section}{\numberline {3.2}Etapas do projeto t\'ecnico}{38}{section.34}
+\contentsline {subsection}{\numberline {3.2.1}Etapa 01: Alinhamento, planejamento e levantamento de servi\c cos de TI}{39}{subsection.45}
+\contentsline {subsubsection}{\numberline {\hspace {.5cm}a)}Alinhamento do trabalho}{39}{subsubsection.46}
+\contentsline {subsubsection}{\numberline {\hspace {.5cm}b)}Levantamento preliminar de servi\c cos de TI}{39}{subsubsection.47}
+\contentsline {subsubsection}{\numberline {\hspace {.5cm}c)}Fluxos de processos de atendimento}{41}{subsubsection.49}
+\contentsline {subsubsection}{\numberline {\hspace {.5cm}d)}Planejamento e defini\c c\~oes do projeto t\'ecnico}{42}{subsubsection.53}
+\contentsline {subsection}{\numberline {3.2.2}Etapa 02: Especifica\c c\~ao e Categoriza\c c\~ao de Servi\c cos e Modelo de Acordos}{42}{subsection.55}
+\contentsline {subsubsection}{\numberline {\hspace {.5cm}a)}Refinamento do levantamento de servi\c cos das equipes e categoriza\c c\~ao dos servi\c cos de TI}{42}{subsubsection.56}
+\contentsline {subsubsection}{\numberline {\hspace {.5cm}b)}Categoriza\c c\~ao dos servi\c cos oferecidos pelo CERCOMP}{47}{subsubsection.71}
+\contentsline {subsubsection}{\numberline {\hspace {.5cm}c)}Aplica\c c\~ao da especifica\c c\~ao de servi\c cos de TI e acordos}{47}{subsubsection.73}
+\contentsline {subsubsection}{\numberline {\hspace {.5cm}d)}Proposi\c c\~ao dos modelos de especifica\c c\~ao de servi\c cos e acordos}{49}{subsubsection.74}
+\contentsline {subsection}{\numberline {3.2.3}Etapa 03: Gest\~ao e Aprimoramento do Cat\'alogo de Servi\c cos}{51}{subsection.76}
+\contentsline {subsubsection}{\numberline {\hspace {.5cm}a)}Gerenciamento do Cat\'alogo de Servi\c cos de TI do CERCOMP}{51}{subsubsection.77}
+\contentsline {subsubsection}{\numberline {\hspace {.5cm}b)}Aprimoramento do Cat\'alogo de Servi\c cos de TI do CERCOMP}{52}{subsubsection.84}
+\contentsline {chapter}{\numberline {4}Considera\c c\~oes Finais}{56}{chapter.87}
+\contentsline {section}{\numberline {4.1}Trabalhos Futuros}{57}{section.88}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{58}{section.88}
+\contentsline {chapter}{\numberline {A}Ap\^endice}{60}{appendix.89}
+\contentsline {chapter}{\numberline {B}Ap\^endice}{63}{appendix.98}
+\contentsline {chapter}{\numberline {C}Ap\^endice}{84}{appendix.99}
 \contentsfinish 
