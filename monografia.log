@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.9.23)  4 OCT 2019 11:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.9.23)  5 OCT 2019 08:19
 entering extended mode
 **./monografia.tex
 (monografia.tex
@@ -761,7 +761,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
  [16]
-<./fig/organograma-cercomp-completo.jpg, id=372, 1066.98625pt x 1062.97125pt>
+<./fig/organograma-cercomp-completo.jpg, id=374, 1066.98625pt x 1062.97125pt>
 File: ./fig/organograma-cercomp-completo.jpg Graphic file (type jpg)
 <use ./fig/organograma-cercomp-completo.jpg>
 Package pdftex.def Info: ./fig/organograma-cercomp-completo.jpg  used on input line 40.
@@ -775,7 +775,7 @@ Cap\'{\i }tulo 2.
 ]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 23.
-<./fig/itil_ciclo-de-vida_cestari.png, id=410, 561.09625pt x 549.05125pt>
+<./fig/itil_ciclo-de-vida_cestari.png, id=412, 561.09625pt x 549.05125pt>
 File: ./fig/itil_ciclo-de-vida_cestari.png Graphic file (type png)
 <use ./fig/itil_ciclo-de-vida_cestari.png>
 Package pdftex.def Info: ./fig/itil_ciclo-de-vida_cestari.png  used on input line 34.
@@ -786,25 +786,25 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
  [23] [24]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 127.
-<./fig/4Ps.png, id=441, 433.62pt x 338.01282pt>
+<./fig/4Ps.png, id=443, 433.62pt x 338.01282pt>
 File: ./fig/4Ps.png Graphic file (type png)
 <use ./fig/4Ps.png>
 Package pdftex.def Info: ./fig/4Ps.png  used on input line 140.
 (pdftex.def)             Requested size: 260.17401pt x 202.80925pt.
  [25] [26 <./fig/4Ps.png>]
-<./fig/conceitos.png, id=454, 665.48625pt x 338.26375pt>
+<./fig/conceitos.png, id=456, 665.48625pt x 338.26375pt>
 File: ./fig/conceitos.png Graphic file (type png)
 <use ./fig/conceitos.png>
 Package pdftex.def Info: ./fig/conceitos.png  used on input line 170.
 (pdftex.def)             Requested size: 399.29483pt x 202.95981pt.
  [27 <./fig/conceitos.png>]
-<./fig/pacote_desenho.png, id=464, 680.5425pt x 105.39375pt>
+<./fig/pacote_desenho.png, id=466, 680.5425pt x 105.39375pt>
 File: ./fig/pacote_desenho.png Graphic file (type png)
 <use ./fig/pacote_desenho.png>
 Package pdftex.def Info: ./fig/pacote_desenho.png  used on input line 182.
 (pdftex.def)             Requested size: 426.79181pt x 99.58635pt.
  [28 <./fig/pacote_desenho.png>]
-<./fig/tipos_ans.png, id=476, 377.15906pt x 441.90094pt>
+<./fig/tipos_ans.png, id=478, 377.15906pt x 441.90094pt>
 File: ./fig/tipos_ans.png Graphic file (type png)
 <use ./fig/tipos_ans.png>
 Package pdftex.def Info: ./fig/tipos_ans.png  used on input line 222.
@@ -815,7 +815,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--273
  []
 
 [31] [32]
-<./fig/catalogo-negocio-e-servicos.png, id=500, 489.83pt x 468.75125pt>
+<./fig/catalogo-negocio-e-servicos.png, id=502, 489.83pt x 468.75125pt>
 File: ./fig/catalogo-negocio-e-servicos.png Graphic file (type png)
 <use ./fig/catalogo-negocio-e-servicos.png>
 Package pdftex.def Info: ./fig/catalogo-negocio-e-servicos.png  used on input line 333.
@@ -827,7 +827,7 @@ Cap\'{\i }tulo 3.
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
-<./fig/atendimentos-glpi.png, id=522, 513.92pt x 318.18875pt>
+<./fig/atendimentos-glpi.png, id=524, 513.92pt x 318.18875pt>
 File: ./fig/atendimentos-glpi.png Graphic file (type png)
 <use ./fig/atendimentos-glpi.png>
 Package pdftex.def Info: ./fig/atendimentos-glpi.png  used on input line 45.
@@ -883,7 +883,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--133
  []
 
 [40]
-<./fig/atendimento.png, id=573, 644.4075pt x 295.1025pt>
+<./fig/atendimento.png, id=575, 644.4075pt x 295.1025pt>
 File: ./fig/atendimento.png Graphic file (type png)
 <use ./fig/atendimento.png>
 Package pdftex.def Info: ./fig/atendimento.png  used on input line 180.
@@ -893,59 +893,59 @@ Underfull \hbox (badness 4886) in paragraph at lines 191--192
 []\T1/ptm/m/n/12 O re-sul-tado de cada etapa do pro-cesso é en-ca-mi-nhado para va-li-da-
  []
 
-<./fig/BPM_catalogo-servicos_elaboracao_resumido.png, id=582, 1168.365pt x 612.2875pt>
+<./fig/BPM_catalogo-servicos_elaboracao_resumido.png, id=584, 1168.365pt x 612.2875pt>
 File: ./fig/BPM_catalogo-servicos_elaboracao_resumido.png Graphic file (type png)
 <use ./fig/BPM_catalogo-servicos_elaboracao_resumido.png>
 Package pdftex.def Info: ./fig/BPM_catalogo-servicos_elaboracao_resumido.png  used on input line 195.
 (pdftex.def)             Requested size: 426.79134pt x 223.66527pt.
 [42 <./fig/BPM_catalogo-servicos_elaboracao_resumido.png>]
-<./fig/criar_vm.png, id=590, 649.67719pt x 709.90219pt>
+<./fig/criar_vm.png, id=592, 649.67719pt x 709.90219pt>
 File: ./fig/criar_vm.png Graphic file (type png)
 <use ./fig/criar_vm.png>
 Package pdftex.def Info: ./fig/criar_vm.png  used on input line 260.
 (pdftex.def)             Requested size: 389.80931pt x 425.9446pt.
  [43] [44 <./fig/criar_vm.png>]
-<./fig/criar_rotina_backup.png, id=611, 627.84563pt x 438.8897pt>
+<./fig/criar_rotina_backup.png, id=613, 627.84563pt x 438.8897pt>
 File: ./fig/criar_rotina_backup.png Graphic file (type png)
 <use ./fig/criar_rotina_backup.png>
 Package pdftex.def Info: ./fig/criar_rotina_backup.png  used on input line 281.
 (pdftex.def)             Requested size: 376.71028pt x 263.33585pt.
  [45 <./fig/criar_rotina_backup.png>]
-<./fig/criar_usuario.png, id=618, 635.37375pt x 448.67625pt>
+<./fig/criar_usuario.png, id=620, 635.37375pt x 448.67625pt>
 File: ./fig/criar_usuario.png Graphic file (type png)
 <use ./fig/criar_usuario.png>
 Package pdftex.def Info: ./fig/criar_usuario.png  used on input line 300.
 (pdftex.def)             Requested size: 381.22719pt x 269.20782pt.
  [46 <./fig/criar_usuario.png>]
-<./fig/colocation.png, id=625, 650.43pt x 892.83563pt>
+<./fig/colocation.png, id=627, 650.43pt x 892.83563pt>
 File: ./fig/colocation.png Graphic file (type png)
 <use ./fig/colocation.png>
 Package pdftex.def Info: ./fig/colocation.png  used on input line 323.
 (pdftex.def)             Requested size: 426.79134pt x 585.86745pt.
-<./fig/mapa-mental_categorizacao_servicos-TI_CERCOMP.png, id=627, 1358.07375pt x 1684.2925pt>
+<./fig/mapa-mental_categorizacao_servicos-TI_CERCOMP.png, id=629, 1358.07375pt x 1684.2925pt>
 File: ./fig/mapa-mental_categorizacao_servicos-TI_CERCOMP.png Graphic file (type png)
 <use ./fig/mapa-mental_categorizacao_servicos-TI_CERCOMP.png>
 Package pdftex.def Info: ./fig/mapa-mental_categorizacao_servicos-TI_CERCOMP.png  used on input line 338.
 (pdftex.def)             Requested size: 426.79134pt x 529.29564pt.
  [47] [48 <./fig/colocation.png>] [49 <./fig/mapa-mental_categorizacao_servicos-TI_CERCOMP.png (PNG copy)>]
-<./fig/modelo-espec-de-servicos-ti.png, id=645, 809.0225pt x 1014.79124pt>
+<./fig/modelo-espec-de-servicos-ti.png, id=647, 809.0225pt x 1014.79124pt>
 File: ./fig/modelo-espec-de-servicos-ti.png Graphic file (type png)
 <use ./fig/modelo-espec-de-servicos-ti.png>
 Package pdftex.def Info: ./fig/modelo-espec-de-servicos-ti.png  used on input line 360.
 (pdftex.def)             Requested size: 404.51027pt x 507.39438pt.
  [50 <./fig/modelo-espec-de-servicos-ti.png>]
-<./fig/BPM_gerenciar-catalogo-de-servico.jpeg, id=653, 1031.855pt x 827.09pt>
+<./fig/BPM_gerenciar-catalogo-de-servico.jpeg, id=655, 1031.855pt x 827.09pt>
 File: ./fig/BPM_gerenciar-catalogo-de-servico.jpeg Graphic file (type jpg)
 <use ./fig/BPM_gerenciar-catalogo-de-servico.jpeg>
 Package pdftex.def Info: ./fig/BPM_gerenciar-catalogo-de-servico.jpeg  used on input line 378.
 (pdftex.def)             Requested size: 426.79134pt x 342.10011pt.
  [51 <./fig/BPM_gerenciar-catalogo-de-servico.jpeg>] [52]
-<./fig/prototipo_catalogo-servicos_principal.jpg, id=673, 1084.05pt x 1481.535pt>
+<./fig/prototipo_catalogo-servicos_principal.jpg, id=675, 1084.05pt x 1481.535pt>
 File: ./fig/prototipo_catalogo-servicos_principal.jpg Graphic file (type jpg)
 <use ./fig/prototipo_catalogo-servicos_principal.jpg>
 Package pdftex.def Info: ./fig/prototipo_catalogo-servicos_principal.jpg  used on input line 418.
 (pdftex.def)             Requested size: 426.79134pt x 583.28967pt.
-<./fig/prototipo_catalogo-servicos_pagina-interna.jpg, id=674, 1091.07625pt x 962.59625pt>
+<./fig/prototipo_catalogo-servicos_pagina-interna.jpg, id=676, 1091.07625pt x 962.59625pt>
 File: ./fig/prototipo_catalogo-servicos_pagina-interna.jpg Graphic file (type jpg)
 <use ./fig/prototipo_catalogo-servicos_pagina-interna.jpg>
 Package pdftex.def Info: ./fig/prototipo_catalogo-servicos_pagina-interna.jpg  used on input line 425.
@@ -959,13 +959,34 @@ Cap\'{\i }tulo 4.
 LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
 (Font)              scaled to size 10.79993pt on input line 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--46
+Underfull \hbox (badness 10000) in paragraph at lines 4--12
+[]\T1/phv/m/sc/12 Brasil. Mi-nis-té-rio do Pla-ne-ja-mento, De-sen-vol-vi-mento e Ges-tão.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--12
+\T1/ptm/b/n/12 Es-tra-té-gia de Go-ver-nança Di-gi-tal: Trans-for-ma-ção Di-gi-tal - ci-da-da-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--12
+\T1/ptm/b/n/12 nia e go-verno\T1/ptm/m/n/12 .  [][]$\T1/pcr/m/n/12 http : / / www . planejamento . gov . br / EGD / arqu
+ivos /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--12
+\T1/pcr/m/n/12 revisao-[]da-[]estrategia-[]de-[]governanca-[]digital-[]2015-[]2019 . pdf$[][]\T1/ptm/m/n/12 , 2018.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
 []\T1/phv/m/sc/12 GLPI Team.  \T1/ptm/b/n/12 GLPI De-ve-lo-per Do-cu-men-ta-tion\T1/ptm/m/n/12 .  [][]$\T1/pcr/m/n/12 ht
 tps : / /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--46
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
 \T1/pcr/m/n/12 glpi-[]developer-[]documentation . readthedocs . io / en / master / devapi/$[][]\T1/ptm/m/n/12 ,
  []
 
@@ -977,17 +998,17 @@ File: ./fig/BPM_catalogo-servicos_elaboracao_resumido.png Graphic file (type png
 <use ./fig/BPM_catalogo-servicos_elaboracao_resumido.png>
 Package pdftex.def Info: ./fig/BPM_catalogo-servicos_elaboracao_resumido.png  used on input line 8.
 (pdftex.def)             Requested size: 426.79134pt x 223.66527pt.
-<./fig/BPM_catalogo-servicos_sub-levantar-servicos.png, id=729, 574.39594pt x 339.51843pt>
+<./fig/BPM_catalogo-servicos_sub-levantar-servicos.png, id=733, 574.39594pt x 339.51843pt>
 File: ./fig/BPM_catalogo-servicos_sub-levantar-servicos.png Graphic file (type png)
 <use ./fig/BPM_catalogo-servicos_sub-levantar-servicos.png>
 Package pdftex.def Info: ./fig/BPM_catalogo-servicos_sub-levantar-servicos.png  used on input line 12.
 (pdftex.def)             Requested size: 132.30426pt x 78.20157pt.
-<./fig/BPM_catalogo-servicos_sub-especificar-servicos.png, id=730, 574.39594pt x 340.27126pt>
+<./fig/BPM_catalogo-servicos_sub-especificar-servicos.png, id=734, 574.39594pt x 340.27126pt>
 File: ./fig/BPM_catalogo-servicos_sub-especificar-servicos.png Graphic file (type png)
 <use ./fig/BPM_catalogo-servicos_sub-especificar-servicos.png>
 Package pdftex.def Info: ./fig/BPM_catalogo-servicos_sub-especificar-servicos.png  used on input line 16.
 (pdftex.def)             Requested size: 132.30426pt x 78.37495pt.
-<./fig/BPM_catalogo-servicos_sub-categorizar-servicos.png, id=731, 572.1375pt x 337.26pt>
+<./fig/BPM_catalogo-servicos_sub-categorizar-servicos.png, id=735, 572.1375pt x 337.26pt>
 File: ./fig/BPM_catalogo-servicos_sub-categorizar-servicos.png Graphic file (type png)
 <use ./fig/BPM_catalogo-servicos_sub-categorizar-servicos.png>
 Package pdftex.def Info: ./fig/BPM_catalogo-servicos_sub-categorizar-servicos.png  used on input line 20.
@@ -1015,7 +1036,7 @@ Package pdftex.def Info: ./fig/BPM_catalogo-servicos_sub-categorizar-servicos.pn
  <./fig/BPM_catalogo-servicos_sub-levantar-servicos.png> <./fig/BPM_catalogo-servicos_sub-especificar-servicos.png> <./f
 ig/BPM_catalogo-servicos_sub-categorizar-servicos.png>] [61] [62]
 Ap\^endice B.
-<./mods/ANS-CERCOMP_UFG.pdf, id=754, 598.235pt x 846.16125pt>
+<./mods/ANS-CERCOMP_UFG.pdf, id=758, 598.235pt x 846.16125pt>
 File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 <use ./mods/ANS-CERCOMP_UFG.pdf>
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf  used on input line 50.
@@ -1024,7 +1045,7 @@ File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 <use ./mods/ANS-CERCOMP_UFG.pdf>
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf  used on input line 50.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
-<./mods/ANS-CERCOMP_UFG.pdf, id=757, page=1, 598.235pt x 846.16125pt>
+<./mods/ANS-CERCOMP_UFG.pdf, id=761, page=1, 598.235pt x 846.16125pt>
 File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 <use ./mods/ANS-CERCOMP_UFG.pdf, page 1>
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf , page1 used on input line 50.
@@ -1049,7 +1070,7 @@ File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf , page1 used on input line 50.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [64 <./mods/ANS-CERCOMP_UFG.pdf>]
-<./mods/ANS-CERCOMP_UFG.pdf, id=793, page=2, 598.235pt x 846.16125pt>
+<./mods/ANS-CERCOMP_UFG.pdf, id=797, page=2, 598.235pt x 846.16125pt>
 File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 <use ./mods/ANS-CERCOMP_UFG.pdf, page 2>
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf , page2 used on input line 50.
@@ -1063,7 +1084,7 @@ File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf , page2 used on input line 50.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [65 <./mods/ANS-CERCOMP_UFG.pdf>]
-<./mods/ANS-CERCOMP_UFG.pdf, id=804, page=3, 598.235pt x 846.16125pt>
+<./mods/ANS-CERCOMP_UFG.pdf, id=808, page=3, 598.235pt x 846.16125pt>
 File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 <use ./mods/ANS-CERCOMP_UFG.pdf, page 3>
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf , page3 used on input line 50.
@@ -1077,7 +1098,7 @@ File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf , page3 used on input line 50.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [66 <./mods/ANS-CERCOMP_UFG.pdf>]
-<./mods/ANS-CERCOMP_UFG.pdf, id=810, page=4, 598.235pt x 846.16125pt>
+<./mods/ANS-CERCOMP_UFG.pdf, id=814, page=4, 598.235pt x 846.16125pt>
 File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 <use ./mods/ANS-CERCOMP_UFG.pdf, page 4>
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf , page4 used on input line 50.
@@ -1091,7 +1112,7 @@ File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf , page4 used on input line 50.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [67 <./mods/ANS-CERCOMP_UFG.pdf>]
-<./mods/ANS-CERCOMP_UFG.pdf, id=815, page=5, 598.235pt x 846.16125pt>
+<./mods/ANS-CERCOMP_UFG.pdf, id=819, page=5, 598.235pt x 846.16125pt>
 File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 <use ./mods/ANS-CERCOMP_UFG.pdf, page 5>
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf , page5 used on input line 50.
@@ -1105,7 +1126,7 @@ File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf , page5 used on input line 50.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [68 <./mods/ANS-CERCOMP_UFG.pdf>]
-<./mods/ANS-CERCOMP_UFG.pdf, id=820, page=6, 598.235pt x 846.16125pt>
+<./mods/ANS-CERCOMP_UFG.pdf, id=824, page=6, 598.235pt x 846.16125pt>
 File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 <use ./mods/ANS-CERCOMP_UFG.pdf, page 6>
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf , page6 used on input line 50.
@@ -1119,7 +1140,7 @@ File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf , page6 used on input line 50.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [69 <./mods/ANS-CERCOMP_UFG.pdf>]
-<./mods/ANS-CERCOMP_UFG.pdf, id=825, page=7, 598.235pt x 846.16125pt>
+<./mods/ANS-CERCOMP_UFG.pdf, id=829, page=7, 598.235pt x 846.16125pt>
 File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 <use ./mods/ANS-CERCOMP_UFG.pdf, page 7>
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf , page7 used on input line 50.
@@ -1133,7 +1154,7 @@ File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf , page7 used on input line 50.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [70 <./mods/ANS-CERCOMP_UFG.pdf>]
-<./mods/ANS-CERCOMP_UFG.pdf, id=830, page=8, 598.235pt x 846.16125pt>
+<./mods/ANS-CERCOMP_UFG.pdf, id=834, page=8, 598.235pt x 846.16125pt>
 File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 <use ./mods/ANS-CERCOMP_UFG.pdf, page 8>
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf , page8 used on input line 50.
@@ -1147,7 +1168,7 @@ File: ./mods/ANS-CERCOMP_UFG.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/ANS-CERCOMP_UFG.pdf , page8 used on input line 50.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [71 <./mods/ANS-CERCOMP_UFG.pdf>]
-<./mods/ANO-Infra_Sistemas.pdf, id=836, 598.235pt x 846.16125pt>
+<./mods/ANO-Infra_Sistemas.pdf, id=840, 598.235pt x 846.16125pt>
 File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 <use ./mods/ANO-Infra_Sistemas.pdf>
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf  used on input line 51.
@@ -1156,7 +1177,7 @@ File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 <use ./mods/ANO-Infra_Sistemas.pdf>
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf  used on input line 51.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
-<./mods/ANO-Infra_Sistemas.pdf, id=839, page=1, 598.235pt x 846.16125pt>
+<./mods/ANO-Infra_Sistemas.pdf, id=843, page=1, 598.235pt x 846.16125pt>
 File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 <use ./mods/ANO-Infra_Sistemas.pdf, page 1>
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf , page1 used on input line 51.
@@ -1178,7 +1199,7 @@ File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf , page1 used on input line 51.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [72 <./mods/ANO-Infra_Sistemas.pdf>]
-<./mods/ANO-Infra_Sistemas.pdf, id=871, page=2, 598.235pt x 846.16125pt>
+<./mods/ANO-Infra_Sistemas.pdf, id=875, page=2, 598.235pt x 846.16125pt>
 File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 <use ./mods/ANO-Infra_Sistemas.pdf, page 2>
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf , page2 used on input line 51.
@@ -1192,7 +1213,7 @@ File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf , page2 used on input line 51.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [73 <./mods/ANO-Infra_Sistemas.pdf>]
-<./mods/ANO-Infra_Sistemas.pdf, id=881, page=3, 598.235pt x 846.16125pt>
+<./mods/ANO-Infra_Sistemas.pdf, id=885, page=3, 598.235pt x 846.16125pt>
 File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 <use ./mods/ANO-Infra_Sistemas.pdf, page 3>
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf , page3 used on input line 51.
@@ -1206,7 +1227,7 @@ File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf , page3 used on input line 51.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [74 <./mods/ANO-Infra_Sistemas.pdf>]
-<./mods/ANO-Infra_Sistemas.pdf, id=887, page=4, 598.235pt x 846.16125pt>
+<./mods/ANO-Infra_Sistemas.pdf, id=891, page=4, 598.235pt x 846.16125pt>
 File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 <use ./mods/ANO-Infra_Sistemas.pdf, page 4>
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf , page4 used on input line 51.
@@ -1220,7 +1241,7 @@ File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf , page4 used on input line 51.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [75 <./mods/ANO-Infra_Sistemas.pdf>]
-<./mods/ANO-Infra_Sistemas.pdf, id=892, page=5, 598.235pt x 846.16125pt>
+<./mods/ANO-Infra_Sistemas.pdf, id=896, page=5, 598.235pt x 846.16125pt>
 File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 <use ./mods/ANO-Infra_Sistemas.pdf, page 5>
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf , page5 used on input line 51.
@@ -1234,7 +1255,7 @@ File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf , page5 used on input line 51.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [76 <./mods/ANO-Infra_Sistemas.pdf>]
-<./mods/ANO-Infra_Sistemas.pdf, id=897, page=6, 598.235pt x 846.16125pt>
+<./mods/ANO-Infra_Sistemas.pdf, id=901, page=6, 598.235pt x 846.16125pt>
 File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 <use ./mods/ANO-Infra_Sistemas.pdf, page 6>
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf , page6 used on input line 51.
@@ -1248,7 +1269,7 @@ File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf , page6 used on input line 51.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [77 <./mods/ANO-Infra_Sistemas.pdf>]
-<./mods/ANO-Infra_Sistemas.pdf, id=903, page=7, 598.235pt x 846.16125pt>
+<./mods/ANO-Infra_Sistemas.pdf, id=907, page=7, 598.235pt x 846.16125pt>
 File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 <use ./mods/ANO-Infra_Sistemas.pdf, page 7>
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf , page7 used on input line 51.
@@ -1262,7 +1283,7 @@ File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf , page7 used on input line 51.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [78 <./mods/ANO-Infra_Sistemas.pdf>]
-<./mods/ANO-Infra_Sistemas.pdf, id=908, page=8, 598.235pt x 846.16125pt>
+<./mods/ANO-Infra_Sistemas.pdf, id=912, page=8, 598.235pt x 846.16125pt>
 File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 <use ./mods/ANO-Infra_Sistemas.pdf, page 8>
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf , page8 used on input line 51.
@@ -1276,7 +1297,7 @@ File: ./mods/ANO-Infra_Sistemas.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/ANO-Infra_Sistemas.pdf , page8 used on input line 51.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [79 <./mods/ANO-Infra_Sistemas.pdf>]
-<./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf, id=913, 597.23125pt x 845.1575pt>
+<./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf, id=917, 597.23125pt x 845.1575pt>
 File: ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf Graphic file (type pdf)
 <use ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf>
 Package pdftex.def Info: ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf  used on input line 52.
@@ -1285,7 +1306,7 @@ File: ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf Graphi
 <use ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf>
 Package pdftex.def Info: ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf  used on input line 52.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf, id=916, page=1, 597.23125pt x 845.1575pt>
+<./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf, id=920, page=1, 597.23125pt x 845.1575pt>
 File: ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf Graphic file (type pdf)
 <use ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf, page 1>
 Package pdftex.def Info: ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf , page1 used on input line 
@@ -1312,7 +1333,7 @@ Package pdftex.def Info: ./mods/especificacao-de-servicos_cat-servidores-e-armaz
 52.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
  [80 <./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf>]
-<./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf, id=938, page=2, 597.23125pt x 845.1575pt>
+<./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf, id=942, page=2, 597.23125pt x 845.1575pt>
 File: ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf Graphic file (type pdf)
 <use ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf, page 2>
 Package pdftex.def Info: ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf , page2 used on input line 
@@ -1329,7 +1350,7 @@ Package pdftex.def Info: ./mods/especificacao-de-servicos_cat-servidores-e-armaz
 52.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
  [81 <./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf>]
-<./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf, id=944, page=3, 597.23125pt x 845.1575pt>
+<./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf, id=948, page=3, 597.23125pt x 845.1575pt>
 File: ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf Graphic file (type pdf)
 <use ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf, page 3>
 Package pdftex.def Info: ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf , page3 used on input line 
@@ -1346,7 +1367,7 @@ Package pdftex.def Info: ./mods/especificacao-de-servicos_cat-servidores-e-armaz
 52.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
  [82 <./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf>]
-<./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf, id=950, page=4, 597.23125pt x 845.1575pt>
+<./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf, id=954, page=4, 597.23125pt x 845.1575pt>
 File: ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf Graphic file (type pdf)
 <use ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf, page 4>
 Package pdftex.def Info: ./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf , page4 used on input line 
@@ -1364,7 +1385,7 @@ Package pdftex.def Info: ./mods/especificacao-de-servicos_cat-servidores-e-armaz
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
  [83 <./mods/especificacao-de-servicos_cat-servidores-e-armazenamento.pdf>]
 Ap\^endice C.
-<./mods/modelo-de-ANS.pdf, id=957, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANS.pdf, id=961, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANS.pdf>
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf  used on input line 58.
@@ -1373,7 +1394,7 @@ File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANS.pdf>
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf  used on input line 58.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
-<./mods/modelo-de-ANS.pdf, id=960, page=1, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANS.pdf, id=964, page=1, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANS.pdf, page 1>
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf , page1 used on input line 58.
@@ -1398,7 +1419,7 @@ File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf , page1 used on input line 58.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [85 <./mods/modelo-de-ANS.pdf>]
-<./mods/modelo-de-ANS.pdf, id=996, page=2, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANS.pdf, id=1000, page=2, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANS.pdf, page 2>
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf , page2 used on input line 58.
@@ -1412,7 +1433,7 @@ File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [86 <./mods/modelo-de-ANS.pdf>]
-<./mods/modelo-de-ANS.pdf, id=1006, page=3, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANS.pdf, id=1010, page=3, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANS.pdf, page 3>
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf , page3 used on input line 58.
@@ -1426,7 +1447,7 @@ File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf , page3 used on input line 58.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [87 <./mods/modelo-de-ANS.pdf>]
-<./mods/modelo-de-ANS.pdf, id=1012, page=4, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANS.pdf, id=1016, page=4, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANS.pdf, page 4>
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf , page4 used on input line 58.
@@ -1440,7 +1461,7 @@ File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf , page4 used on input line 58.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [88 <./mods/modelo-de-ANS.pdf>]
-<./mods/modelo-de-ANS.pdf, id=1017, page=5, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANS.pdf, id=1021, page=5, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANS.pdf, page 5>
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf , page5 used on input line 58.
@@ -1454,7 +1475,7 @@ File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf , page5 used on input line 58.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [89 <./mods/modelo-de-ANS.pdf>]
-<./mods/modelo-de-ANS.pdf, id=1023, page=6, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANS.pdf, id=1027, page=6, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANS.pdf, page 6>
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf , page6 used on input line 58.
@@ -1468,7 +1489,7 @@ File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf , page6 used on input line 58.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [90 <./mods/modelo-de-ANS.pdf>]
-<./mods/modelo-de-ANS.pdf, id=1028, page=7, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANS.pdf, id=1032, page=7, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANS.pdf, page 7>
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf , page7 used on input line 58.
@@ -1482,7 +1503,7 @@ File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf , page7 used on input line 58.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [91 <./mods/modelo-de-ANS.pdf>]
-<./mods/modelo-de-ANS.pdf, id=1033, page=8, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANS.pdf, id=1037, page=8, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANS.pdf, page 8>
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf , page8 used on input line 58.
@@ -1496,7 +1517,7 @@ File: ./mods/modelo-de-ANS.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/modelo-de-ANS.pdf , page8 used on input line 58.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [92 <./mods/modelo-de-ANS.pdf>]
-<./mods/modelo-de-ANO.pdf, id=1038, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANO.pdf, id=1042, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANO.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANO.pdf>
 Package pdftex.def Info: ./mods/modelo-de-ANO.pdf  used on input line 59.
@@ -1505,7 +1526,7 @@ File: ./mods/modelo-de-ANO.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANO.pdf>
 Package pdftex.def Info: ./mods/modelo-de-ANO.pdf  used on input line 59.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
-<./mods/modelo-de-ANO.pdf, id=1041, page=1, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANO.pdf, id=1045, page=1, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANO.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANO.pdf, page 1>
 Package pdftex.def Info: ./mods/modelo-de-ANO.pdf , page1 used on input line 59.
@@ -1527,7 +1548,7 @@ File: ./mods/modelo-de-ANO.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/modelo-de-ANO.pdf , page1 used on input line 59.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [93 <./mods/modelo-de-ANO.pdf>]
-<./mods/modelo-de-ANO.pdf, id=1073, page=2, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANO.pdf, id=1077, page=2, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANO.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANO.pdf, page 2>
 Package pdftex.def Info: ./mods/modelo-de-ANO.pdf , page2 used on input line 59.
@@ -1541,7 +1562,7 @@ File: ./mods/modelo-de-ANO.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/modelo-de-ANO.pdf , page2 used on input line 59.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [94 <./mods/modelo-de-ANO.pdf>]
-<./mods/modelo-de-ANO.pdf, id=1083, page=3, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANO.pdf, id=1087, page=3, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANO.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANO.pdf, page 3>
 Package pdftex.def Info: ./mods/modelo-de-ANO.pdf , page3 used on input line 59.
@@ -1555,7 +1576,7 @@ File: ./mods/modelo-de-ANO.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/modelo-de-ANO.pdf , page3 used on input line 59.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [95 <./mods/modelo-de-ANO.pdf>]
-<./mods/modelo-de-ANO.pdf, id=1090, page=4, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANO.pdf, id=1094, page=4, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANO.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANO.pdf, page 4>
 Package pdftex.def Info: ./mods/modelo-de-ANO.pdf , page4 used on input line 59.
@@ -1570,7 +1591,7 @@ Package pdftex.def Info: ./mods/modelo-de-ANO.pdf , page4 used on input line 59.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
 
 [96 <./mods/modelo-de-ANO.pdf>]
-<./mods/modelo-de-ANO.pdf, id=1095, page=5, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANO.pdf, id=1099, page=5, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANO.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANO.pdf, page 5>
 Package pdftex.def Info: ./mods/modelo-de-ANO.pdf , page5 used on input line 59.
@@ -1584,7 +1605,7 @@ File: ./mods/modelo-de-ANO.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/modelo-de-ANO.pdf , page5 used on input line 59.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [97 <./mods/modelo-de-ANO.pdf>]
-<./mods/modelo-de-ANO.pdf, id=1100, page=6, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANO.pdf, id=1104, page=6, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANO.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANO.pdf, page 6>
 Package pdftex.def Info: ./mods/modelo-de-ANO.pdf , page6 used on input line 59.
@@ -1598,7 +1619,7 @@ File: ./mods/modelo-de-ANO.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/modelo-de-ANO.pdf , page6 used on input line 59.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [98 <./mods/modelo-de-ANO.pdf>]
-<./mods/modelo-de-ANO.pdf, id=1105, page=7, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANO.pdf, id=1109, page=7, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANO.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANO.pdf, page 7>
 Package pdftex.def Info: ./mods/modelo-de-ANO.pdf , page7 used on input line 59.
@@ -1612,7 +1633,7 @@ File: ./mods/modelo-de-ANO.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./mods/modelo-de-ANO.pdf , page7 used on input line 59.
 (pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
  [99 <./mods/modelo-de-ANO.pdf>]
-<./mods/modelo-de-ANO.pdf, id=1110, page=8, 598.235pt x 846.16125pt>
+<./mods/modelo-de-ANO.pdf, id=1114, page=8, 598.235pt x 846.16125pt>
 File: ./mods/modelo-de-ANO.pdf Graphic file (type pdf)
 <use ./mods/modelo-de-ANO.pdf, page 8>
 Package pdftex.def Info: ./mods/modelo-de-ANO.pdf , page8 used on input line 59.
@@ -1632,24 +1653,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
 (monografia.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 118.
-
-
-Package rerunfilecheck Warning: File `monografia.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `monografia.out':
-(rerunfilecheck)             Before: DA631286792A4CCEB5288E92C5EE9245;3873
-(rerunfilecheck)             After:  4E6825F4FD39295C8A10447ADD1111C7;3855.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `monografia.out' has not changed.
+(rerunfilecheck)             Checksum: 4E6825F4FD39295C8A10447ADD1111C7;3855.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
  ) 
 Here is how much of TeX's memory you used:
- 12197 strings out of 492970
- 189270 string characters out of 3135855
- 314515 words of memory out of 3000000
+ 12198 strings out of 492970
+ 189268 string characters out of 3135855
+ 314523 words of memory out of 3000000
  15501 multiletter control sequences out of 15000+200000
  133638 words of font info for 161 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1659,9 +1670,9 @@ msy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Pr
 elvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on monografia.pdf (102 pages, 2598719 bytes).
+Output written on monografia.pdf (102 pages, 2600143 bytes).
 PDF statistics:
- 1195 PDF objects out of 1200 (max. 8388607)
- 229 named destinations out of 1000 (max. 500000)
+ 1199 PDF objects out of 1200 (max. 8388607)
+ 230 named destinations out of 1000 (max. 500000)
  750 words of extra memory for PDF output out of 10000 (max. 10000000)
 

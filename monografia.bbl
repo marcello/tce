@@ -1,12 +1,22 @@
 \begin{thebibliography}{10}
 
+\bibitem{EGD}
+{\sffamily\scshape {Brasil. Minist\'erio do Planejamento, Desenvolvimento e
+  Gest\~ao}.}
+\newblock {\bfseries {Estrat\'egia de Governan\c{c}a Digital:
+  Transforma\c{c}\~ao Digital - cidadania e governo}}.
+\newblock
+  \url{http://www.planejamento.gov.br/EGD/arquivos/revisao-da-estrategia-de-governanca-digital-2015-2019.pdf},
+  2018.
+\newblock [Acessado em Setembro de 2019].
+
 \bibitem{Cercomp2018}
 {\sffamily\scshape {Cercomp - Centro de Recursos Computacionais da UFG}.}
 \newblock {\bfseries {Resolu\c{c}\~ao CONSUNI 32/2008}}.
 \newblock
   \url{https://www.cercomp.ufg.br/up/18/o/Resolucao_CONSUNI_2008_0032.pdf},
   2018.
-\newblock [Acessado em Novembro de 2018].
+\newblock [Acessado em Novembro de 2019].
 
 \bibitem{Cervone2008}
 {\sffamily\scshape Cervone, F.}
