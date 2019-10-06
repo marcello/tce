@@ -47,31 +47,23 @@ O CERCOMP, por sua vez, é organizado em direção, assessorias e gerências para o 
 \section{Justificativa}
 \label{sec:justificativa}
 
-Durante sua trajetória, o CERCOMP foi incorporando e disponibilizando, gradativamente, à comunidade universitária diversos serviços de TI. Contudo, a disponibilização desses serviços não foi acompanhada de uma sistemática de processos para garantir sua especificação, divulgação e gestão de atendimento, tornando esses serviços, por algumas vezes, desconhecidos até entre as equipes técnicas do órgão.
+Durante sua trajetória, o CERCOMP foi incorporando e disponibilizando, gradativamente, à comunidade universitária da UFG diversos serviços de TI. Contudo, a disponibilização desses serviços não foi acompanhada de uma sistemática de processos para garantir sua especificação, divulgação e gestão de atendimento, tornando esses serviços, por algumas vezes, desconhecidos até entre as equipes técnicas do órgão.
 
-Além disso, a ferramenta de gerenciamento de serviços adotada pela instituição (GLPI) não possui integração com o catálogo de serviços de TI, até porque o mesmo é inexistente na instituição. Esse cenário prejudica o atendimento aos usuários e gerenciamento dos serviços de TI pela equipe técnica de TI do órgão, de forma a comprometer a qualidade dos serviços prestados.
+Adicionalmente, a ferramenta de gerenciamento de serviços adotada pela instituição (GLPI) não possui integração com o Catálogo de Serviços de TI, até porque o mesmo é inexistente. Esse cenário prejudica o atendimento aos usuários e o gerenciamento dos serviços pela equipe técnica de TI do órgão, de forma a comprometer a qualidade dos serviços prestados.
 
-Alguns dos problemas identificados no atendimento dos chamados de TI são: dificuldade da equipe do Serviço de Atendimento ao Usuário - SAU/CERCOMP (\textit{helpdesk}) identificar e direcionar determinados tipos de chamados; ausência de prazos para atendimento ao usuário; indefinição e/ou desconhecimento do conjunto de serviços de TI ativos e disponíveis, entre outros.
+De maneira sintética, observa-se alguns problemas relacionados ao atendimento dos chamados de TI pelo CERCOMP: dificuldade, por parte da equipe do Serviço de Atendimento ao Usuário - SAU (\textit{helpdesk}), em identificar e direcionar determinados tipos de chamados; ausência de prazos definidos para atendimento ao usuário; indefinição e/ou desconhecimento do conjunto de serviços de TI ativos e disponíveis, entre outros.
 
+Além das dificuldades observadas quanto às solicitações de serviços de TI (requisições e incidentes), bem como o atendimento dessas solicitações por parte das equipes técnicas do CERCOMP, um outro fator tem se tornado determinante para o desenvolvimento de ações e estratégias para o gerenciamento de serviços de TI: a fiscalização, acompanhamento e exigências dos órgãos de controle.
 
+Anualmente, as atividades da UFG são objeto de acompanhamento e auditoria dos órgãos de controle, tais como TCU e CGU. O Relatório de Gestão 2018 \cite{RelatorioGestao}, apresentado junto à CGU, possui uma seção (Anexo G) dedicada à ``Gestão da tecnologia da informação da unidade jurisdicionada'', a qual tem por objetivo colher informações sobre a governança e gestão de TI, assim como dos serviços de TI oferecidos aos cidadãos.
 
-Ainda, diante da necessidade do atendimento às portarias, normativas e demais diretrizes dos órgãos de controle que direcionam a parte de governança e gestão de TI da APF, notou-se a oportunidade através deste trabalho para estudar e implementar práticas consolidadas no atendimento feito pelos departamentos do CERCOMP ao seus usuários, iniciando, mais especificamente com a Equipe de Infraestrutura.
+A UFG, enquanto órgão da administração federal indireta, na condição de autarquia, integra o Sistema de Administração dos Recursos de Tecnologia da Informação (SISP) do atual Ministério da Economia. O SISP é um sistema instituído com o objetivo de gerir os recursos de tecnologia da informação da Administração Pública Federal Direta, Autárquica e Fundacional e, para tanto, estabelece um conjunto de diretrizes e normas a serem seguidas por esses órgãos.
 
-Tal implementação trará o estabelecimento de uma maturidade no serviço de TI da UFG, beneficiando diretamente os órgãos e unidades acadêmicas que são atendidos pelo departamento, bem como ao restante da comunidade acadêmica através de outros serviços que também são disponibilizados.
+A disponibilização do Catálogo de Serviços de TI consta como meta do Plano Diretor de Tecnologia da Informação - PDTI/UFG (2018/2021 p.49)~\cite{PDTI2018} que por sua vez está alinhado ao Plano de Desenvolvimento Institucional - PDI/UFG (2018-2022 p.69)~\cite{PDI2018}. Isso que demonstra o reconhecimento e interesse estratégico da Alta Administração e do CERCOMP sobre a sua necessidade e relevância no aprimoramento da oferta e do atendimento de serviços de TI à comunidade universitária.
 
+Nesse contexto, o CERCOMP tem percebido a necessidade de adotar e institucionalizar um conjunto de boas práticas consolidadas para o gerenciamento de serviços de TI, especialmente com a utilização da ITIL. Essa estratégia passa necessariamente pela elaboração, disponibilização e gerenciamento do Catálogo de Serviços de TI da UFG. 
 
-Nesse contexto, o Centro de Recursos Computacionais da UFG tem percebido a necessidade de adotar e institucionalizar um conjunto de boas práticas para o gerenciamento de serviços de TI, especialmente com a utilização da ITIL.
-
-
-A disponibilização, divulgação e gerenciamento do Catálogo de Serviços de TI consta como meta do Plano Diretor de Tecnologia da Informação - PDTI/UFG (2018/2021 p.49)~\cite{PDTI2018} que por sua vez está alinhado ao Plano de Desenvolvimento Institucional - PDI/UFG (2018-2022 p.69)~\cite{PDI2018}, o que demonstra o reconhecimento e interesse estratégico da alta administração e das equipes técnicas do CERCOMP sobre a sua necessidade e relevância para aprimorar o atendimento e oferta de serviços de TI à comunidade universitária da UFG.
-
-
-O Departamento de Segurança da Informação e Comunicação do Gabinete de Segurança Institucional da Presidência da República (DSIC/GSIPR), do Tribunal de Contas da União (TCU) possui normas e de leis complementares para TI que devem ser seguidas por toda APF.
-Neste sentido, percebeu-se a necessidade de um mapeamento dos processos da área de Gerenciamento de Catálogo de Serviços dentro do órgão referenciado como objeto de estudo deste trabalho, para adequar-se às melhores práticas estabelecidas por tais entidades.
-
-A necessidade de mapeamento dos processos surge não somente do desejo de melhoria contínua na prestação de serviço, mas de exigências dos órgãos de controle e fiscalização na aplicação da governança de TI nos órgãos da Administração Pública direta, indireta, autárquica e fundacional do Governo Federal.
-Portanto, a aplicação destes processos é requisito de conformidade, ou seja, requerida para atendimento de normativas que regem o funcionamento do órgão em questão, fazendo com que tais exigências sejam cumpridas parcial ou totalmente, dependendo do caso.
-
+Dessa forma, mais do que uma necessidade entende-se que a disponibilização do Catálogo de Serviços de TI é uma oportunidade para aprimoramento e melhoria da qualidade dos serviços de TI oferecidos, de forma a atender tanto as diretrizes e exigências dos órgãos de controle como os objetivos e metas institucionais estabelecidos para a área. Assim, o conjunto de fatores apresentados acima motivou a escolha do tema e realização deste projeto técnico.
 
 \section{Objetivos}
 \label{sec:objetivos}
