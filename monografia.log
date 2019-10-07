@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.9.23)  5 OCT 2019 23:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.9.23)  7 OCT 2019 12:33
 entering extended mode
 **./monografia.tex
 (monografia.tex
@@ -760,15 +760,14 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
- [16]
-<./fig/organograma-cercomp-completo.jpg, id=374, 1066.98625pt x 1062.97125pt>
+<./fig/organograma-cercomp-completo.jpg, id=368, 1066.98625pt x 1062.97125pt>
 File: ./fig/organograma-cercomp-completo.jpg Graphic file (type jpg)
 <use ./fig/organograma-cercomp-completo.jpg>
 Package pdftex.def Info: ./fig/organograma-cercomp-completo.jpg  used on input line 40.
 (pdftex.def)             Requested size: 426.79134pt x 425.18097pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 41.
- [17 <./fig/organograma-cercomp-completo.jpg>] [18] [19]) (tex/cap_II.tex [20]
+ [16] [17 <./fig/organograma-cercomp-completo.jpg>] [18]) (tex/cap_II.tex [19] [20]
 Cap\'{\i }tulo 2.
 [21
 
@@ -1675,7 +1674,7 @@ msy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Pr
 elvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on monografia.pdf (102 pages, 2601570 bytes).
+Output written on monografia.pdf (102 pages, 2601430 bytes).
 PDF statistics:
  1203 PDF objects out of 1440 (max. 8388607)
  231 named destinations out of 1000 (max. 500000)
