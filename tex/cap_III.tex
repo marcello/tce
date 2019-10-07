@@ -97,7 +97,7 @@ O Grupo de Trabalho (GT) de Catálogo de Serviços do CERCOMP foi criado pela Dire
 O GT iniciou suas atividades em setembro de 2018, sendo composto por um representante da cada uma das equipes técnicas e assessorias do CERCOMP (Sistemas, Infraestrutura/Redes, Serviços/Suporte, Secretaria Administrativa e Escritório de Gestão de Processos e Projetos), com a participação da Direção e de outros servidores/colaboradores com experiência na área de gerenciamento de serviços de TI.
 
 Durante o desenvolvimento das atividades do GT buscou-se estabelecer um alinhamento entre suas ações e a proposta estabelecida nos objetivos deste trabalho.
-Essa primeira etapa apoiou-se no trabalho conduzido pelo GT e, como base nas informações disponíveis, definiu-se o escopo e metodologia do projeto técnico.
+Essa primeira etapa apoiou-se no trabalho conduzido pelo GT e, com base nas informações disponíveis, definiu-se o escopo e metodologia do projeto técnico.
 
 \subsubsection{Levantamento preliminar de serviços de TI}
 
@@ -159,13 +159,13 @@ Essa consulta obteve o retorno espontâneo de 10 (dez) universidades federais, da
 %  \label{tab:ifes-catalogo}
 %\end{table*}
 
-O projeto técnico a ser apresentado nas etapas seguintes contemplará, a proposição de modelos de documentos (especificação de serviços, acordo de nível de serviços e acordo de nível operacional) e a aplicação desses modelos de documentos ao contexto do CERCOMP e da sua Equipe de Infraestrutura.
+O projeto técnico, a ser apresentado nas etapas seguintes, contemplará a proposição de modelos de documentos (especificação de serviços, acordo de nível de serviços e acordo de nível operacional) e a aplicação desses modelos de documentos ao contexto do CERCOMP e da sua Equipe de Infraestrutura.
 
 \subsubsection{Fluxos de processos de atendimento}
 
 Para realização dessa atividade foi analisado o atual fluxo de atendimento dos chamados realizado pela Equipe.
 A abertura de chamados é realizada livremente por qualquer membro da comunidade universitária por meio da ferramenta ITSM adotada pela UFG - GLPI (acrônimo francês para \textit{Gestionnaire Libre de Parc Informatique}).
-Observa-se que após o recebimento do chamado, o SAU (equipe responsável pelo recebimento, categorização e encaminhamento de todas os chamados recebidos pela ferramenta) então classifica se a demanda trata-se de uma requisição de serviço ou de um incidente.
+Observa-se que após o recebimento do chamado, o SAU (equipe responsável pelo recebimento, categorização e encaminhamento de todos os chamados recebidos pela ferramenta), então, classifica se a demanda trata-se de uma requisição de serviço ou de um incidente.
 A visualização do fluxo de atendimento é apresentada na Figura~\ref{fig:atendim}.
 
 A classificação entre requisição de serviço\footnote{por definição, não gera impacto negativo para nenhum usuário/processo de negócio, nem perdas para a organização} e incidentes\footnote{por definição, gera interrupção total ou parcial de processo de negócio} era feita pelo próprio usuário final e de forma dependente da interpretação dos atendentes do SAU.
@@ -224,7 +224,7 @@ O resultado de cada etapa do processo é encaminhado para validação/homologação d
 
 O departamento que é o foco do projeto técnico deste trabalho levantou seus principais processos de trabalho através dos fluxos de atendimentos executados aos seus clientes.
 
-Para a modelagem destes processos foi utilizada a ferramenta Bizagi na versão livre empregando o uso da notação BPMN (Business Process Model and Notation).
+Para a modelagem destes processos foi utilizada a ferramenta Bizagi na versão livre empregando o uso da notação BPMN (\textit{Business Process Model and Notation}).
 Os principais processos identificados pela equipe são:
 
 \begin{enumerate}
@@ -241,7 +241,7 @@ Os principais processos identificados pela equipe são:
 \end{enumerate}
 
 Serão apresentados apenas os processos destacados, uma vez que a definição extensiva de todos não colabora para didática deste trabalho. A escolha destes processos se deve ao fato deles fazerem parte da categoria ``Servidores e Armazenamento'' descritos no Mapa Mental apresentado posteriormente.
-O serviço ``File Sender (compartilhamento de arquivos)'' que também faz parte dessa categoria não foi mapeado por se tratar de um serviço oferecido por outra equipe.
+O serviço ``\textit{File Sender} (compartilhamento de arquivos)'' que também faz parte dessa categoria, não foi mapeado por se tratar de um serviço oferecido por outra equipe.
 
 \subsubsubsection{Alocação de recursos computacionais no Data Center}
 
@@ -396,7 +396,7 @@ A Comissão de Gestão do Catálogo de Serviços de TI do CERCOMP teria por atribuiç
 O GLPI é uma ferramenta consolidada na UFG no gerenciamento dos chamados de TI, tanto por parte da equipe técnica quanto da equipe usuária, ainda que em algumas situações observa-se uma ``cultura de indisposição'' de alguns usuários em reportar problemas com a abertura do respectivo chamado.
 Ciente disso, a equipe técnica do CERCOMP vem trabalhando na atualização e reconfiguração da ferramenta de forma a aprimorar a interface de abertura de chamados e seu atendimento e gerenciamento.
 
-No que se refere à disponibilização do Catálogo de Serviços e sua integração com o GLPI, duas abordagens foram avaliadas: criação de uma interface web para disponibilização do Catálogo de Serviços de TI e abertura de chamados, a qual seria integrada ao GLPI por meio da utilização de uma API~\cite{Glpi2019} da ferramenta ou a utilização de um plugin - Form Creator~\cite{Formcreator2019} do GLPI que permite a organização do Catálogo de Serviços dentro da própria ferramenta, bem como a configuração específica de cada formulário com base no tipo e atributos do serviço.
+No que se refere à disponibilização do Catálogo de Serviços e sua integração com o GLPI, duas abordagens foram avaliadas: criação de uma interface web para disponibilização do Catálogo de Serviços de TI e abertura de chamados, a qual seria integrada ao GLPI por meio da utilização de uma API~\cite{Glpi2019} da ferramenta ou a utilização de um plugin - \textit{Form Creator}~\cite{Formcreator2019} do GLPI que permite a organização do Catálogo de Serviços dentro da própria ferramenta, bem como a configuração específica de cada formulário com base no tipo e atributos do serviço.
 
 Na primeira abordagem, a visualização do Catálogo de Serviços é pública e apenas no momento da solicitação do serviço (requisição/incidente) é necessário a autenticação do usuário no GLPI.
 Já na segunda abordagem, a primeira ação do usuário necessariamente é a autenticação no GLPI e, após isso, ele realiza a navegação pelo Catálogo de Serviços e encaminha a sua solicitação.
@@ -408,7 +408,7 @@ Dessa forma, o usuário poderá conhecer e navegar pelos vários serviços oferecido
 A Figura~\ref{fig:proto-cs-int} apresenta o protótipo de interface da página interna do serviço.
 Nessa abordagem, após autenticação, a criação do chamado (requisição/incidente) seria realizada pela interface e encaminhada ao GLPI, por meio de integração via API, e a interação do usuário para acompanhamento do chamado seria diretamente no GLPI, além de notificações por e-mail.
 
-Ainda que a primeira abordagem seja implementada no âmbito do CERCOMP (interface web integrada via API), pode-se utilizar uma implementação híbrida que considere tanto a página web do Catálogo de Serviços de TI, bem como sua disponibilização e organização dentro da própria ferramenta GLPI (utilizando o plugin Form Creator).
+Ainda que a primeira abordagem seja implementada no âmbito do CERCOMP (interface web integrada via API), pode-se utilizar uma implementação híbrida que considere tanto a página web do Catálogo de Serviços de TI, bem como sua disponibilização e organização dentro da própria ferramenta GLPI (utilizando o plugin \textit{Form Creator}).
 
 Neste caso, para evitar retrabalho e/ou inconsistência das informações, pode-se avaliar a possibilidade de cadastrar as informações do Catálogo nos formulários do GLPI e consumir essas informações na interface web.
 Obviamente, tanto o esforço de implementação dessa solução híbrida bem como a existência de (duas) experiências de usuários distintas devem ser consideradas na avaliação e decisão final sobre a abordagem de disponibilização do Catálogo de Serviços de TI.
@@ -428,7 +428,7 @@ Obviamente, tanto o esforço de implementação dessa solução híbrida bem como a ex
 \end{figure}
 
 Na época da consulta às instituições de ensino, apresentada anteriormente, a jovem Universidade Federal dos Vales do Jequitinhonha e Mucuvi (UFVJM) estava finalizando o trabalho de documentação da especificação dos seus serviços de TI.
-Após esta etapa, iniciou-se o processo de implantação do Catálogo de Serviços de TI, integrando-o à ferramenta ITSM adotada pela instituição - GLPI, utilizando o plugin Form Creator.
+Após esta etapa, iniciou-se o processo de implantação do Catálogo de Serviços de TI, integrando-o à ferramenta ITSM adotada pela instituição - GLPI, utilizando o plugin \textit{Form Creator}.
 
 O trabalho desenvolvido por Rosa~\cite{Rosa2019} na UFVJM apresenta a implementação modularizada do GLPI com foco na satisfação do usuário final e o intuito de desburocratizar e automatizar o processo de solicitação de serviços de TI.
 O resultado do trabalho apresentou alto grau de satisfação dos usuários na UFVJM após a implantação do Catálogo de Serviços de TI integrado ao GLPI.
