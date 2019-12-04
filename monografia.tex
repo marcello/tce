@@ -62,10 +62,14 @@
 
 %-------------------------------------------------- ELEMENTOS PRÉ-TEXTUAIS %
 \capa    % Gera o modelo da capa externa do trabalho
-\publica % Gera a autorização para publicação em formato eletrônico
+
+%\publica % Gera a autorização para publicação em formato eletrônico
+\includepdf[scale=1, offset={0 -70}]{./TCE-folha_autorizacao.pdf} %\includepdf[pages=-, pagecommand={}, width=\textwidth, frame=false]{./TCE-folha_aprovacao.pdf}
+
 \rosto   % Primeira folha interna do trabalho
 
-\input{./tex/pre_aprovacao}
+\includepdf[scale=0.9, offset={0 -70}, angle=-0.3]{./TCE-folha_aprovacao.pdf} %\includepdf[pages=-, pagecommand={}, width=\textwidth, frame=false]{./TCE-folha_aprovacao.pdf}
+%\input{./tex/pre_aprovacao}
 \input{./tex/pre_direitos}
 \input{./tex/pre_dedicatoria}
 \input{./tex/pre_agradecimentos}
